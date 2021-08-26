@@ -1,27 +1,2 @@
-/* Custom Scroll Bar with CSS */
-/*
-::-webkit-scrollbar {
-	width: 5px;
-	height: 5px;
-}
-::-webkit-scrollbar-track {
-	background: kt-get($x-base-colors, gray, 300);
-}
-::-webkit-scrollbar-thumb {
-	background: kt-get($x-base-colors, gray, 500);
-}
-::-webkit-scrollbar-thumb:hover {
-	background: kt-get($x-base-colors, gray, 700);
-}
-*/
-/* Plugins from Node Modules */
-/* general header css */
-.header {
-  background: red; }
-
-.footer {
-  background: green; }
-
-/* Common Compoonents  */
-
+.header{background:red}.footer{background:green}.swiper{width:600px;height:300px}
 /*# sourceMappingURL=main.css.map */
