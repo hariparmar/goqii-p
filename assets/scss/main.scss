@@ -15,9 +15,10 @@
 }
 */
 @import "./vendor";
-// @import "./config";
+@import "./config";
 @import "./header";
 @import "./footer";
 @import "./components";
+@import "./slider";
 @import "./pages";
 @import "./responsive";
