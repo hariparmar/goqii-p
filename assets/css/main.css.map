@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,gCAAgC;AAChC;;;;;;;;;;;;;;EAcE;ACfF,+BAA+B;ACA/B,wBAAwB;AAExB,OAAO;EACH,UAAU,EAAC,GAAG;;ACHlB,OAAO;EACL,UAAU,EAAC,KAAK;;ACDlB,yBAAyB",
+"sources": ["../scss/main.scss","../scss/_vendor.scss","../scss/_header.scss","../scss/_footer.scss","../scss/_components.scss"],
+"names": [],
+"file": "main.css"
+}
