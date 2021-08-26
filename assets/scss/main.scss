@@ -1,0 +1,24 @@
+/* Custom Scroll Bar with CSS */
+/*
+::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+}
+::-webkit-scrollbar-track {
+	background: kt-get($x-base-colors, gray, 300);
+}
+::-webkit-scrollbar-thumb {
+	background: kt-get($x-base-colors, gray, 500);
+}
+::-webkit-scrollbar-thumb:hover {
+	background: kt-get($x-base-colors, gray, 700);
+}
+*/
+@import "vendor";
+@import "bootstrap-grid";
+@import "config";
+@import "header";
+@import "footer";
+@import "components";
+@import "pages";
+@import "responsive";
