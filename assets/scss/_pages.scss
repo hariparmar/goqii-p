@@ -1,15 +1,26 @@
 body {
-    font-family: $primary-font;
-    font-size: 22.5px;
-    font-weight: 300;
-    line-height: 1.64;
-    letter-spacing: 2.25px
+  font-family: $primary-font;
+  font-size: 22.5px;
+  font-weight: 300;
+  line-height: 1.64;
+  letter-spacing: 2.25px;
+  overflow-x: hidden;
 }
-
 .home-explore-product {
-    margin-bottom: 150px;
+  margin-bottom: 150px;
 }
-
 .home-app-feature {
-    margin-bottom: 150px;
+  margin-bottom: 150px;
+}
+.home-health-ecosystem {
+  margin-bottom: 150px;
+}
+.home-logo {
+  margin-bottom: 150px;
+}
+.home-new-product {
+  margin-bottom: 150px;
+}
+.home-blog-testimonials {
+  margin-bottom: 150px;
 }
