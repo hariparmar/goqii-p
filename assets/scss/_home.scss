@@ -101,3 +101,43 @@
         }
     }
 }
+
+.offer-slider {
+    background-image: url('../images/bg-golden.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 80px;
+    span.offer-slider__tag {
+        position: absolute;
+        top: -35px;
+        left: 10%;
+        background-color: #2185f4;
+        color: #fff;
+        padding: 15px 35px;
+    }
+ }
+
+.offer-slider__content {
+    
+    width: 100%;
+    padding: 100px 0;
+    border-radius: 80px;
+    bottom: 0;
+    h2{
+        max-width: 460px;
+        font-size: 44px;
+    }
+}
+.offer-slider__image {
+    bottom: 0;
+    right: 140px;
+    position: absolute;
+    .offer-slider__imageLogo {
+        position: absolute;
+    }
+}
+.offer-slider__pagination {
+    position: static;
+    margin-top: 40px;
+}

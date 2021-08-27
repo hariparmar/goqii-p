@@ -16,9 +16,11 @@
 }
 */
 @import "./vendor";
+@import "./bootstrap-grid";
 // @import "./config";
 @import "./header";
 @import "./footer";
+@import "./variables";
 @import "./components";
 @import "./pages";
 @import "./responsive";
@@ -38,7 +40,7 @@
 	background: kt-get($x-base-colors, gray, 500);
 }
 ::-webkit-scrollbar-thumb:hover {
-	background: kt-get($x-base-colors, gray, 700);
+	background: kt-get($x-base-colors, gray, 700);lp 
 }
 */
 @import "./vendor";

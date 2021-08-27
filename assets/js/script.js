@@ -1,6 +1,16 @@
 // AOS Animation
 AOS.init();
 
+const offerSlider = new Swiper(".offer-slider", {
+  // Optional parameters
+  slidesPerView: 1,
+
+  // If we need pagination
+  pagination: {
+    el: ".offer-slider__pagination.swiper-pagination"
+  }, 
+});
+
 const logoSlider = new Swiper(".logo-slider", {
   // Optional parameters
   slidesPerView: 6,
