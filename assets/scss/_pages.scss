@@ -1,26 +1,146 @@
-body {
-  font-family: $primary-font;
-  font-size: 22.5px;
-  font-weight: 300;
-  line-height: 1.64;
-  letter-spacing: 2.25px;
-  overflow-x: hidden;
+.home-new-product {
+  margin-bottom: 150px;
+  .new-product-slider {
+    .swiper-wrapper {
+      align-items: center;
+    }
+    &__single {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
 }
 .home-explore-product {
   margin-bottom: 150px;
+  .product-range-slider {
+    position: relative;
+    .swiper-wrapper {
+      align-items: center;
+      .swiper-slide {
+        border: 1px transparent solid;
+      }
+      .swiper-slide-thumb-active {
+        border: 1px #000 solid;
+      }
+    }
+    &__main {
+      img {
+        max-width: 100%;
+      }
+    }
+    &__thumb {
+      width: 550px;
+      position: absolute;
+      right: 65px;
+      bottom: -65px;
+      img {
+        width: 100%;
+      }
+    }
+  }
 }
-.home-app-feature {
+.home-coaching-care {
   margin-bottom: 150px;
+  background-image: linear-gradient(to right, #fff1eb, #f4bfb7);
+  border-radius: 80px;
+  padding: 44px 100px 100px;
+  position: relative;
+  h2 {
+    font-family: "Acumin Pro Bold";
+    font-size: 100px;
+    color: #fff;
+  }
+  &__info {
+    p {
+    }
+  }
+  &__img {
+      position: absolute;
+      top: 44px;
+      right: 0;
+  }
 }
 .home-health-ecosystem {
   margin-bottom: 150px;
+  .health-ecosystem-slider {
+    position: relative;
+    .swiper-wrapper {
+      align-items: center;
+      .swiper-slide {
+        border: 1px transparent solid;
+      }
+      .swiper-slide-thumb-active {
+        border: 1px #000 solid;
+      }
+    }
+    &__main {
+      img {
+        max-width: 100%;
+      }
+    }
+    &__thumb {
+      width: 50%;
+      position: absolute;
+      right: 65px;
+      bottom: -65px;
+      img {
+        width: 100%;
+      }
+    }
+  }
 }
-.home-logo {
+.home-app-feature {
   margin-bottom: 150px;
-}
-.home-new-product {
-  margin-bottom: 150px;
+  .app-feature-slider {
+    position: relative;
+    .swiper-wrapper {
+      align-items: center;
+      .swiper-slide {
+        border: 1px transparent solid;
+      }
+      .swiper-slide-thumb-active {
+        border: 1px #000 solid;
+      }
+    }
+    &__main {
+      img {
+        max-width: 100%;
+      }
+    }
+    &__thumb {
+      width: 50%;
+      position: absolute;
+      left: 65px;
+      bottom: -65px;
+      img {
+        width: 100%;
+      }
+    }
+  }
 }
 .home-blog-testimonials {
   margin-bottom: 150px;
+}
+.home-corporate-wellness {
+  margin-bottom: 150px;
+  &__info {
+    h2 {
+    }
+    p {
+    }
+  }
+}
+.home-logo {
+  margin-bottom: 150px;
+  .logo-slider {
+    .swiper-wrapper {
+      align-items: center;
+    }
+    &__single {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
 }
