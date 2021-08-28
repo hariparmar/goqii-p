@@ -16,18 +16,29 @@
   h2 {
     text-align: center;
     font-family: "Acumin Pro Bold";
-    margin-bottom: 30px;
-    font-size: 48px;
+    margin-bottom: 72px;
+    font-size: 80px;
+    line-height: 0.31;
+    letter-spacing: 6px;
+    color: #222;
   }
   .product-range-slider {
     position: relative;
-    .swiper-wrapper {
-      align-items: center;
-      .swiper-slide {
-        border: 1px transparent solid;
+    .swiper {
+      .swiper-wrapper {
+        align-items: center;
+        .swiper-slide {
+          border: 1px transparent solid;
+        }
+        .swiper-slide-thumb-active {
+          border: 1px #000 solid;
+        }
       }
-      .swiper-slide-thumb-active {
-        border: 1px #000 solid;
+      .swiper-button-prev {
+        left: 75px;
+      }
+      .swiper-button-next {
+        right: 75px;
       }
     }
     &__main {
@@ -37,6 +48,20 @@
           text-align: center;
           position: relative;
           top: 65px;
+        }
+        &__info {
+          max-width: 514px;
+          h3 {
+            font-size: 60px;
+            font-family: "Acumin Pro Bold";
+            line-height: 0.53;
+            letter-spacing: 4.5px;
+            margin-bottom: 49px;
+            color: #222;
+          }
+          p {
+            margin-bottom: 60px;
+          }
         }
       }
     }
