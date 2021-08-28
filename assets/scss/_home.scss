@@ -1,9 +1,7 @@
-.Home--Banner {
-     
+.Home--Banner__wrapper {
     position: relative;
     height: 720px;
     margin-bottom: 140px;
-
     p {
         font-size: 43px;
         color: #364a5c;
@@ -11,7 +9,6 @@
         margin-bottom: 15px;
         line-height: 1.3;
     }
-
     h1 {
         text-indent: -9999px;
         position: relative;
@@ -95,25 +92,22 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 200px;
-
     .Feature {
         &--Single {
-
             &Inner {
                 display: flex;
                 align-items: center;
                 padding: 0 45px 0 30px;
                 margin-bottom: 25px;
-            }        
+            }
         }
         &--Image {
             max-width: 20%;
-            padding: 25px 20px;            
+            padding: 25px 20px;
             border-radius: 14.5px;
             box-shadow: -1.2px 1.6px 16.2px 0.9px rgba(36, 40, 44, 0.25);
             background-color: #fff;
             flex-shrink: 0;
-
         }
         &--Content {
             padding-left: 45px;
@@ -126,11 +120,11 @@
                 margin-bottom: 10px;
                 text-transform: uppercase;
             }
-            p { 
+            p {
                 font-size: 18px;
                 font-weight: $light-font;
                 line-height: 1.75;
-                letter-spacing: 0.9px; 
+                letter-spacing: 0.9px;
                 color: #29284a;
             }
         }
@@ -150,17 +144,15 @@
         color: #fff;
         padding: 15px 35px;
         font-weight: $bold-font;
-        font-size: 46px;        
+        font-size: 46px;
         line-height: 1;
         letter-spacing: 4.6px;
         text-transform: uppercase;
         transform: translatey(-50%);
     }
-
     &__single {
         text-align: right;
     }
-
     &__content {
         background-image: url('../images/bg-golden.jpg');
         background-repeat: no-repeat;
@@ -174,7 +166,7 @@
         padding-left: 7.5%;
         position: absolute;
         text-align: left;
-        h2{
+        h2 {
             max-width: 460px;
             font-size: 44px;
             font-weight: $bold-font;
@@ -186,7 +178,6 @@
             margin-top: 75px;
         }
     }
-
     &__image {
         bottom: 0;
         text-align: right;
@@ -200,7 +191,6 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-
             span {
                 font-size: 26px;
                 font-family: $heading-font;
@@ -213,7 +203,6 @@
             z-index: 1;
         }
     }
-
     &__pagination {
         position: static;
         margin-top: 40px;
