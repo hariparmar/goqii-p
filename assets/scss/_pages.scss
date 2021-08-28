@@ -13,6 +13,12 @@
 }
 .home-explore-product {
   margin-bottom: 150px;
+  h2 {
+    text-align: center;
+    font-family: "Acumin Pro Bold";
+    margin-bottom: 30px;
+    font-size: 48px;
+  }
   .product-range-slider {
     position: relative;
     .swiper-wrapper {
@@ -25,15 +31,20 @@
       }
     }
     &__main {
-      img {
-        max-width: 100%;
+      &__single {
+        margin-bottom: 65px;
+        &__img {
+          text-align: center;
+          position: relative;
+          top: 65px;
+        }
       }
     }
     &__thumb {
       width: 550px;
       position: absolute;
       right: 65px;
-      bottom: -65px;
+      bottom: 0;
       img {
         width: 100%;
       }
@@ -42,23 +53,34 @@
 }
 .home-coaching-care {
   margin-bottom: 150px;
-  background-image: linear-gradient(to right, #fff1eb, #f4bfb7);
-  border-radius: 80px;
-  padding: 44px 100px 100px;
+  padding-right: 166px;
   position: relative;
-  h2 {
-    font-family: "Acumin Pro Bold";
-    font-size: 100px;
-    color: #fff;
-  }
-  &__info {
-    p {
+  &__wrapper {
+    background-image: linear-gradient(to right, #fff1eb, #f4bfb7);
+    border-radius: 80px;
+    padding: 44px 0 100px;
+    h2 {
+      font-family: "Acumin Pro Bold";
+      font-size: 175px;
+      color: #fff;
+      position: relative;
+      z-index: 1;
+      margin-bottom: 80px;
+      line-height: 0.99;
+      letter-spacing: 35px;
+      margin-left: -5px;
     }
-  }
-  &__img {
+    &__info {
+      padding-left: 100px;
+      p {
+        margin-bottom: 60px;
+      }
+    }
+    &__img {
       position: absolute;
       top: 44px;
       right: 0;
+    }
   }
 }
 .home-health-ecosystem {
@@ -126,8 +148,23 @@
   margin-bottom: 150px;
   &__info {
     h2 {
+      margin-bottom: 61px;
+      font-family: 'Acumin Pro Bold';
+      font-size: 96.5px;
+      line-height: 1.1;
+      letter-spacing: 7.24px;
+      span {
+        font-family: $primary-font;
+        font-size: 42.5px;
+        font-weight: 300;
+        letter-spacing: 2.13px;
+        display: inline-block;
+        margin-bottom: 36px;
+
+      }
     }
     p {
+      margin-bottom: 42px;
     }
   }
 }

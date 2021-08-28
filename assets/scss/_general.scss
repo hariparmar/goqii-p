@@ -1,13 +1,13 @@
 body {
-    font-family: $primary-font;
-    font-size: 22.5px;
-    font-weight: 300;
-    line-height: 1.64;
-    letter-spacing: 2.25px;
-    overflow-x: hidden;
-  }
+  font-family: $primary-font;
+  font-size: 22.5px;
+  font-weight: 300;
+  line-height: 1.64;
+  letter-spacing: 2.25px;
+  overflow-x: hidden;
+}
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 h1,
@@ -16,5 +16,27 @@ h3,
 h4,
 h5,
 h6 {
-    margin-top: 0;
+  margin-top: 0;
+}
+
+.goqii-btn-primary {
+  height: 51px;
+  padding: 0 38px;
+  font-size: 20.5px;
+  display: inline-flex;
+  font-weight: bold;
+  border: solid 1px #3a3939;
+  line-height: 51px;
+  letter-spacing: 2.05px;
+  text-align: center;
+  color: #3a3939;
+  text-transform: uppercase;
+  &:hover {
+    color: #3a3939;
+    text-decoration: none;
+  }
+  &--blue {
+  color: #2185f4;
+  border: solid 1px #2185f4;
+  }
 }
