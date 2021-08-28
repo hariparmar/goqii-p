@@ -31,7 +31,7 @@
           border: 1px transparent solid;
         }
         .swiper-slide-thumb-active {
-          border: 1px #000 solid;
+          border: 1px #3a7fd0 solid;
         }
       }
       .swiper-button-prev {
@@ -40,21 +40,25 @@
       .swiper-button-next {
         right: 75px;
       }
+      &-pagination{
+        bottom: 5px;
+      }
     }
     &__main {
       &__single {
-        margin-bottom: 65px;
+        margin-bottom: 231px;
         &__img {
           text-align: center;
-          position: relative;
-          top: 65px;
+          position: absolute;
+          bottom: -230px;
+          width: 100%;
         }
         &__info {
           max-width: 514px;
+          padding: 130px 0;
           h3 {
             font-size: 60px;
-            font-family: "Acumin Pro Bold";
-            line-height: 0.53;
+            font-family: $heading-font; 
             letter-spacing: 4.5px;
             margin-bottom: 49px;
             color: #222;
@@ -66,12 +70,23 @@
       }
     }
     &__thumb {
-      width: 550px;
+      width: 530px;
       position: absolute;
       right: 65px;
-      bottom: 0;
-      img {
-        width: 100%;
+      bottom: calc(231px - 65px);
+
+      &__single {
+        width: 150px;
+        height: 150px;        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+        
+        img {
+          max-height: 100%;
+         }
+
       }
     }
   }
@@ -90,10 +105,10 @@
       color: #fff;
       position: relative;
       z-index: 1;
-      margin-bottom: 80px;
-      line-height: 0.99;
+      margin-bottom: 80px; 
       letter-spacing: 35px;
       margin-left: -5px;
+      line-height: 0.99;
     }
     &__info {
       padding-left: 100px;
@@ -103,7 +118,7 @@
     }
     &__img {
       position: absolute;
-      top: 44px;
+      bottom: -90px;
       right: 0;
     }
   }
@@ -121,6 +136,20 @@
         border: 1px #000 solid;
       }
     }
+    &__single {
+      display: flex;
+      padding: 0 90px;
+      &__image, &__content { 
+        flex:1;
+      }
+      &__mobile__image {
+        width: 23%;
+        align-self: flex-end;
+        position: relative;
+        left: -110px;
+      }
+    }
+
     &__main {
       img {
         max-width: 100%;

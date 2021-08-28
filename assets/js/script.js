@@ -4,7 +4,10 @@ AOS.init();
 const offerSlider = new Swiper(".offer-slider", {
   // Optional parameters
   slidesPerView: 1,
-
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
   // If we need pagination
   pagination: {
     el: ".offer-slider__pagination.swiper-pagination"
