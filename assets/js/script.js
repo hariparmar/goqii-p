@@ -6,11 +6,6 @@ const logoSlider = new Swiper(".logo-slider", {
   slidesPerView: 6,
   spaceBetween: 40,
 
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-  },
-
   // Navigation arrows
   navigation: {
     nextEl: ".swiper-button-next",

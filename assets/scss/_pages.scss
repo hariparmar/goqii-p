@@ -195,9 +195,30 @@
 }
 .home-logo {
   margin-bottom: 150px;
+  &__tab-nav {
+    &.nav {
+      .nav-item {
+        background-color: transparent;
+        padding: 0;
+        width: 100%;
+        font-size: 24px;
+        line-height: 2.02;
+        letter-spacing: 2.4px;
+        color: #252525;
+        &.active {
+          color: #e32e2e;
+          font-weight: 700;
+        }
+      }
+    }
+  }
   .logo-slider {
     .swiper-wrapper {
       align-items: center;
+    }
+    .swiper-button-disabled {
+      opacity: 0;
+      visibility: hidden;
     }
     &__single {
       img {
