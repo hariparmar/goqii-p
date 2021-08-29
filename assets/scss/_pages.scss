@@ -1,232 +1,400 @@
 .home-new-product {
-  margin-bottom: 150px;
-  .new-product-slider {
-    .swiper-wrapper {
-      align-items: center;
+    margin-bottom: 150px;
+    .new-product-slider {
+        .swiper-wrapper {
+            align-items: center;
+        }
+        &__single {
+            img {
+                max-width: 100%;
+            }
+        }
     }
-    &__single {
-      img {
-        max-width: 100%;
-      }
-    }
-  }
 }
+
 .home-explore-product {
-  margin-bottom: 150px;
-  h2 {
-    text-align: center;
-    font-family: "Acumin Pro Bold";
-    margin-bottom: 72px;
-    font-size: 80px;
-    line-height: 0.31;
-    letter-spacing: 6px;
-    color: #222;
-  }
-  .product-range-slider {
-    position: relative;
-    .swiper {
-      .swiper-wrapper {
-        align-items: center;
-        .swiper-slide {
-          border: 1px transparent solid;
-        }
-        .swiper-slide-thumb-active {
-          border: 1px #000 solid;
-        }
-      }
-      .swiper-button-prev {
-        left: 75px;
-      }
-      .swiper-button-next {
-        right: 75px;
-      }
+    margin-bottom: 150px;
+    h2 {
+        text-align: center;
+        font-family: "Acumin Pro Bold";
+        margin-bottom: 72px;
+        font-size: 80px;
+        line-height: 0.31;
+        letter-spacing: 6px;
+        color: #222;
     }
-    &__main {
-      &__single {
-        margin-bottom: 65px;
-        &__img {
-          text-align: center;
-          position: relative;
-          top: 65px;
+    .product-range-slider {
+        position: relative;
+        .swiper {
+            .swiper-wrapper {
+                align-items: center;
+                .swiper-slide {
+                    border: 1px transparent solid;
+                }
+                .swiper-slide-thumb-active {
+                    border: 1px #3a7fd0 solid;
+                }
+            }
+            .swiper-button-prev {
+                left: 75px;
+                top: calc(50% - 115px);
+            }
+            .swiper-button-next {
+                right: 75px;
+                top: calc(50% - 115px);
+            }
+            &-pagination {
+                bottom: 5px;
+                &-bullet {
+                    background-color: #bed2de;
+                    opacity: 1;
+                    &-active {
+                        background-color: #000;
+                    }
+                }
+            }
+        }
+        &__main {
+            &__single {
+                margin-bottom: 231px;
+                &__img {
+                    text-align: center;
+                    position: absolute;
+                    bottom: -230px;
+                    width: 100%;
+                }
+                &__info {
+                    max-width: 514px;
+                    padding: 130px 0;
+                    h3 {
+                        font-size: 60px;
+                        font-family: $heading-font;
+                        letter-spacing: 4.5px;
+                        margin-bottom: 49px;
+                        color: #222;
+                    }
+                    p {
+                        margin-bottom: 60px;
+                    }
+                }
+            }
+        }
+        &__thumb {
+            width: 530px;
+            position: absolute;
+            right: 65px;
+            bottom: calc(231px - 65px);
+            &__single {
+                width: 150px;
+                height: 150px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 0;
+                img {
+                    max-height: 100%;
+                }
+            }
+        }
+    }
+}
+
+.home-coaching-care {
+    &__inner {
+        margin-bottom: 150px;
+        padding-right: 166px;
+        position: relative;
+    }
+    &__wrapper {
+        background-image: linear-gradient(to right, #fff1eb, #f4bfb7);
+        border-radius: 80px;
+        padding: 44px 0 100px;
+        h2 {
+            font-family: "Acumin Pro Bold";
+            font-size: 175px;
+            color: #fff;
+            position: relative;
+            z-index: 1;
+            margin-bottom: 80px;
+            letter-spacing: 35px;
+            margin-left: -8px;
+            line-height: 0.99;
         }
         &__info {
-          max-width: 514px;
-          h3 {
-            font-size: 60px;
-            font-family: "Acumin Pro Bold";
-            line-height: 0.53;
-            letter-spacing: 4.5px;
-            margin-bottom: 49px;
-            color: #222;
-          }
-          p {
-            margin-bottom: 60px;
-          }
+            padding-left: 100px;
+            p {
+                margin-bottom: 60px;
+            }
         }
-      }
+        &__img {
+            position: absolute;
+            bottom: -90px;
+            right: 0;
+        }
     }
-    &__thumb {
-      width: 550px;
-      position: absolute;
-      right: 65px;
-      bottom: 0;
-      img {
-        width: 100%;
-      }
-    }
-  }
 }
-.home-coaching-care {
-  margin-bottom: 150px;
-  padding-right: 166px;
-  position: relative;
-  &__wrapper {
-    background-image: linear-gradient(to right, #fff1eb, #f4bfb7);
-    border-radius: 80px;
-    padding: 44px 0 100px;
-    h2 {
-      font-family: "Acumin Pro Bold";
-      font-size: 175px;
-      color: #fff;
-      position: relative;
-      z-index: 1;
-      margin-bottom: 80px;
-      line-height: 0.99;
-      letter-spacing: 35px;
-      margin-left: -5px;
-    }
-    &__info {
-      padding-left: 100px;
-      p {
-        margin-bottom: 60px;
-      }
-    }
-    &__img {
-      position: absolute;
-      top: 44px;
-      right: 0;
-    }
-  }
-}
-.home-health-ecosystem {
-  margin-bottom: 150px;
-  background-color: #e2eaff;
-  border-top-left-radius: 80px;
-  border-top-right-radius: 80px;
-  .health-ecosystem-slider {
-    position: relative;
-    .swiper-wrapper {
-      align-items: center;
-      .swiper-slide {
-        border: 1px transparent solid;
-      }
-      .swiper-slide-thumb-active {
-        border: 1px #000 solid;
-      }
-    }
-    &__main {
-      img {
-        max-width: 100%;
-      }
-    }
-    &__thumb {
-      width: 50%;
-      position: absolute;
-      right: 65px;
-      bottom: -65px;
-      img {
-        width: 100%;
-      }
-    }
-  }
-}
-.home-app-feature {
-  margin-bottom: 150px;
-  .app-feature-slider {
-    position: relative;
-    .swiper-wrapper {
-      align-items: center;
-      .swiper-slide {
-        border: 1px transparent solid;
-      }
-      .swiper-slide-thumb-active {
-        border: 1px #000 solid;
-      }
-    }
-    &__main {
-      img {
-        max-width: 100%;
-      }
-    }
-    &__thumb {
-      width: 50%;
-      position: absolute;
-      left: 65px;
-      bottom: -65px;
-      img {
-        width: 100%;
-      }
-    }
-  }
-}
-.home-blog-testimonials {
-  margin-bottom: 150px;
-}
-.home-corporate-wellness {
-  margin-bottom: 150px;
-  &__info {
-    h2 {
-      margin-bottom: 61px;
-      font-family: 'Acumin Pro Bold';
-      font-size: 96.5px;
-      line-height: 1.1;
-      letter-spacing: 7.24px;
-      span {
-        font-family: $primary-font;
-        font-size: 42.5px;
-        font-weight: 300;
-        letter-spacing: 2.13px;
-        display: inline-block;
-        margin-bottom: 36px;
 
-      }
-    }
-    p {
-      margin-bottom: 42px;
-    }
-  }
-}
-.home-logo {
-  margin-bottom: 150px;
-  &__tab-nav {
-    &.nav {
-      .nav-item {
-        background-color: transparent;
-        padding: 0;
-        width: 100%;
-        font-size: 24px;
-        line-height: 2.02;
-        letter-spacing: 2.4px;
-        color: #252525;
-        &.active {
-          color: #e32e2e;
-          font-weight: 700;
+.home-health-ecosystem {
+    margin-bottom: 150px;
+    background-color: #e2eaff;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    padding: 80px 0;
+    .health-ecosystem-slider {
+        position: relative;
+        .swiper-wrapper {
+            align-items: center;
+            .swiper-slide {}
+            .swiper-slide-thumb-active {}
         }
-      }
+        &__single {
+            display: flex;
+            padding: 0 90px;
+            &__info {
+                h2 {
+                    margin-bottom: 25px;
+                    font-family: 'Acumin Pro Bold';
+                    font-size: 80px;
+                    line-height: 1.1;
+                    letter-spacing: 7.24px;
+                    color: #2185f4;
+                    span {
+                        font-family: $primary-font;
+                        font-size: 38px;
+                        font-weight: 300;
+                        letter-spacing: 2.13px;
+                        display: block;
+                        margin-bottom: 23px;
+                        margin-left: 2px;
+                    }
+                }
+                p {
+                    margin-bottom: 42px;
+                }
+            }
+        }
+        &__main {
+            img {
+                max-width: 100%;
+            }
+        }
+        &__thumb {
+            width: 60%;
+            position: absolute;
+            right: 65px;
+            bottom: -65px;
+            img {
+                width: 100%;
+            }
+            @keyframes example {
+                from {
+                    width: 0;
+                }
+                to {
+                    width: 100%;
+                }
+            }
+            &__single {
+                font-size: 20px;
+                line-height: 2.16;
+                letter-spacing: 1.69px;
+                color: #2185f4;
+                text-transform: uppercase;
+                white-space: nowrap;
+                display: inline-block;
+                &__progress {
+                    height: 7px;
+                    width: 100%;
+                    background-color: #bababa;
+                    border-radius: 10px;
+                    position: relative;
+                    opacity: 0;
+                    &::after {
+                        content: '';
+                        height: 100%;
+                        width: 0;
+                        background-color: #2185f4;
+                        top: 0;
+                        left: 0;
+                        position: absolute;
+                    }
+                }
+            }
+            .swiper-slide-thumb-active {
+                .health-ecosystem-slider__thumb__single {
+                    // font-size: 22px;
+                    font-weight: $bold-font;
+                    &__progress {
+                        opacity: 1;
+                        &::after {
+                            animation-name: example;
+                            animation-duration: 6s;
+                        }
+                    }
+                }
+            }
+        }
+        .swiper-button {
+            &-prev,
+            &-next {
+                background-position-y: -26px;
+            }
+        }
     }
-  }
-  .logo-slider {
-    .swiper-wrapper {
-      align-items: center;
+}
+
+.home-app-feature {
+    margin-bottom: 150px;
+    background-image: url('../images/bg-app-feature.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .app-feature-slider {
+        position: relative;
+        .swiper-wrapper {
+            align-items: center;
+            .swiper-slide {}
+            .swiper-slide-thumb-active {}
+        }
+        &__single {
+            &__info {
+                max-width: 78%;
+                h2 {
+                    font-size: 96px;
+                    font-family: $heading-font;
+                    color: #fea33c;
+                    line-height: 110px;
+                    margin-bottom: 40px;
+                    letter-spacing: 7.24px;
+                }
+                p {
+                    margin-bottom: 40px;
+                    letter-spacing: 1.13px;
+                }
+            }
+        }
+        &__main {
+            img {
+                max-width: 100%;
+            }
+        }
+        &__thumb {
+            width: 50%;
+            margin-top: -100px;
+            margin-bottom: 45px;
+            margin-left: 0;
+            img {
+                width: 100%;
+            }
+            &__single {
+                font-size: 20px;
+                line-height: 2.16;
+                letter-spacing: 1.69px;
+                color: #f7a140;
+                text-transform: uppercase;
+                white-space: nowrap;
+                display: inline-block;
+                &__progress {
+                    height: 7px;
+                    width: 100%;
+                    background-color: #bababa;
+                    border-radius: 10px;
+                    position: relative;
+                    opacity: 0;
+                    &::after {
+                        content: '';
+                        height: 100%;
+                        width: 0;
+                        background-color: #2185f4;
+                        top: 0;
+                        left: 0;
+                        position: absolute;
+                    }
+                }
+            }
+            .swiper-slide-thumb-active {
+                .app-feature-slider__thumb__single {
+                    // font-size: 22px;
+                    font-weight: $bold-font;
+                    &__progress {
+                        opacity: 1;
+                        &::after {
+                            animation-name: example;
+                            animation-duration: 6s;
+                        }
+                    }
+                }
+            }
+        }
     }
-    .swiper-button-disabled {
-      opacity: 0;
-      visibility: hidden;
+    &__app-download {
+        padding-bottom: 45px;
     }
-    &__single {
-      img {
-        max-width: 100%;
-      }
+}
+
+.home-blog-testimonials {
+    margin-bottom: 150px;
+}
+
+.home-corporate-wellness {
+    margin-bottom: 150px;
+    &__info {
+        h2 {
+            margin-bottom: 61px;
+            font-family: 'Acumin Pro Bold';
+            font-size: 96px;
+            line-height: 1.1;
+            letter-spacing: 7.24px;
+            span {
+                font-family: $primary-font;
+                font-size: 44px;
+                font-weight: 300;
+                letter-spacing: 2.13px;
+                display: inline-block;
+                margin-bottom: 36px;
+            }
+        }
+        p {
+            margin-bottom: 42px;
+        }
     }
-  }
+}
+
+.home-logo {
+    margin-bottom: 150px;
+    &__tab-nav {
+        &.nav {
+            .nav-item {
+                background-color: transparent;
+                padding: 0;
+                width: 100%;
+                font-size: 24px;
+                line-height: 2.02;
+                letter-spacing: 2.4px;
+                color: #252525;
+                &.active {
+                    color: #e32e2e;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    .tab-content .swiper {
+        padding: 0 70px;
+    }
+    .logo-slider {
+        .swiper-wrapper {
+            align-items: center;
+        }
+        .swiper-button-disabled {
+            opacity: 0;
+            visibility: hidden;
+        }
+        &__single {
+            text-align: center;
+            img {
+                max-width: 100%;
+            }
+        }
+    }
 }
