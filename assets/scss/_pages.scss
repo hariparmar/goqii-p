@@ -100,6 +100,7 @@
 }
 
 .home-coaching-care {
+    padding-bottom: 1px;
     &__inner {
         margin-bottom: 150px;
         padding-right: 166px;
@@ -136,14 +137,29 @@
 
 .home-health-ecosystem {
     margin-bottom: 150px;
+    margin-top: 170px;
     background-color: #e2eaff;
     border-top-left-radius: 80px;
     border-top-right-radius: 80px;
     padding: 80px 0;
+    position: relative;
+    &::before {
+        content: "";
+        background-image: url(../images/app-feature-element.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 750px;
+        height: 220px;
+        top: -210px;
+        left: 50%;
+        z-index: -1;
+        transform: translateX(-60%);
+    }
     .health-ecosystem-slider {
         position: relative;
         .swiper-wrapper {
             align-items: center;
+            padding-bottom: 120px;
             .swiper-slide {}
             .swiper-slide-thumb-active {}
         }
@@ -202,6 +218,8 @@
                 text-transform: uppercase;
                 white-space: nowrap;
                 display: inline-block;
+                font-weight: $bold-font;
+                opacity: 0.5;
                 &__progress {
                     height: 7px;
                     width: 100%;
@@ -209,6 +227,7 @@
                     border-radius: 10px;
                     position: relative;
                     opacity: 0;
+                    overflow: hidden;
                     &::after {
                         content: '';
                         height: 100%;
@@ -220,15 +239,17 @@
                     }
                 }
             }
+            .swiper-slide {
+                width: auto !important;
+            }
             .swiper-slide-thumb-active {
                 .health-ecosystem-slider__thumb__single {
-                    // font-size: 22px;
-                    font-weight: $bold-font;
+                    opacity: 1;
                     &__progress {
                         opacity: 1;
                         &::after {
                             animation-name: example;
-                            animation-duration: 6s;
+                            animation-duration: 5s;
                         }
                     }
                 }
@@ -245,16 +266,28 @@
 
 .home-app-feature {
     margin-bottom: 150px;
+    margin-top: 300px;
     background-image: url('../images/bg-app-feature.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    &::before {
+        content: "";
+        background-image: url(../images/app-feature-element.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 750px;
+        height: 220px;
+        top: -210px;
+        left: 50%;
+        z-index: -1;
+    }
     .app-feature-slider {
         position: relative;
         .swiper-wrapper {
             align-items: center;
-            .swiper-slide {}
-            .swiper-slide-thumb-active {}
+            // padding-top: 80px;
         }
         &__single {
             &__info {
@@ -272,15 +305,19 @@
                     letter-spacing: 1.13px;
                 }
             }
+            &__img {
+                // margin-top: -70px;
+            }
         }
         &__main {
+            top: -80px;
             img {
                 max-width: 100%;
             }
         }
         &__thumb {
-            width: 50%;
-            margin-top: -100px;
+            width: 55%;
+            margin-top: -180px;
             margin-bottom: 45px;
             margin-left: 0;
             img {
@@ -294,33 +331,38 @@
                 text-transform: uppercase;
                 white-space: nowrap;
                 display: inline-block;
+                font-weight: $bold-font;
+                opacity: 0.5;
                 &__progress {
-                    height: 7px;
+                    height: 5px;
                     width: 100%;
                     background-color: #bababa;
                     border-radius: 10px;
                     position: relative;
                     opacity: 0;
+                    overflow: hidden;
                     &::after {
                         content: '';
                         height: 100%;
                         width: 0;
-                        background-color: #2185f4;
+                        background-color: #f7a140;
                         top: 0;
                         left: 0;
                         position: absolute;
                     }
                 }
             }
+            .swiper-slide {
+                width: auto !important;
+            }
             .swiper-slide-thumb-active {
                 .app-feature-slider__thumb__single {
-                    // font-size: 22px;
-                    font-weight: $bold-font;
+                    opacity: 1;
                     &__progress {
                         opacity: 1;
                         &::after {
                             animation-name: example;
-                            animation-duration: 6s;
+                            animation-duration: 5s;
                         }
                     }
                 }
@@ -334,6 +376,33 @@
 
 .home-blog-testimonials {
     margin-bottom: 150px;
+    .swiper-container{
+        background-color: aliceblue;
+        height: 300px;
+        .swiper-wrapper{
+    -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        }
+            .swiper-slide{
+                background-color: #f0f0f0;
+                width: 80%;
+                height: 200px;
+                @media screen and (min-width: 768px){
+                    width: 200px;
+                }
+                &-active{
+                    background-color: #bd1701;
+                    @media screen and (min-width: 768px){
+                        width: 500px;
+              height: 250px;
+                    }
+                }
+            }
+        }
+    
 }
 
 .home-corporate-wellness {

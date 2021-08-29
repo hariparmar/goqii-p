@@ -78,7 +78,7 @@ const appFeatureMainSlider = new Swiper(".app-feature-slider__main", {
     fadeEffect: {
         crossFade: true
     },
-    speed: 1500,
+    speed: 0,
     slidesPerView: 1,
     thumbs: {
         swiper: appFeatureThumbSlider,
@@ -90,18 +90,23 @@ const appFeatureMainSlider = new Swiper(".app-feature-slider__main", {
 const healthEcosystemThumbSlider = new Swiper(".health-ecosystem-slider__thumb", {
     slidesPerView: 4,
     spaceBetween: 20,
+    autoplay: {
+        delay: 5000,
+    },
+    slideToClickedSlide: true
 });
 const healthEcosystemMainSlider = new Swiper(".health-ecosystem-slider__main", {
     // Optional parameters
     effect: 'fade',
+    loop: true,
     fadeEffect: {
         crossFade: true
     },
-    speed: 1500,
+    speed: 0,
     slidesPerView: 1,
     // If we need pagination
     pagination: {
-        el: ".health-ecosystem-slider__thumb.swiper-pagination",
+        el: ".swiper-pagination",
         clickable: true,
     },
     autoplay: {
@@ -135,7 +140,14 @@ function move() {
 }
 const blogTestimonialsSlider = new Swiper(".blog-testimonials-slider", {
     // Optional parameters
-    slidesPerView: 3,
+    slidesPerView: 2,
+    centeredSlides: true,
+    initialSlide: 1,
+    // effect: 'fade',
+    // fadeEffect: {
+    //     crossFade: true
+    // },
+    // speed: 1500,
     // Navigation arrows
     navigation: {
         nextEl: ".swiper-button-next",
