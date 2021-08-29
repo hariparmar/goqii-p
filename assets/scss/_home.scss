@@ -1,7 +1,6 @@
 .Home--Banner__wrapper {
     position: relative;
     height: 720px;
-    margin-bottom: 140px;
     p {
         font-size: 43px;
         color: #364a5c;
@@ -28,7 +27,6 @@
 }
 
 .Banner--Wrapper {
-    position: relative;
     background-image: url("../images/home-bg.jpg");
     background-position: center center;
     background-repeat: no-repeat;
@@ -91,7 +89,10 @@
 .Feature--Wrapper {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 200px;
+    padding-bottom: 150px;
+    padding-top: 140px;
+    margin-bottom: 70px;
+    background-color: #faf9f8;
     .Feature {
         &--Single {
             &Inner {

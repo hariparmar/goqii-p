@@ -140,14 +140,16 @@ function move() {
 }
 const blogTestimonialsSlider = new Swiper(".blog-testimonials-slider", {
     // Optional parameters
-    slidesPerView: 2,
+    slidesPerView: 3,
     centeredSlides: true,
     initialSlide: 1,
+    loop: true,
     // effect: 'fade',
     // fadeEffect: {
     //     crossFade: true
     // },
     // speed: 1500,
+    spaceBetween: 4.5,
     // Navigation arrows
     navigation: {
         nextEl: ".swiper-button-next",
@@ -158,4 +160,9 @@ const blogTestimonialsSlider = new Swiper(".blog-testimonials-slider", {
         el: ".swiper-pagination",
         clickable: true
     },
+});
+$(document).ready(function() {
+	$('.popup-youtube').magnificPopup({
+    type: 'iframe'
+  });
 });
