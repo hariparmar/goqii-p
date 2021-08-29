@@ -207,4 +207,13 @@
         position: static;
         margin-top: 40px;
     }
+    .swiper-pagination {
+        &-bullet {
+            background-color: #d9d8d8;
+            opacity: 1;
+            &-active {
+                background-color: #000;
+            }
+        }
+    }
 }

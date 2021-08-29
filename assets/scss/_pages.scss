@@ -37,12 +37,21 @@
             }
             .swiper-button-prev {
                 left: 75px;
+                top: calc(50% - 115px);
             }
             .swiper-button-next {
                 right: 75px;
+                top: calc(50% - 115px);
             }
             &-pagination {
                 bottom: 5px;
+                &-bullet {
+                    background-color: #bed2de;
+                    opacity: 1;
+                    &-active {
+                        background-color: #000;
+                    }
+                }
             }
         }
         &__main {
@@ -92,9 +101,9 @@
 
 .home-coaching-care {
     &__inner {
-      margin-bottom: 150px;
-      padding-right: 166px;
-      position: relative;
+        margin-bottom: 150px;
+        padding-right: 166px;
+        position: relative;
     }
     &__wrapper {
         background-image: linear-gradient(to right, #fff1eb, #f4bfb7);
@@ -131,24 +140,19 @@
     border-top-left-radius: 80px;
     border-top-right-radius: 80px;
     padding: 80px 0;
-    
     .health-ecosystem-slider {
         position: relative;
         .swiper-wrapper {
             align-items: center;
-            .swiper-slide {
-                border: 1px transparent solid;
-            }
-            .swiper-slide-thumb-active {
-                border: 1px #000 solid;
-            }
+            .swiper-slide {}
+            .swiper-slide-thumb-active {}
         }
         &__single {
             display: flex;
             padding: 0 90px;
             &__info {
                 h2 {
-                    margin-bottom: 61px;
+                    margin-bottom: 25px;
                     font-family: 'Acumin Pro Bold';
                     font-size: 80px;
                     line-height: 1.1;
@@ -161,6 +165,7 @@
                         letter-spacing: 2.13px;
                         display: block;
                         margin-bottom: 23px;
+                        margin-left: 2px;
                     }
                 }
                 p {
@@ -174,12 +179,65 @@
             }
         }
         &__thumb {
-            width: 50%;
+            width: 60%;
             position: absolute;
             right: 65px;
             bottom: -65px;
             img {
                 width: 100%;
+            }
+            @keyframes example {
+                from {
+                    width: 0;
+                }
+                to {
+                    width: 100%;
+                }
+            }
+            &__single {
+                font-size: 20px;
+                line-height: 2.16;
+                letter-spacing: 1.69px;
+                color: #2185f4;
+                text-transform: uppercase;
+                white-space: nowrap;
+                display: inline-block;
+                &__progress {
+                    height: 7px;
+                    width: 100%;
+                    background-color: #bababa;
+                    border-radius: 10px;
+                    position: relative;
+                    opacity: 0;
+                    &::after {
+                        content: '';
+                        height: 100%;
+                        width: 0;
+                        background-color: #2185f4;
+                        top: 0;
+                        left: 0;
+                        position: absolute;
+                    }
+                }
+            }
+            .swiper-slide-thumb-active {
+                .health-ecosystem-slider__thumb__single {
+                    // font-size: 22px;
+                    font-weight: $bold-font;
+                    &__progress {
+                        opacity: 1;
+                        &::after {
+                            animation-name: example;
+                            animation-duration: 6s;
+                        }
+                    }
+                }
+            }
+        }
+        .swiper-button {
+            &-prev,
+            &-next {
+                background-position-y: -26px;
             }
         }
     }
@@ -187,15 +245,32 @@
 
 .home-app-feature {
     margin-bottom: 150px;
+    background-image: url('../images/bg-app-feature.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     .app-feature-slider {
         position: relative;
         .swiper-wrapper {
             align-items: center;
-            .swiper-slide {
-                border: 1px transparent solid;
-            }
-            .swiper-slide-thumb-active {
-                border: 1px #000 solid;
+            .swiper-slide {}
+            .swiper-slide-thumb-active {}
+        }
+        &__single {
+            &__info {
+                max-width: 78%;
+                h2 {
+                    font-size: 96px;
+                    font-family: $heading-font;
+                    color: #fea33c;
+                    line-height: 110px;
+                    margin-bottom: 40px;
+                    letter-spacing: 7.24px;
+                }
+                p {
+                    margin-bottom: 40px;
+                    letter-spacing: 1.13px;
+                }
             }
         }
         &__main {
@@ -205,13 +280,55 @@
         }
         &__thumb {
             width: 50%;
-            position: absolute;
-            left: 65px;
-            bottom: -65px;
+            margin-top: -100px;
+            margin-bottom: 45px;
+            margin-left: 0;
             img {
                 width: 100%;
             }
+            &__single {
+                font-size: 20px;
+                line-height: 2.16;
+                letter-spacing: 1.69px;
+                color: #f7a140;
+                text-transform: uppercase;
+                white-space: nowrap;
+                display: inline-block;
+                &__progress {
+                    height: 7px;
+                    width: 100%;
+                    background-color: #bababa;
+                    border-radius: 10px;
+                    position: relative;
+                    opacity: 0;
+                    &::after {
+                        content: '';
+                        height: 100%;
+                        width: 0;
+                        background-color: #2185f4;
+                        top: 0;
+                        left: 0;
+                        position: absolute;
+                    }
+                }
+            }
+            .swiper-slide-thumb-active {
+                .app-feature-slider__thumb__single {
+                    // font-size: 22px;
+                    font-weight: $bold-font;
+                    &__progress {
+                        opacity: 1;
+                        &::after {
+                            animation-name: example;
+                            animation-duration: 6s;
+                        }
+                    }
+                }
+            }
         }
+    }
+    &__app-download {
+        padding-bottom: 45px;
     }
 }
 
@@ -262,6 +379,9 @@
             }
         }
     }
+    .tab-content .swiper {
+        padding: 0 70px;
+    }
     .logo-slider {
         .swiper-wrapper {
             align-items: center;
@@ -271,6 +391,7 @@
             visibility: hidden;
         }
         &__single {
+            text-align: center;
             img {
                 max-width: 100%;
             }
