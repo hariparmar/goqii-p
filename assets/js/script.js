@@ -166,3 +166,47 @@ $(document).ready(function() {
     type: 'iframe'
   });
 });
+
+//  About Team slider
+
+
+const aboutTeamThumbSlider = new Swiper(".about-team-slider__inner__thumb", {
+    slidesPerView: 6,
+    spaceBetween: 34,
+});
+const aboutTeamMainSlider = new Swiper(".about-team-slider__inner__main", {
+    // Optional parameters
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    },
+    speed: 1500,
+    slidesPerView: 1,
+
+    // If we need pagination
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+        swiper: aboutTeamThumbSlider,
+    },
+});
+
+const aboutInvestorsSlider = new Swiper(".about-investors__inner__members__slider", {
+    slidesPerView: 3,
+    grid: {
+        rows: 2,
+    },
+    spaceBetween: 30,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});

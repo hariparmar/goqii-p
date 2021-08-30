@@ -1,0 +1,122 @@
+.about-banner {
+    margin-bottom: 200px;
+    &__inner {
+        border-radius: 80px;
+        padding: 95px 75px;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fdefe8+1,fdefe8+13,fdefe8+23,f9eeea+35,e8eaed+45,dae9f0+56,bde3f5+68,a9dff9+80,a1dcfb+92,afe0fc+100 */
+        background: rgb(253, 239, 232);
+        /* Old browsers */
+        background: -moz-linear-gradient(-45deg, rgba(253, 239, 232, 1) 1%, rgba(253, 239, 232, 1) 13%, rgba(253, 239, 232, 1) 23%, rgba(249, 238, 234, 1) 35%, rgba(232, 234, 237, 1) 45%, rgba(218, 233, 240, 1) 56%, rgba(189, 227, 245, 1) 68%, rgba(169, 223, 249, 1) 80%, rgba(161, 220, 251, 1) 92%, rgba(175, 224, 252, 1) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg, rgba(253, 239, 232, 1) 1%, rgba(253, 239, 232, 1) 13%, rgba(253, 239, 232, 1) 23%, rgba(249, 238, 234, 1) 35%, rgba(232, 234, 237, 1) 45%, rgba(218, 233, 240, 1) 56%, rgba(189, 227, 245, 1) 68%, rgba(169, 223, 249, 1) 80%, rgba(161, 220, 251, 1) 92%, rgba(175, 224, 252, 1) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg, rgba(253, 239, 232, 1) 1%, rgba(253, 239, 232, 1) 13%, rgba(253, 239, 232, 1) 23%, rgba(249, 238, 234, 1) 35%, rgba(232, 234, 237, 1) 45%, rgba(218, 233, 240, 1) 56%, rgba(189, 227, 245, 1) 68%, rgba(169, 223, 249, 1) 80%, rgba(161, 220, 251, 1) 92%, rgba(175, 224, 252, 1) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        
+    }
+}
+
+.about-team-slider {
+    margin-bottom: 200px;
+    &__inner {
+        &__main {            
+            padding: 0 115px;
+
+            &__single {
+                &__image {
+                    display: inline-block;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    border: 5px solid #5eab41;
+                }
+                &__info {
+                    h2 {
+                        font-size: 36px;
+                        color: #5eab41;
+                        font-family: $heading-font;
+                        text-transform: uppercase;
+                        line-height: 40px;
+                        span {
+                            font-size: 22px;
+
+                        }
+                    }
+                    p {
+                        color: #29284a;
+                    }
+
+                }
+            }
+        }
+        &__thumb {
+            margin-top: 150px;
+            &__single {
+                text-align: center;
+                img {
+                    display: inline-block;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    border: 5px solid transparent;
+                }
+                span {
+                    display: block;
+                    font-size: 20px;
+                    color: #232324;
+                    line-height: 30px;
+                    font-weight: $bold-font;
+                    margin-top: 25px;
+                }
+                
+                
+                 
+            }
+            .swiper-slide-thumb-active {
+                .about-team-slider__inner__thumb__single img {
+                    border: 5px solid #5eab41;
+                }
+            }
+        }
+    }
+}
+
+.about-investors {
+    background-color: #fcefe9;
+    padding-top: 185px;
+    border-top-left-radius: 130px;    
+    border-top-right-radius: 130px;
+
+    &__inner {
+        h2 {
+            text-align: center;
+            font-family: "Acumin Pro Bold";
+            margin-bottom: 110px;
+            font-size: 80px;
+            line-height: 1;
+            letter-spacing: 6px;
+            color: #222;
+        }
+        &__members { 
+            &__slider {
+                &__single { 
+                    margin-bottom: 65px;
+                    
+                    img {
+                        display: inline-block;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        border: 5px solid transparent; 
+                    }
+
+                    span {
+                        display: block;
+                        font-size: 20px;
+                        color: #232324;
+                        line-height: 30px;
+                        font-weight: $bold-font;
+                        margin-top: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
