@@ -1,0 +1,189 @@
+.blog-banner__inner__slider {
+    &__main {
+        background-image: url('../images/blog-banner.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 650px;
+        border-radius: 80px;
+        padding: 0 220px;
+        display: flex;
+        align-items: center;
+        &__title {
+            font-size: 60px;
+            color: #fff;
+            font-family: $heading-font;
+            max-width: 500px;
+            line-height: 82px;
+        }
+    }
+    .swiper {
+        &-pagination-bullet {
+            background-color: #827b50;
+            &-active {
+                background-color: #fff;
+            }
+        }
+        &-button-next {
+            background-position-y: calc(-26px * 3);
+            right: 45px;
+        }
+        &-button-prev {
+            background-position-y: calc(-26px * 3);
+            left: 45px;
+        }
+    }
+}
+
+.blog-popular {
+    padding-bottom: 30px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f7fcfe+0,f6fbfe+10,f3fafe+21,eff9fe+33,edf8fd+50,dceffa+74,d7ecf7+99 */
+    background: rgb(247, 252, 254);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(247, 252, 254, 1) 0%, rgba(246, 251, 254, 1) 10%, rgba(243, 250, 254, 1) 21%, rgba(239, 249, 254, 1) 33%, rgba(237, 248, 253, 1) 50%, rgba(220, 239, 250, 1) 74%, rgba(215, 236, 247, 1) 99%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(247, 252, 254, 1) 0%, rgba(246, 251, 254, 1) 10%, rgba(243, 250, 254, 1) 21%, rgba(239, 249, 254, 1) 33%, rgba(237, 248, 253, 1) 50%, rgba(220, 239, 250, 1) 74%, rgba(215, 236, 247, 1) 99%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(247, 252, 254, 1) 0%, rgba(246, 251, 254, 1) 10%, rgba(243, 250, 254, 1) 21%, rgba(239, 249, 254, 1) 33%, rgba(237, 248, 253, 1) 50%, rgba(220, 239, 250, 1) 74%, rgba(215, 236, 247, 1) 99%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    &__title {
+        font-size: 48px;
+        color: #0178e6;
+        font-family: $heading-font;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0 0 50px;
+        padding-top: 80px;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -30px;
+    }
+    &__single {
+        display: flex;
+        width: calc(100% / 3);
+        padding: 0 30px;
+        margin-bottom: 25px;
+        &__image {
+            width: 155px;
+            flex-shrink: 0
+        }
+        &__content {
+            padding-left: 30px;
+            h2 {
+                font-size: 20px;
+                font-weight: $bold-font;
+                color: #3a3939;
+                line-height: 32px;
+                text-transform: uppercase;
+            }
+            p {
+                color: #29284a;
+                font-size: 18px;
+                line-height: 28px;
+                margin-top: 10px;
+            }
+            .read-more {
+                color: #000f16;
+            }
+        }
+    }
+}
+
+.blog-listing {
+    padding: 120px 0;
+    &__options {
+        display: flex;
+        justify-content: space-between;
+        &__search,
+        &__signup {
+            flex: 1;
+            max-width: 450px;
+        }
+    }
+    &__tags {
+        display: flex;
+        margin-top: 120px;
+        &__listing {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            &__single {
+                text-align: center;
+                max-width: calc(100% / 7);
+                img {
+                    display: inline-block;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    border: 5px solid transparent;
+                    height: 130px;
+                    width: 130px;
+                }
+                span {
+                    display: block;
+                    font-size: 20px;
+                    line-height: 30px;
+                    margin-top: 27px;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                }
+                &.active {
+                    span {
+                        font-weight: $bold-font;
+                        color: #454546;
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+        &__show--more {
+            margin-top: 50px;
+            a span {
+                font-size: 20px;
+                font-weight: $bold-font;
+                text-decoration: underline;
+                color: #dd4031;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                margin-left: 45px;
+            }
+        }
+    }
+    &__articles {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 80px 0;
+        &__single {
+            width: calc(100% / 3);
+            margin-top: 85px;
+            &__inner {
+                max-width: 420px;
+                margin: auto;
+                h2 {
+                    font-weight: $bold-font;
+                    font-size: 20px;
+                    color: #3a3939;
+                    text-transform: uppercase;
+                    margin-top: 25px;
+                }
+                p {
+                    color: #29284a;
+                    margin-bottom: 10px;
+                    line-height: 28px;
+                    font-size: 18px;
+                    letter-spacing: 1px;
+                }
+                .read-more {
+                    color: #dd4031;
+                }
+            }
+            &:nth-child(3n+1) &__inner {
+                margin-left: 0;
+            }
+            &:nth-child(3n) &__inner {
+                margin-right: 0;
+            }
+        }
+    }
+}

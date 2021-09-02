@@ -162,9 +162,9 @@ const blogTestimonialsSlider = new Swiper(".blog-testimonials-slider", {
     },
 });
 $(document).ready(function() {
-	$('.popup-youtube').magnificPopup({
-    type: 'iframe'
-  });
+    $('.popup-youtube').magnificPopup({
+        type: 'iframe'
+    });
 });
 
 //  About Team slider
@@ -199,14 +199,35 @@ const aboutTeamMainSlider = new Swiper(".about-team-slider__inner__main", {
     },
 });
 
-const aboutInvestorsSlider = new Swiper(".about-investors__inner__members__slider", {
-    slidesPerView: 3,
+const aboutInvestorsSlider = new Swiper(".investors__inner__members__slider", {
+    slidesPerView: 1,
     grid: {
         rows: 2,
     },
-    spaceBetween: 30,
+    spaceBetween: 10,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
+    },
+});
+
+// blog page banner slider
+
+
+const blogBanenerSlider = new Swiper(".blog-banner__inner__slider", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    },
+    // Navigation arrows
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
 });
