@@ -200,3 +200,67 @@ button {
         display: inline-block;
     }
 }
+
+.text-content {
+    &__sub-title {
+        font-weight: $bold-font;
+        color: #5eab41;
+        font-size: 22px;
+        line-height: 35px;
+        margin-bottom: 55px;
+    }
+    p {
+        font-size: 20px;
+        color: #010101;
+        line-height: 35px;
+        margin-bottom: 50px;
+        span {
+            font-weight: $bold-font;
+        }
+    }
+    img {
+        width: 100%;
+        border-radius: 80px;
+        margin-top: 25px;
+        margin-bottom: 75px;
+    }
+    a {
+        text-decoration: underline;
+        font-weight: $bold-font;
+        color: #010101;
+    }
+}
+
+a.anchor-link {
+    color: #5eab41;
+    font-size: 20px;
+    font-weight: $bold-font;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    position: relative;
+    padding-right: 42px;
+    text-decoration: none;
+    &:after {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 19px;
+        right: 0;
+        background-image: url(../images/icons-sprite.png);
+        background-repeat: no-repeat;
+        background-position-y: calc(-15px * 4);
+        background-size: cover;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.radius-section-title {
+    text-align: center;
+    font-family: "Acumin Pro Bold";
+    margin-bottom: 110px;
+    font-size: 80px;
+    line-height: 1;
+    letter-spacing: 6px;
+    color: #222;
+}

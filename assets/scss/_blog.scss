@@ -187,3 +187,110 @@
         }
     }
 }
+
+.blog-detail {
+    &-banner__inner {
+        padding: 0 110px;
+        margin: 100px 0;
+        position: relative;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fffef8+0,fffef6+15,fffdef+32,fffdea+50,fffbdf+68,fffbdc+100 */
+        background: rgb(255, 254, 248);
+        /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(255, 254, 248, 1) 0%, rgba(255, 254, 246, 1) 15%, rgba(255, 253, 239, 1) 32%, rgba(255, 253, 234, 1) 50%, rgba(255, 251, 223, 1) 68%, rgba(255, 251, 220, 1) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(255, 254, 248, 1) 0%, rgba(255, 254, 246, 1) 15%, rgba(255, 253, 239, 1) 32%, rgba(255, 253, 234, 1) 50%, rgba(255, 251, 223, 1) 68%, rgba(255, 251, 220, 1) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(255, 254, 248, 1) 0%, rgba(255, 254, 246, 1) 15%, rgba(255, 253, 239, 1) 32%, rgba(255, 253, 234, 1) 50%, rgba(255, 251, 223, 1) 68%, rgba(255, 251, 220, 1) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        &__image {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            left: 110px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            max-width: 620px;
+        }
+        &__content-wrapper {
+            padding: 60px 0;
+        }
+        &__content {
+            max-width: 800px;
+            margin-left: auto;
+            &__tag {
+                font-size: 27px;
+                font-weight: $light-font;
+                color: #222222;
+                letter-spacing: 1px;
+            }
+            &__title {
+                font-size: 52px;
+                color: #222222;
+                font-family: $heading-font;
+                letter-spacing: 1px;
+                margin-top: 15px;
+                line-height: 58px;
+            }
+            &__date {
+                font-size: 18px;
+                color: #010101;
+                font-weight: $bold-font;
+                margin-bottom: 50px;
+            }
+            p {
+                font-size: 20px;
+                color: #010101;
+            }
+            .read-more {
+                color: #5eab41;
+                display: inline-block;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+.blog-detail-content {
+    .text-content {
+        padding: 0 230px;
+        a.anchor-link {
+            display: inline-block;
+            margin-top: 50px;
+            margin-bottom: 100px;
+        }
+    }
+}
+
+.blog-detail {
+    &-recommended {
+        padding-top: 185px;
+        padding-bottom: 80px;
+        border-top-left-radius: 130px;
+        border-top-right-radius: 130px;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fae2e2+0,fbe6e3+15,fbe9e5+25,fcecec+39,fcecec+50,ffffff+75,ffffff+75,ffffff+78,ffffff+100 */
+        background: rgb(250, 226, 226);
+        /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(250, 226, 226, 1) 0%, rgba(251, 230, 227, 1) 15%, rgba(251, 233, 229, 1) 25%, rgba(252, 236, 236, 1) 39%, rgba(252, 236, 236, 1) 50%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1) 78%, rgba(255, 255, 255, 1) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(250, 226, 226, 1) 0%, rgba(251, 230, 227, 1) 15%, rgba(251, 233, 229, 1) 25%, rgba(252, 236, 236, 1) 39%, rgba(252, 236, 236, 1) 50%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1) 78%, rgba(255, 255, 255, 1) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(250, 226, 226, 1) 0%, rgba(251, 230, 227, 1) 15%, rgba(251, 233, 229, 1) 25%, rgba(252, 236, 236, 1) 39%, rgba(252, 236, 236, 1) 50%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1) 78%, rgba(255, 255, 255, 1) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        .radius-section-title {
+            margin-bottom: 0;
+        }
+        .recommended__inner__cards.blog-listing {
+            padding: 0;
+        }
+        .blog-listing__articles {
+            margin: 0;
+        }
+    }
+    &-signup {
+        margin: 50px 0;
+        .blog-listing__options__signup {
+            margin: auto;
+        }
+    }
+}
