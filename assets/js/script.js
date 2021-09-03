@@ -162,7 +162,72 @@ const blogTestimonialsSlider = new Swiper(".blog-testimonials-slider", {
     },
 });
 $(document).ready(function() {
-	$('.popup-youtube').magnificPopup({
-    type: 'iframe'
-  });
+    $('.popup-youtube').magnificPopup({
+        type: 'iframe'
+    });
+});
+
+//  About Team slider
+
+
+const aboutTeamThumbSlider = new Swiper(".about-team-slider__inner__thumb", {
+    slidesPerView: 6,
+    spaceBetween: 34,
+});
+const aboutTeamMainSlider = new Swiper(".about-team-slider__inner__main", {
+    // Optional parameters
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    },
+    speed: 1500,
+    slidesPerView: 1,
+
+    // If we need pagination
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+        swiper: aboutTeamThumbSlider,
+    },
+});
+
+const aboutInvestorsSlider = new Swiper(".investors__inner__members__slider", {
+    slidesPerView: 1,
+    grid: {
+        rows: 2,
+    },
+    spaceBetween: 10,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
+
+// blog page banner slider
+
+
+const blogBanenerSlider = new Swiper(".blog-banner__inner__slider", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    },
+    // Navigation arrows
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
 });
