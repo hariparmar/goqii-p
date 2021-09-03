@@ -1,0 +1,416 @@
+.plp-product-list {
+    margin-bottom: 210px;
+    margin-top: 150px;
+    &__left {
+        h2 {
+            font-size: 46.5px;
+            line-height: 1.22;
+            letter-spacing: 2.33px;
+            color: #04060a;
+            font-family: $heading-font;
+            text-transform: uppercase;
+            margin-bottom: 0;
+        }
+        &__quiz-cta {
+            max-width: 95%;
+            border-radius: 19.4px;
+            border: solid 1px #2185f4;
+            padding: 26px 33px 29px 31px;
+            a {
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 1.38;
+                letter-spacing: 2.6px;
+                color: #2185f4;
+                text-decoration: underline;
+            }
+        }
+    }
+    &__tab-nav {
+        margin-top: 90px;
+        margin-bottom: 70px;
+        padding-right: 60px;
+        &.nav {
+            .nav-item {
+                border-radius: 0;
+                background-color: transparent;
+                padding: 0;
+                width: 100%;
+                font-size: 22px;
+                line-height: 70px;
+                letter-spacing: 2.4px;
+                color: #252525;
+                font-weight: 700;
+                border-top: solid 0.6px #e9e8e8;
+                &:first-child {
+                    border-top: none;
+                }
+                &.active {
+                    color: #2185f4;
+                }
+            }
+        }
+    }
+    &__single {
+        text-align: center;
+        img {
+            margin-bottom: 56px;
+        }
+        h3 {
+            font-size: 27.5px;
+            font-family: $heading-font;
+            line-height: 1.16;
+            letter-spacing: 2.06px;
+            color: #222;
+            margin-bottom: 24px;
+        }
+        p {
+            font-size: 20.5px;
+            line-height: 1.44;
+            letter-spacing: 2.05px;
+            color: #010101;
+            margin-bottom: 40px;
+        }
+    }
+    &__right {
+
+    }
+    &__tab-content {
+        &__view-all {
+            display: flex;
+            justify-content: center;
+            margin-top: 60px;
+            margin-bottom: 40px;
+            a {
+                font-size: 20.5px;
+                font-weight: bold;
+                line-height: 2.37;
+                letter-spacing: 2.05px;
+                color: #020305;
+                text-decoration: underline;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+.plp-coaching-plans {
+    margin-bottom: 300px;
+    h2 {
+        font-size: 77.5px;
+        letter-spacing: 3.88px;
+        text-align: center;
+        color: #04060a;
+        font-family: $heading-font;
+        margin-bottom: 142px;
+    }
+    &__single {
+        border-radius: 19.4px;
+        box-shadow: -1.2px 1.6px 19px 1px rgba(36, 40, 44, 0.16);
+        background-color: #fff;
+        position: relative;
+        padding: 87px 0 34px;
+        min-height: 678px;
+        display: flex;
+        flex-direction: column;
+        &__icon {
+            position: absolute;
+            left: 50%;
+            top: -48px;
+            border-radius: 50%;
+            overflow: hidden;
+            transform: translateX(-50%);
+        }
+        h3 {
+            font-size: 29px;
+            line-height: 1.1;
+            letter-spacing: 2.18px;
+            text-align: center;
+            color: #222;
+            font-family: $heading-font;
+            span {
+                font-size: 19.5px;
+                font-weight: bold;
+                line-height: 1.9;
+                letter-spacing: 1.46px;
+                font-family: $primary-font;
+                display: block;
+            }
+        }
+        &__benefits {
+            padding: 40px 32px 25px 36px;
+            position: relative;
+            background-color: #eee;
+            margin-top: 39px;
+            h4 {
+                font-size: 17.5px;
+                line-height: 1.54;
+                letter-spacing: 1.75px;
+                color: #010101;
+                font-weight: 700;
+                font-family: $heading-font;
+                margin-bottom: 0;
+            }
+            &__offers {
+                padding: 8px 14px 7px 13px;
+                border-radius: 5.8px;
+                background-color: #010101;
+                font-size: 13.5px;
+                letter-spacing: 1.35px;
+                line-height: 1;
+                color: #feefed;
+                display: inline-block;
+                position: absolute;
+                font-family: "Acumin Pro Bold",sans-serif;
+                top: -16px;
+                left: 36px;
+
+            }
+            ul {
+                list-style: none;
+                position: relative;
+                padding-left: 20px;
+                margin-bottom: 0;
+                li {
+                    font-size: 17.5px;
+                    line-height: 1.54;
+                    letter-spacing: 1.75px;
+                    color: #010101;
+                    &::before {
+                        content: "+";
+                        position: absolute;
+                        left: 0;
+                    }
+                }
+            }
+        }
+        &__sub-plans {
+            flex: 1;
+            padding: 36px;
+            h4 {
+                font-size: 17.5px;
+                line-height: 1.54;
+                letter-spacing: 1.75px;
+                color: #010101;
+                font-weight: 700;
+                font-family: $heading-font;
+                text-transform: uppercase;
+                margin-bottom: 5px;
+            }
+            &__single {
+                font-size: 17.5px;
+                line-height: 1.79;
+                letter-spacing: 1.75px;
+                color: #010101;
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+                padding-left: 30px;
+                cursor: pointer;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    height: 21px;
+                    width: 21px;
+                    border-radius: 50%;
+                    border: solid 1px #010101;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    height: 12px;
+                    width: 12px;
+                    border-radius: 50%;
+                    background-color: #010101;
+                    left: 5px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    display: none;
+                }
+                &--active {
+                    &::after {
+                        display: block;
+                    }
+                }
+            }
+        }
+        &__cta {
+            padding: 0 36px;
+            display: flex;
+            justify-content: space-between;
+            &__price {
+                font-family: $heading-font;
+                font-size: 24.5px;
+                line-height: 1.82;
+                letter-spacing: 0.61px;
+                color: #222;
+                span {
+                    font-size: 24.5px;
+                    line-height: 1.82;
+                    letter-spacing: 0.61px;
+                    color: #a4a1a1;
+                    font-family: 'Acumin Pro';
+                    text-decoration: line-through;
+                    margin-right: 10px;
+                }
+            }
+        }
+        &--red {
+            .plp-coaching-plans__single__benefits {
+                background-color: #ffefec;
+            }
+            .plp-coaching-plans__single__benefits__offers {
+                background-color: #d03a2c;
+            }
+            .plp-coaching-plans__single__sub-plans__single::before {
+                border: solid 1px #d03a2c;
+            }
+            .plp-coaching-plans__single__sub-plans__single::after {
+                background-color: #d03a2c;
+            }
+        }
+        &--yellow {
+            .plp-coaching-plans__single__benefits {
+                background-color: #fdf5d2;
+            }
+            .plp-coaching-plans__single__benefits__offers {
+                background-color: #fbbd34;
+            }
+            .plp-coaching-plans__single__sub-plans__single::before {
+                border: solid 1px #fbbd34;
+            }
+            .plp-coaching-plans__single__sub-plans__single::after {
+                background-color: #fbbd34;
+            }
+        }
+        &--green {
+            .plp-coaching-plans__single__benefits {
+                background-color: #e3f8de;
+            }
+            .plp-coaching-plans__single__benefits__offers {
+                background-color: #39af25;
+            }
+            .plp-coaching-plans__single__sub-plans__single::before {
+                border: solid 1px #39af25;
+            }
+            .plp-coaching-plans__single__sub-plans__single::after {
+                background-color: #39af25;
+            }
+        }
+        &--blue {
+            .plp-coaching-plans__single__benefits {
+                background-color: #e4f2fe;
+            }
+            .plp-coaching-plans__single__benefits__offers {
+                background-color: #0085fc;
+            }
+            .plp-coaching-plans__single__sub-plans__single::before {
+                border: solid 1px #0085fc;
+            }
+            .plp-coaching-plans__single__sub-plans__single::after {
+                background-color: #0085fc;
+            }
+        }
+    }
+}
+.plp-disease-condition {
+    border-radius: 145px;
+    background-image: linear-gradient(to top, #dff2fc, #ffffff);
+    padding: 76px 0 54px;
+    margin-bottom: 215px;
+    h2 {
+        font-size: 77.5px;
+        letter-spacing: 3.88px;
+        color: #1c7de8;
+        text-align: center;
+        font-family: $heading-font;
+        margin-bottom: 38px;
+    }
+    &__wrapper {
+        .row {
+            padding:  0 72px;
+        }
+    }
+    &__single {
+        text-align: center;
+        img {
+            margin-bottom: 53px;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        h3 {
+            font-family: $heading-font;
+            font-size: 33.5px;
+            line-height: 0.97;
+            letter-spacing: 2.51px;
+            color: #222;
+            margin-bottom: 27px;
+        }
+        p {
+            font-size: 16.5px;
+            line-height: 1.45;
+            letter-spacing: 1.65px;
+            color: #010101;
+            max-width: 80%;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+    }
+}
+.plp-combo {
+    margin-bottom: 115px;
+    &__wrapper {
+        border-radius: 77.6px;
+        background-image: linear-gradient(to top, #ffe5db, #ecedf8);
+        padding: 76px 0 54px;
+        h2 {
+            font-size: 108.5px;
+            letter-spacing: 5.43px;
+            color: #fff;
+            text-align: center;
+            font-family: $heading-font;
+            margin-bottom: 38px;
+        }
+        .row {
+            padding:  0 72px;
+        }
+    }
+    &__single {
+        text-align: center;
+        img {
+            margin-bottom: 36px;
+        }
+        h3 {
+            font-size: 27.5px;
+            font-family: $heading-font;
+            line-height: 1.16;
+            letter-spacing: 2.06px;
+            color: #222;
+            margin-bottom: 27px;
+        }
+        p {
+            font-size: 16.5px;
+            line-height: 1.45;
+            letter-spacing: 1.65px;
+            color: #010101;
+        }
+        &__price {
+            font-size: 31px;
+            font-family: $heading-font;
+            line-height: 1.81;
+            letter-spacing: 0.78px;
+            color: #222;
+            margin-bottom: 32px;
+            span {
+                line-height: 1.81;
+                letter-spacing: 0.78px;
+                color: #ad9a8b;
+                font-family: 'Acumin Pro';
+                margin-right: 10px;
+                text-decoration: line-through;
+            }
+        }
+    }
+}

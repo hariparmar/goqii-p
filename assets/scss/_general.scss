@@ -40,9 +40,20 @@ a:hover {
         color: #3a3939;
         text-decoration: none;
     }
+    &--small {
+        height: 40px;
+        line-height: 40px;
+        font-size: 15.5px;
+        letter-spacing: 1.55px;
+        padding: 0 10px;
+    }
     &--blue {
         color: #2185f4;
         border: solid 1px #2185f4;
+    }
+    &--red {
+        color: #e22016;
+        border: solid 1px #e22016;
     }
 }
 
