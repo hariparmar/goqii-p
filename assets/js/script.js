@@ -180,7 +180,7 @@ const aboutTeamMainSlider = new Swiper(".about-team-slider__inner__main", {
     fadeEffect: {
         crossFade: true
     },
-    speed: 1500,
+    speed: 500,
     slidesPerView: 1,
 
     // If we need pagination
@@ -201,10 +201,8 @@ const aboutTeamMainSlider = new Swiper(".about-team-slider__inner__main", {
 
 const aboutInvestorsSlider = new Swiper(".investors__inner__members__slider", {
     slidesPerView: 1,
-    grid: {
-        rows: 2,
-    },
     spaceBetween: 10,
+    speed: 500,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -212,8 +210,6 @@ const aboutInvestorsSlider = new Swiper(".investors__inner__members__slider", {
 });
 
 // blog page banner slider
-
-
 const blogBanenerSlider = new Swiper(".blog-banner__inner__slider", {
     slidesPerView: 1,
     spaceBetween: 10,
