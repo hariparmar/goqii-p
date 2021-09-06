@@ -275,3 +275,21 @@ a.anchor-link {
     letter-spacing: 6px;
     color: #222;
 }
+.date-picker {
+    margin-top: 100px;
+    margin-bottom: 10px;
+
+    &__icon {
+        text-align: right;
+        cursor: pointer;
+    }
+} 
+
+// .date-picker {
+//     background-image: url("../images/icon-calendar.png");
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     height: 45px;
+//     width: 43px;
+
+// }
