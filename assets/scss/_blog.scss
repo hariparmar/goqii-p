@@ -9,12 +9,20 @@
         padding: 0 220px;
         display: flex;
         align-items: center;
+        @media only screen and (max-width: $max-width-1600) {
+            height: 500px;
+            padding: 0 100px;
+        }
         &__title {
             font-size: 60px;
             color: #fff;
             font-family: $heading-font;
             max-width: 500px;
             line-height: 82px;
+            @media only screen and (max-width: $max-width-1600) {
+                font-size: 48px;
+                line-height: 1.1;
+            }
         }
     }
     .swiper {
@@ -27,10 +35,16 @@
         &-button-next {
             background-position-y: calc(-26px * 3);
             right: 45px;
+            @media only screen and (max-width: $max-width-1600) {
+                right: 20px;
+            }
         }
         &-button-prev {
             background-position-y: calc(-26px * 3);
             left: 45px;
+            @media only screen and (max-width: $max-width-1600) {
+                left: 20px;
+            }
         }
     }
 }
@@ -54,17 +68,28 @@
         text-align: center;
         margin: 0 0 50px;
         padding-top: 80px;
+        @media only screen and (max-width: $max-width-1600) {
+            font-size: 36px;
+            margin: 0 0 30px;
+            padding-top: 70px;
+        }
     }
     &__list {
         display: flex;
         flex-wrap: wrap;
         margin: 0 -30px;
+        @media only screen and (max-width: $max-width-1600) {
+            margin: 0 -10px;
+        }
     }
     &__single {
         display: flex;
         width: calc(100% / 3);
         padding: 0 30px;
         margin-bottom: 25px;
+        @media only screen and (max-width: $max-width-1600) {
+            padding: 0 10px;
+        }
         &__image {
             width: 155px;
             flex-shrink: 0
@@ -77,12 +102,20 @@
                 color: #3a3939;
                 line-height: 32px;
                 text-transform: uppercase;
+                @media only screen and (max-width: $max-width-1600) {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
             }
             p {
                 color: #29284a;
                 font-size: 18px;
                 line-height: 28px;
                 margin-top: 10px;
+                @media only screen and (max-width: $max-width-1600) {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
             }
             .read-more {
                 color: #000f16;
@@ -93,6 +126,9 @@
 
 .blog-listing {
     padding: 120px 0;
+    @media only screen and (max-width: $max-width-1600) {
+        padding: 80px 0;
+    }
     &__options {
         display: flex;
         justify-content: space-between;
@@ -105,6 +141,9 @@
     &__tags {
         display: flex;
         margin-top: 120px;
+        @media only screen and (max-width: $max-width-1600) {
+            margin-top: 80px;
+        }
         &__listing {
             flex: 1;
             display: flex;
@@ -119,6 +158,10 @@
                     border: 5px solid transparent;
                     height: 130px;
                     width: 130px;
+                    @media only screen and (max-width: $max-width-1600) {
+                        height: 100px;
+                        width: 100px;
+                    }
                 }
                 span {
                     display: block;
@@ -127,12 +170,20 @@
                     margin-top: 27px;
                     text-transform: uppercase;
                     font-weight: 400;
+                    @media only screen and (max-width: $max-width-1600) {
+                        font-size: 18px;
+                        line-height: 24px;
+                        margin-top: 15px;
+                    }
                 }
                 &.active {
                     span {
                         font-weight: $bold-font;
                         color: #454546;
                         font-size: 22px;
+                        @media only screen and (max-width: $max-width-1600) {
+                            font-size: 20px;
+                        }
                     }
                 }
             }
@@ -147,6 +198,9 @@
                 letter-spacing: 1px;
                 text-transform: uppercase;
                 margin-left: 45px;
+                @media only screen and (max-width: $max-width-1600) {
+                    font-size: 18px;
+                }
             }
         }
     }
@@ -154,18 +208,31 @@
         display: flex;
         flex-wrap: wrap;
         margin: 20px 0 80px;
+        @media only screen and (max-width: $max-width-1600) {
+            margin: 20px 0 30px;
+        }
         &__single {
             width: calc(100% / 3);
             margin-bottom: 85px;
+            @media only screen and (max-width: $max-width-1600) {
+                margin-bottom: 50px;
+            }
             &__inner {
                 max-width: 420px;
                 margin: auto;
+                @media only screen and (max-width: $max-width-1600) {
+                    max-width: 320px;
+                }
                 h2 {
                     font-weight: $bold-font;
                     font-size: 20px;
                     color: #3a3939;
                     text-transform: uppercase;
                     margin-top: 25px;
+                    @media only screen and (max-width: $max-width-1600) {
+                        font-size: 18px;
+                        margin-top: 20px;
+                    }
                 }
                 p {
                     color: #29284a;
@@ -173,6 +240,9 @@
                     line-height: 28px;
                     font-size: 18px;
                     letter-spacing: 1px;
+                    @media only screen and (max-width: $max-width-1600) {
+                        font-size: 16px;
+                    }
                 }
                 .read-more {
                     color: #dd4031;
@@ -202,6 +272,9 @@
         /* Chrome10-25,Safari5.1-6 */
         background: linear-gradient(to bottom, rgba(255, 254, 248, 1) 0%, rgba(255, 254, 246, 1) 15%, rgba(255, 253, 239, 1) 32%, rgba(255, 253, 234, 1) 50%, rgba(255, 251, 223, 1) 68%, rgba(255, 251, 220, 1) 100%);
         /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        @media only screen and (max-width: $max-width-1600) {
+            padding: 0 40px;
+        }
         &__image {
             background-repeat: no-repeat;
             background-size: cover;
@@ -211,18 +284,31 @@
             top: 50%;
             transform: translateY(-50%);
             max-width: 620px;
+            @media only screen and (max-width: $max-width-1600) {
+                max-width: 480px;
+                left: 40px;
+            }
         }
         &__content-wrapper {
             padding: 60px 0;
+            @media only screen and (max-width: $max-width-1600) {
+                padding: 40px 0;
+            }
         }
         &__content {
             max-width: 800px;
             margin-left: auto;
+            @media only screen and (max-width: $max-width-1600) {
+                max-width: 600px;
+            }
             &__tag {
                 font-size: 27px;
                 font-weight: $light-font;
                 color: #222222;
                 letter-spacing: 1px;
+                @media only screen and (max-width: $max-width-1600) {
+                    font-size: 20px;
+                }
             }
             &__title {
                 font-size: 52px;
@@ -231,21 +317,38 @@
                 letter-spacing: 1px;
                 margin-top: 15px;
                 line-height: 58px;
+                @media only screen and (max-width: $max-width-1600) {
+                    font-size: 36px;
+                    margin-top: 10px;
+                    line-height: 40px;
+                    margin-bottom: 5px;
+                }
             }
             &__date {
                 font-size: 18px;
                 color: #010101;
                 font-weight: $bold-font;
                 margin-bottom: 50px;
+                display: inline-block;
+                @media only screen and (max-width: $max-width-1600) {
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                }
             }
             p {
                 font-size: 20px;
                 color: #010101;
+                @media only screen and (max-width: $max-width-1600) {
+                    font-size: 16px;
+                }
             }
             .read-more {
                 color: #5eab41;
                 display: inline-block;
                 margin-top: 20px;
+                @media only screen and (max-width: $max-width-1600) {
+                    margin-top: 10px;
+                }
             }
         }
     }
@@ -254,10 +357,17 @@
 .blog-detail-content {
     .text-content {
         padding: 0 230px;
+        @media only screen and (max-width: $max-width-1600) {
+            padding: 0 100px;
+        }
         a.anchor-link {
             display: inline-block;
             margin-top: 50px;
             margin-bottom: 100px;
+            @media only screen and (max-width: $max-width-1600) {
+                margin-top: 30px;
+                margin-bottom: 60px;
+            }
         }
     }
 }
@@ -277,8 +387,8 @@
         /* Chrome10-25,Safari5.1-6 */
         background: linear-gradient(to bottom, rgba(250, 226, 226, 1) 0%, rgba(251, 230, 227, 1) 15%, rgba(251, 233, 229, 1) 25%, rgba(252, 236, 236, 1) 39%, rgba(252, 236, 236, 1) 50%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1) 78%, rgba(255, 255, 255, 1) 100%);
         /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        .radius-section-title {
-            margin-bottom: 0;
+        @media only screen and (max-width: $max-width-1600) {
+            padding-top: 80px;
         }
         .recommended__inner__cards.blog-listing {
             padding: 0;
@@ -289,6 +399,9 @@
     }
     &-signup {
         margin: 50px 0;
+        @media only screen and (max-width: $max-width-1600) {
+            margin: 20px 0;
+        }
         .blog-listing__options__signup {
             margin: auto;
         }
@@ -298,6 +411,7 @@
 .text-content__image {
     position: relative;
 }
+
 .text-content__share {
     position: absolute;
     top: 50%;
@@ -323,30 +437,23 @@
         &:hover {
             background-position-x: -84px;
         }
-        &.icon--share {             
+        &.icon--share {
             background-position-y: 0;
             &:hover {
                 background-position-x: -51px;
             }
         }
         &.icon--fb {
- 
             background-position-y: -33px;
         }
-        &.icon--instagram { 
+        &.icon--instagram {
             background-position-y: -65px;
-
         }
         &.icon--twitter {
             background-position-y: -96px;
-
         }
         &.icon--youtube {
             background-position-y: -130px;
-
         }
     }
-
-    
-
 }

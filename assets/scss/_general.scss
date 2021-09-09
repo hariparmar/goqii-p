@@ -5,6 +5,10 @@ body {
     line-height: 1.64;
     letter-spacing: 2.25px;
     overflow-x: hidden;
+    @media only screen and (max-width: $max-width-1600) {
+        font-size: 18px;
+        letter-spacing: 1.5px;
+    }
 }
 
 img {
@@ -27,7 +31,7 @@ a:hover {
 .goqii-btn-primary {
     height: 51px;
     padding: 0 38px;
-    font-size: 20.5px;
+    font-size: 21px;
     display: inline-flex;
     font-weight: bold;
     border: solid 1px #3a3939;
@@ -36,6 +40,10 @@ a:hover {
     text-align: center;
     color: #3a3939;
     text-transform: uppercase;
+    @media only screen and (max-width: $max-width-1600) {
+        font-size: 18px;
+        padding: 0 25px;
+    }
     &:hover {
         color: #3a3939;
         text-decoration: none;
@@ -43,9 +51,12 @@ a:hover {
     &--small {
         height: 40px;
         line-height: 40px;
-        font-size: 15.5px;
+        font-size: 15px;
         letter-spacing: 1.55px;
         padding: 0 10px;
+        @media only screen and (max-width: $max-width-1600) {
+            font-size: 14px;
+        }
     }
     &--blue {
         color: #2185f4;
@@ -75,6 +86,9 @@ a:hover {
         &:after {
             content: '';
         }
+        @media only screen and (max-width: $max-width-1600) {
+            transform: translateY(-50%) rotate( 180deg) scale(0.8);
+        }
     }
     &-next {
         height: 26px;
@@ -85,6 +99,9 @@ a:hover {
         transform: translateY(-50%);
         &:after {
             content: '';
+        }
+        @media only screen and (max-width: $max-width-1600) {
+            transform: translateY(-50%) scale(0.8);
         }
     }
 }
@@ -100,6 +117,11 @@ a:hover {
     margin-left: -8px;
     line-height: 0.99;
     text-transform: uppercase;
+    @media only screen and (max-width: $max-width-1600) {
+        font-size: 110px;
+        letter-spacing: 25px;
+        margin-bottom: 20px;
+    }
 }
 
 input {
@@ -138,6 +160,9 @@ button {
 
 .form-field {
     padding-bottom: 35px;
+    @media only screen and (max-width: $max-width-1600) {
+        padding-bottom: 25px;
+    }
     &__search {
         position: relative;
         display: flex;
@@ -160,6 +185,9 @@ button {
         font-weight: $bold-font;
         text-transform: uppercase;
         letter-spacing: 1px;
+        @media only screen and (max-width: $max-width-1600) {
+            font-size: 16px;
+        }
     }
 }
 
@@ -170,6 +198,13 @@ button {
     text-decoration: underline;
     letter-spacing: 1.5px;
     text-transform: uppercase;
+    @media only screen and (max-width: $max-width-1600) {
+        font-size: 16px;
+        letter-spacing: inherit;
+    }
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .pagination {
@@ -177,10 +212,16 @@ button {
     align-items: center;
     li {
         margin: 0 20px;
+        @media only screen and (max-width: $max-width-1600) {
+            margin: 0 10px;
+        }
         a {
             font-weight: $bold-font;
             color: #3a3939;
             font-size: 24px;
+            @media only screen and (max-width: $max-width-1600) {
+                font-size: 18px;
+            }
             &:hover {
                 color: #dd4031;
             }
@@ -195,10 +236,13 @@ button {
         background-image: url(../images/icons-sprite.png);
         background-repeat: no-repeat;
         margin-top: 0;
-        transform: rotate( 180deg);
+        transform: rotate(180deg);
         background-position-y: -26px;
         vertical-align: middle;
         display: inline-block;
+        @media only screen and (max-width: $max-width-1600) {
+            transform: rotate(180deg) scale(0.8);
+        }
     }
     &__next a {
         height: 26px;
@@ -209,6 +253,9 @@ button {
         background-position-y: -26px;
         vertical-align: middle;
         display: inline-block;
+        @media only screen and (max-width: $max-width-1600) {
+            transform: scale(0.8);
+        }
     }
 }
 
@@ -219,6 +266,9 @@ button {
         font-size: 22px;
         line-height: 35px;
         margin-bottom: 55px;
+        @media only screen and (max-width: $max-width-1600) {
+            margin-bottom: 25px;
+        }
     }
     p {
         font-size: 20px;
@@ -228,12 +278,20 @@ button {
         span {
             font-weight: $bold-font;
         }
+        @media only screen and (max-width: $max-width-1600) {
+            font-size: 18px;
+            line-height: 30px;
+            margin-bottom: 20px;
+        }
     }
     img {
         width: 100%;
         border-radius: 80px;
         margin-top: 25px;
         margin-bottom: 75px;
+        @media only screen and (max-width: $max-width-1600) {
+            margin-bottom: 50px;
+        }
     }
     a {
         text-decoration: underline;
@@ -274,16 +332,25 @@ a.anchor-link {
     line-height: 1;
     letter-spacing: 6px;
     color: #222;
+    @media only screen and (max-width: $max-width-1600) {
+        font-size: 56px;
+        line-height: 1;
+        letter-spacing: 4px;
+        margin-bottom: 40px;
+    }
 }
+
 .date-picker {
     margin-top: 100px;
     margin-bottom: 10px;
-
+    @media only screen and (max-width: $max-width-1600) {
+        margin-top: 60px;
+    }
     &__icon {
         text-align: right;
         cursor: pointer;
     }
-} 
+}
 
 // .date-picker {
 //     background-image: url("../images/icon-calendar.png");
@@ -291,5 +358,4 @@ a.anchor-link {
 //     background-repeat: no-repeat;
 //     height: 45px;
 //     width: 43px;
-
 // }

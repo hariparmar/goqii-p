@@ -14,6 +14,10 @@
 
 .home-explore-product {
     margin-bottom: 150px;
+    @media only screen and (max-width: $max-width-1600) {
+        margin-bottom: 40px;
+
+    }
     h2 {
         text-align: center;
         font-family: "Acumin Pro Bold";
@@ -22,6 +26,12 @@
         line-height: 0.31;
         letter-spacing: 6px;
         color: #222;
+        @media only screen and (max-width: $max-width-1600) {
+            font-size: 56px;
+            line-height: 1;
+            letter-spacing: 4px;
+            margin-bottom: 40px;
+        }
     }
     .product-range-slider {
         position: relative;
@@ -38,13 +48,23 @@
             .swiper-button-prev {
                 left: 75px;
                 top: calc(50% - 115px);
+                @media only screen and (max-width: $max-width-1600) {
+                    left: 20px;
+                }
             }
             .swiper-button-next {
                 right: 75px;
                 top: calc(50% - 115px);
+                @media only screen and (max-width: $max-width-1600) {
+                    right: 20px;
+                }
             }
             &-pagination {
                 bottom: 5px;
+                @media only screen and (max-width: $max-width-1600) {
+                    bottom: 80px;
+
+                }
                 &-bullet {
                     background-color: #bed2de;
                     opacity: 1;
@@ -62,16 +82,29 @@
                     position: absolute;
                     bottom: -230px;
                     width: 100%;
+                    @media only screen and (max-width: $max-width-1600) {
+                        bottom: -170px;
+                        padding: 0 60px 0 140px;
+                    }
                 }
                 &__info {
                     max-width: 514px;
                     padding: 130px 0;
+                    @media only screen and (max-width: $max-width-1600) {
+                        padding: 80px 0;
+                    }
                     h3 {
                         font-size: 60px;
                         font-family: $heading-font;
                         letter-spacing: 4.5px;
                         margin-bottom: 49px;
                         color: #222;
+                        @media only screen and (max-width: $max-width-1600) {
+                            font-size: 48px;
+                            font-family: "Acumin Pro Bold", sans-serif;
+                            letter-spacing: 2.5px;
+                            margin-bottom: 20px;
+                        }
                     }
                     p {
                         margin-bottom: 60px;
@@ -84,6 +117,10 @@
             position: absolute;
             right: 65px;
             bottom: calc(231px - 65px);
+            @media only screen and (max-width: $max-width-1600) {
+                width: 404px;
+                right: 35px;
+            }
             &__single {
                 width: 150px;
                 height: 150px;
@@ -91,8 +128,15 @@
                 justify-content: center;
                 align-items: center;
                 margin-right: 0;
+                @media only screen and (max-width: $max-width-1600) {
+                    width: 110px;
+                    height: 110px;
+                }
                 img {
                     max-height: 100%;
+                    @media only screen and (max-width: $max-width-1600) {
+                        max-height: 80%;
+                    }
                 }
             }
         }
@@ -110,17 +154,25 @@
         background-image: linear-gradient(to right, #fff1eb, #f4bfb7);
         border-radius: 80px;
         padding: 44px 0 100px;
-        
         &__info {
             padding-left: 100px;
+            @media only screen and (max-width: $max-width-1600) {
+                padding-left: 50px;
+            }
             p {
                 margin-bottom: 60px;
+                @media only screen and (max-width: $max-width-1600) {
+                    margin-bottom: 35px;
+                }
             }
         }
         &__img {
             position: absolute;
             bottom: -90px;
             right: 0;
+            @media only screen and (max-width: $max-width-1600) {
+                width: 760px;
+            }
         }
     }
 }
@@ -133,6 +185,10 @@
     border-top-right-radius: 80px;
     padding: 80px 0;
     position: relative;
+    @media only screen and (max-width: $max-width-1600) {
+        padding: 40px 0;
+        margin-top: 60px;
+    }
     &::before {
         content: "";
         background-image: url(../images/app-feature-element.png);
@@ -144,6 +200,14 @@
         left: 50%;
         z-index: -1;
         transform: translateX(-60%);
+        background-size: contain;
+        @media only screen and (max-width: $max-width-1600) {
+
+        width: 420px;
+        height: 130px;
+        top: -130px;
+        }
+
     }
     .health-ecosystem-slider {
         position: relative;
@@ -162,7 +226,12 @@
                     font-size: 80px;
                     line-height: 1.1;
                     letter-spacing: 7.24px;
-                    color: #2185f4;
+                    @media only screen and (max-width: $max-width-1600) {
+                        margin-bottom: 25px;
+                        font-size: 56px;
+                        line-height: 1.1;
+                        letter-spacing: 4px;
+                    }
                     span {
                         font-family: $primary-font;
                         font-size: 38px;
@@ -171,6 +240,11 @@
                         display: block;
                         margin-bottom: 23px;
                         margin-left: 2px;
+                        @media only screen and (max-width: $max-width-1600) {
+                            font-size: 30px;
+                            letter-spacing: 1.5px;
+                            margin-bottom: 15px;
+                        }
                     }
                 }
                 p {
@@ -178,8 +252,8 @@
                 }
             }
         }
-        &__main {          
-          padding-bottom: 120px;
+        &__main {
+            padding-bottom: 120px;
             img {
                 max-width: 100%;
             }
@@ -189,6 +263,9 @@
             position: absolute;
             right: 0;
             bottom: 50px;
+            @media only screen and (max-width: $max-width-1600) {
+                width: 62%;
+            }
             img {
                 width: 100%;
             }
@@ -210,6 +287,10 @@
                 display: inline-block;
                 font-weight: $bold-font;
                 opacity: 0.5;
+                @media only screen and (max-width: $max-width-1600) {
+                    font-size: 16px;
+                    letter-spacing: 1px;
+                }
                 &__progress {
                     height: 7px;
                     width: 100%;
@@ -226,6 +307,9 @@
                         top: 0;
                         left: 0;
                         position: absolute;
+                    }
+                    @media only screen and (max-width: $max-width-1600) {
+                        height: 5px;
                     }
                 }
             }
@@ -262,6 +346,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    @media only screen and (max-width: $max-width-1600) {
+        margin-top: 170px;
+        margin-bottom: 60px;
+    }
     &::before {
         content: "";
         background-image: url(../images/app-feature-element.png);
@@ -272,6 +360,13 @@
         top: -210px;
         left: 50%;
         z-index: -1;
+        background-size: contain;
+        @media only screen and (max-width: $max-width-1600) {
+
+        width: 590px;
+        height: 150px;
+        top: -150px;
+        }
     }
     .app-feature-slider {
         position: relative;
@@ -289,6 +384,12 @@
                     line-height: 110px;
                     margin-bottom: 40px;
                     letter-spacing: 7.24px;
+                    @media only screen and (max-width: $max-width-1600) {
+                        font-size: 56px;
+                        line-height: 1.1;
+                        margin-bottom: 20px;
+                        letter-spacing: 4px;
+                    }
                 }
                 p {
                     margin-bottom: 40px;
@@ -301,6 +402,7 @@
         }
         &__main {
             top: -80px;
+            @media only screen and (max-width: $max-width-1600) {}
             img {
                 max-width: 100%;
             }
@@ -323,14 +425,21 @@
                 display: inline-block;
                 font-weight: $bold-font;
                 opacity: 0.5;
+                @media only screen and (max-width: $max-width-1600) {
+                    font-size: 16px;
+                    letter-spacing: 1px;
+                }
                 &__progress {
-                    height: 5px;
+                    height: 7px;
                     width: 100%;
                     background-color: #bababa;
                     border-radius: 10px;
                     position: relative;
                     opacity: 0;
                     overflow: hidden;
+                    @media only screen and (max-width: $max-width-1600) {
+                        height: 5px;
+                    }
                     &::after {
                         content: "";
                         height: 100%;
@@ -361,11 +470,22 @@
     }
     &__app-download {
         padding-bottom: 45px;
+        @media only screen and (max-width: $max-width-1600) {
+            img {
+                max-height: 50px;
+            }
+        }
     }
 }
 
 .home-blog-testimonials {
     margin-bottom: 150px;
+
+    @media only screen and (max-width: $max-width-1600) {
+        margin-bottom: 120px;
+
+
+    }
     h2 {
         font-size: 67px;
         font-family: $heading-font;
@@ -375,13 +495,25 @@
         margin-bottom: 40px;
         max-width: 60%;
         margin-left: auto;
+        @media only screen and (max-width: $max-width-1600) {
+            letter-spacing: 2.5px;
+            margin-bottom: 40px;
+            max-width: 55%;
+            font-size: 56px;
+            line-height: 1.1;
+        }
         span {
-            font-size: 30.5px;
+            font-size: 31px;
             font-weight: 300;
             font-family: $primary-font;
             letter-spacing: 1.53px;
             display: block;
             margin-bottom: 25px;
+            @media only screen and (max-width: $max-width-1600) {
+                font-size: 30px;
+                letter-spacing: 1.5px;
+                margin-bottom: 15px;
+            }
         }
     }
     .blog-testimonials-slider {
@@ -420,6 +552,10 @@
                 padding: 65px;
                 background-color: #fff;
                 display: none;
+                @media only screen and (max-width: $max-width-1600) {
+                    padding: 20px;
+                    width: calc(100% - 323px);
+                }
                 &__content {
                     span {
                         font-size: 26px;
@@ -427,6 +563,10 @@
                         line-height: 1.54;
                         letter-spacing: 2.6px;
                         color: #74b45b;
+                        @media only screen and (max-width: $max-width-1600) {
+                            font-size: 20px;
+                            letter-spacing: 1.5px;
+                        }
                     }
                 }
             }
@@ -446,6 +586,10 @@
                         &__img {
                             min-width: 400px;
                             filter: grayscale(0%);
+                            @media only screen and (max-width: $max-width-1600) {
+                                min-width: 310px;
+                                max-width: 310px;
+                            }
                         }
                         &__info {
                             display: flex;
@@ -503,6 +647,11 @@
             height: 215px;
             top: -190px;
             left: 21%;
+            @media only screen and (max-width: $max-width-1600) {
+                top: -130px;
+                left: 21%;
+                background-size: 70%;
+            }
         }
         &::after {
             content: "";
@@ -513,6 +662,10 @@
             height: 240px;
             bottom: -125px;
             right: 21%;
+            @media only screen and (max-width: $max-width-1600) {
+                background-size: 70%;
+                bottom: -135px;
+            }
         }
     }
     &__tab-nav {
@@ -529,6 +682,13 @@
                 line-height: 2.02;
                 letter-spacing: 2.4px;
                 color: #252525;
+                @media only screen and (max-width: $max-width-1600) {
+                    margin-right: 20px;
+                    font-size: 20px;
+                    line-height: 1.5;
+                    letter-spacing: 1.5px;
+                    width: 190px;
+                }
                 &.active {
                     color: #74b45b;
                     font-weight: 700;
@@ -540,6 +700,9 @@
 
 .home-corporate-wellness {
     margin-bottom: 150px;
+    @media only screen and (max-width: $max-width-1600) {
+        margin-bottom: 100px;
+    }
     &__info {
         h2 {
             margin-bottom: 61px;
@@ -547,6 +710,12 @@
             font-size: 96px;
             line-height: 1.1;
             letter-spacing: 7.24px;
+            @media only screen and (max-width: $max-width-1600) {
+                margin-bottom: 25px;
+                font-size: 56px;
+                line-height: 1.1;
+                letter-spacing: 4px;
+            }
             span {
                 font-family: $primary-font;
                 font-size: 44px;
@@ -554,6 +723,11 @@
                 letter-spacing: 2.13px;
                 display: inline-block;
                 margin-bottom: 36px;
+                @media only screen and (max-width: $max-width-1600) {
+                    font-size: 30px;
+                    letter-spacing: 1.5px;
+                    margin-bottom: 15px;
+                }
             }
         }
         p {
@@ -564,6 +738,10 @@
 
 .home-logo {
     margin-bottom: 150px;
+    
+    @media only screen and (max-width: $max-width-1600) {
+        margin-bottom: 100px;
+    }
     &__tab-nav {
         &.nav {
             .nav-item {
@@ -574,6 +752,9 @@
                 line-height: 2.02;
                 letter-spacing: 2.4px;
                 color: #252525;
+                @media only screen and (max-width: $max-width-1600) {
+                    font-size: 20px;
+                }
                 &.active {
                     color: #e32e2e;
                     font-weight: 700;
@@ -583,6 +764,9 @@
     }
     .tab-content .swiper {
         padding: 0 70px;
+        @media only screen and (max-width: $max-width-1600) {
+            padding: 0 60px;
+        }
     }
     .logo-slider {
         .swiper-wrapper {
