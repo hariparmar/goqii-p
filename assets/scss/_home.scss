@@ -4,6 +4,15 @@
     @media only screen and (max-width: $max-width-1600) {
         height: 65vh;
     }
+    @media only screen and (max-width: $max-width-lg) {
+        height: 400px;
+    }
+    @media only screen and (max-width: $max-width-sm) {
+        height: 260px;
+    }
+    @media only screen and (max-width: $max-width-mob) {
+        height: auto;
+    }
     p {
         font-size: 43px;
         color: #364a5c;
@@ -13,6 +22,16 @@
         text-transform: uppercase;
         @media only screen and (max-width: $max-width-1600) {
             font-size: 30px;
+        }
+        @media only screen and (max-width: $max-width-lg) {
+            font-size: 24px;
+        }
+        @media only screen and (max-width: $max-width-sm) {
+            font-size: 20px;
+        }
+        @media only screen and (max-width: $max-width-mob) {
+            font-size: 14px;
+            margin-bottom: 10px
         }
     }
     h1 {
@@ -26,6 +45,13 @@
         @media only screen and (max-width: $max-width-1600) {
             height: 100px;
         }
+        @media only screen and (max-width: $max-width-lg) {
+            height: 70px;
+        }
+        @media only screen and (max-width: $max-width-mob) {
+            background-position: center;
+            height: 50px;
+        }
     }
     h3 {
         margin-top: 55px;
@@ -37,6 +63,20 @@
             margin-top: 20px;
             font-size: 20px;
             line-height: 30px;
+        }
+        @media only screen and (max-width: $max-width-lg) {
+            margin-top: 15px;
+            font-size: 18px;
+            line-height: 24px;
+        }
+        @media only screen and (max-width: $max-width-sm) {
+            margin-top: 13px;
+            font-size: 16px;
+            line-height: 20px;
+        }
+        @media only screen and (max-width: $max-width-sm) {
+            font-size: 12px;
+            letter-spacing: 1px;
         }
     }
 }
@@ -52,6 +92,13 @@
     height: 100%;
     top: 0;
     position: absolute;
+    @media only screen and (max-width: $max-width-lg) {
+        border-radius: 40px;
+    }
+    @media only screen and (max-width: $max-width-mob) {
+        position: relative;
+        border-radius: 15px;
+    }
 }
 
 .Banner--RoundElement {
@@ -61,6 +108,21 @@
     left: 55px;
     @media only screen and (max-width: $max-width-1600) {
         max-width: 450px;
+    }
+    @media only screen and (max-width: $max-width-lg) {
+        max-width: 360px;
+        bottom: -55px;
+        left: 35px;
+    }
+    @media only screen and (max-width: $max-width-sm) {
+        max-width: 260px;
+    }
+    @media only screen and (max-width: $max-width-mob) {
+        max-width: 170px;
+        position: absolute;
+        top: 30px;
+        left: 15px;
+        max-height: 170px;
     }
 }
 
@@ -77,7 +139,15 @@
     bottom: 0;
     right: 0;
     @media only screen and (max-width: $max-width-1600) {
-        height: 86%;
+        height: 82%;
+        img {
+            max-height: 100%;
+        }
+    }
+    @media only screen and (max-width: $max-width-mob) {
+        height: auto;
+        top: 70px;
+        width: 155px;
     }
 }
 
@@ -89,6 +159,14 @@
         left: 40%;
         width: 150px;
     }
+    @media only screen and (max-width: $max-width-sm) {
+        left: 43%;
+        width: 80px;
+    }
+    @media only screen and (max-width: $max-width-mob) {
+        left: 55%;
+        width: 60px;
+    }
 }
 
 .Banner-Ellipse2 {
@@ -99,6 +177,16 @@
         left: 50%;
         width: 150px;
     }
+    @media only screen and (max-width: $max-width-sm) {
+        width: 80px;
+    }
+    @media only screen and (max-width: $max-width-sm) {
+        width: 60px;
+        right: -20px;
+        left: inherit;
+        bottom: 70px;
+        transform: rotate( -85deg);
+    }
 }
 
 .Banner-Ellipse3 {
@@ -106,7 +194,13 @@
     top: 0;
     right: 0;
     @media only screen and (max-width: $max-width-1600) {
-        width: 80px;
+        width: 70px;
+    }
+    @media only screen and (max-width: $max-width-sm) {
+        width: 40px;
+    }
+    @media only screen and (max-width: $max-width-mob) {
+        display: none;
     }
 }
 
@@ -120,6 +214,19 @@
         left: 43%;
         width: 320px;
     }
+    @media only screen and (max-width: $max-width-sm) {
+        width: 250px;
+    }
+    @media only screen and (max-width: $max-width-mob) {
+        position: relative;
+        width: 100%;
+        left: 0;
+        top: 0;
+        transform: inherit;
+        margin-top: 250px;
+        text-align: center;
+        margin-bottom: 35px;
+    }
 }
 
 .Feature--Wrapper {
@@ -129,12 +236,20 @@
     padding-top: 140px;
     margin-bottom: 70px;
     background-color: #faf9f8;
-    @media only screen and (max-width: $max-width-1600) { 
+    @media only screen and (max-width: $max-width-1600) {
         padding-bottom: 40px;
         padding-top: 120px;
         margin-bottom: 20px;
     }
-        .Feature {
+    @media only screen and (max-width: $max-width-sm) {
+        padding-bottom: 20px;
+        padding-top: 90px;
+        margin-bottom: 10px;
+    }
+    @media only screen and (max-width: $max-width-mob) {
+        padding-top: 40px;
+    }
+    .Feature {
         &--Single {
             &Inner {
                 display: flex;
@@ -144,6 +259,11 @@
                 @media only screen and (max-width: $max-width-1600) {
                     padding-right: 10px;
                     padding-left: 10px;
+                }
+                @media only screen and (max-width: $max-width-mob) {
+                    padding-right: 0;
+                    padding-left: 0;
+                    margin-bottom: 15px;
                 }
             }
         }
@@ -158,6 +278,15 @@
                 max-width: 15%;
                 padding: 15px 10px;
                 border-radius: 10px;
+            }
+            @media only screen and (max-width: $max-width-lg) {
+                max-width: 20%;
+                padding: 15px 20px;
+                border-radius: 5px;
+            }
+            @media only screen and (max-width: $max-width-lg) {
+                max-width: 28%;
+                padding: 10px;
             }
         }
         &--Content {
@@ -175,7 +304,13 @@
                 text-transform: uppercase;
                 @media only screen and (max-width: $max-width-1600) {
                     font-size: 20px;
-                    width: 320px;
+                }
+                @media only screen and (max-width: $max-width-lg) {
+                    font-size: 18px;
+                }
+                @media only screen and (max-width: $max-width-lg) {
+                    font-size: 12px;
+                    margin-bottom: 0;
                 }
             }
             p {
@@ -189,6 +324,10 @@
                     line-height: 1.5;
                     letter-spacing: 0.5px;
                 }
+                @media only screen and (max-width: $max-width-mob) {
+                    font-size: 12px;
+                    margin-bottom: 10px;
+                }
             }
         }
     }
@@ -196,9 +335,14 @@
 
 .home-offerSlider {
     margin-bottom: 200px;
-    
     @media only screen and (max-width: $max-width-1600) {
         margin-bottom: 100px;
+    }
+    @media only screen and (max-width: $max-width-lg) {
+        margin-bottom: 80px;
+    }
+    @media only screen and (max-width: $max-width-sm) {
+        margin-bottom: 50px;
     }
 }
 
@@ -220,6 +364,18 @@
             padding: 10px 15px;
             font-size: 30px;
         }
+        @media only screen and (max-width: $max-width-1600) {
+            font-size: 28px;
+            left: 4%;
+        }
+        @media only screen and (max-width: $max-width-sm) {
+            font-size: 20px;
+            letter-spacing: 2.5px;
+        }
+        @media only screen and (max-width: $max-width-mob) {
+            font-size: 12px;
+            left: 40px;
+        }
     }
     &__single {
         text-align: right;
@@ -240,6 +396,17 @@
             padding: 70px 0;
             padding-left: 7.5%;
         }
+        @media only screen and (max-width: $max-width-lg) {
+            padding: 40px 0;
+            border-radius: 40px;
+            padding-left: 4%;
+        }
+        @media only screen and (max-width: $max-width-mob) {
+            position: relative;
+            margin-top: 20px;
+            border-radius: 20px;
+            padding: 30px 20px 110px 20px;
+        }
         h2 {
             max-width: 460px;
             font-size: 44px;
@@ -252,11 +419,25 @@
                 font-weight: 700;
                 letter-spacing: 1.5px;
             }
+            @media only screen and (max-width: $max-width-lg) {
+                font-size: 30px;
+                max-width: 400px;
+            }
+            @media only screen and (max-width: $max-width-sm) {
+                font-size: 24px;
+                max-width: 300px;
+            }
+            @media only screen and (max-width: $max-width-mob) {
+                font-size: 14px;
+            }
         }
         a {
             margin-top: 75px;
             @media only screen and (max-width: $max-width-1600) {
                 margin-top: 35px;
+            }
+            @media only screen and (max-width: $max-width-mob) {
+                margin-top: 10px;
             }
         }
     }
@@ -270,6 +451,25 @@
             margin-right: 100px;
             max-width: 390px;
         }
+        @media only screen and (max-width: $max-width-lg) {
+            margin-right: 40px;
+            max-width: 315px;
+        }
+        @media only screen and (max-width: $max-width-sm) {
+            max-width: 260px;
+        }
+        @media only screen and (max-width: $max-width-sm) {
+            max-width: 110px;
+            margin-right: 20px;
+        }
+        @media only screen and (max-width: $max-width-mob) {
+            max-width: 110px;
+            margin-right: 20px;
+            position: absolute;
+            bottom: 10px;
+            width: 110px;
+            right: 0;
+        }
         &__logo {
             position: absolute;
             top: 50%;
@@ -282,6 +482,19 @@
                 width: 260px;
                 text-align: center
             }
+            @media only screen and (max-width: $max-width-lg) {
+                left: -64%;
+                width: 220px;
+            }
+            @media only screen and (max-width: $max-width-sm) {
+                left: -50%;
+                width: 140px;
+            }
+            @media only screen and (max-width: $max-width-mob) {
+                left: -89%;
+                width: 100px;
+                top: 42%;
+            }
             span {
                 font-size: 26px;
                 font-family: $heading-font;
@@ -290,6 +503,13 @@
                 @media only screen and (max-width: $max-width-1600) {
                     font-size: 20px;
                     margin-top: 10px;
+                }
+                @media only screen and (max-width: $max-width-lg) {
+                    font-size: 18px;
+                }
+                @media only screen and (max-width: $max-width-mob) {
+                    font-size: 12px;
+                    white-space: nowrap;
                 }
             }
         }
@@ -301,6 +521,9 @@
     &__pagination {
         position: static;
         margin-top: 40px;
+        @media only screen and (max-width: $max-width-mob) {
+            margin-top: 15px;
+        }
     }
     .swiper-pagination {
         &-bullet {

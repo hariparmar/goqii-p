@@ -9,6 +9,10 @@ body {
         font-size: 18px;
         letter-spacing: 1.5px;
     }
+    @media only screen and (max-width: $max-width-lg) {
+        font-size: 16px;
+        letter-spacing: 1.2px;
+    }
 }
 
 img {
@@ -43,6 +47,16 @@ a:hover {
     @media only screen and (max-width: $max-width-1600) {
         font-size: 18px;
         padding: 0 25px;
+    }
+    @media only screen and (max-width: $max-width-lg) {
+        font-size: 16px;
+        padding: 0 15px;
+        line-height: 40px;
+        height: 40px;
+    }
+    @media only screen and (max-width: $max-width-mob) {
+        font-size: 12px;
+        padding: 0 10px
     }
     &:hover {
         color: #3a3939;
@@ -121,6 +135,14 @@ a:hover {
         font-size: 110px;
         letter-spacing: 25px;
         margin-bottom: 20px;
+    }
+    @media only screen and (max-width: $max-width-lg) {
+        font-size: 80px;
+        letter-spacing: 20px;
+    }
+    @media only screen and (max-width: $max-width-sm) {
+        font-size: 60px;
+        letter-spacing: 10px;
     }
 }
 
@@ -359,3 +381,8 @@ a.anchor-link {
 //     height: 45px;
 //     width: 43px;
 // }
+@media (max-width: 1300px) {
+    .container {
+        max-width: 100% !important;
+    }
+}
