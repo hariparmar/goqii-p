@@ -1,30 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 @font-face {
-  font-family: 'Acumin Pro';
-  src: url('../fonts/AcuminPro-Regular.woff2') format('woff2'),
-      url('../fonts/AcuminPro-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'Acumin Pro';
+    src: url('../fonts/AcuminPro-Regular.woff2') format('woff2'), url('../fonts/AcuminPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: 'Acumin Pro Bold';
-  src: url('../fonts/AcuminPro-Bold.woff2') format('woff2'),
-      url('../fonts/AcuminPro-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'Acumin Pro Bold';
+    src: url('../fonts/AcuminPro-Bold.woff2') format('woff2'), url('../fonts/AcuminPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
-$primary-font: 'Open Sans', sans-serif;
-$heading-font: 'Acumin Pro Bold', sans-serif;
+
+$primary-font: 'Open Sans',
+sans-serif;
+$heading-font: 'Acumin Pro Bold',
+sans-serif;
 $primary-font-size: 14px;
 $primary-font-weight: 400;
 $bold-font: 700;
 $light-font: 300;
-
-
-
+$max-width-1600: 1800px;
+$max-width-1400: 1400px;
+$max-width-lg: 1280px;
+$max-width-sm: 991px;
+$max-width-mob: 767px;
+$max-width-small-mob-375: 375px;
+$max-width-small-mob: 374px;
+$max-width-1200: 1200px;
 // $blue: #5192f2;
 // $blue-light: #eef4fd;
 // $white: #ffffff;
@@ -32,7 +38,6 @@ $light-font: 300;
 // $gray : #f2f2f2;
 // $body-text-dark: #4A5568;
 // $body-text-light: #718196;
-
 // $colours :(
 //   primary: $blue,
 //   blue: $blue,
@@ -41,7 +46,6 @@ $light-font: 300;
 //   cblack: $black,
 //   gray: $gray,
 // );
-
 // $grayShades:(
 //   100: #F7FAFC,
 //   200: #EDF2F7,
@@ -53,7 +57,6 @@ $light-font: 300;
 //   800: #2D3748,
 //   900: #1A202C,
 // );
-
 // :root{
 //   @each $key, $value in $colours {
 //       --#{$key} : #{$value};
@@ -62,7 +65,6 @@ $light-font: 300;
 //     --gray-#{$key} : #{$value};
 //   }
 // }
-
 // @each $key, $value in $colours {
 //   .bg-#{$key}{
 //     background-color: $value;
@@ -71,8 +73,6 @@ $light-font: 300;
 //     color: $value;
 //   }
 // }
-
-
 // $fonts : (10,11,12,14,18,18,20,24,36,40,44,48,50,55,60);
 // @mixin font-classes {
 //   @each $i in $fonts {
@@ -80,7 +80,6 @@ $light-font: 300;
 //   }
 // }
 // @include font-classes;
-
 // $font-weights: (100,200,300,400,500,600,700);
 // @mixin font-weight {
 //   @each $i in $font-weights {
@@ -88,7 +87,6 @@ $light-font: 300;
 //   }
 // }
 // @include font-weight;
-
 // $sizes: 12;
 // $spacers : (0, 4,8,12,16,24,32,36,48,60,64,80,120,150,180);
 // $space-type-map: (
@@ -101,7 +99,6 @@ $light-font: 300;
 //   l: left,
 //   r: right,
 // );
-
 // @mixin margin-classes {
 //   @each $i in $spacers {
 //     /* margin #{$margin} */
@@ -115,7 +112,6 @@ $light-font: 300;
 //   }
 // }
 // @include margin-classes;
-
 // @mixin padding-classes {
 //   @each $i in $spacers {
 //     .p-#{$i} {padding: #{$i}px;}
@@ -128,8 +124,6 @@ $light-font: 300;
 //   }
 // }
 // @include padding-classes;
-
-
 // $transition: all 0.3s !default;
 // @mixin transition {
 //   transition: $transition;

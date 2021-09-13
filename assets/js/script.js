@@ -155,6 +155,11 @@ const blogTestimonialsSlider = new Swiper(".blog-testimonials-slider", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+        767: {
+            spaceBetween: 5
+        }
+    },
     // If we need pagination
     pagination: {
         el: ".swiper-pagination",
@@ -226,4 +231,12 @@ const blogBanenerSlider = new Swiper(".blog-banner__inner__slider", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+});
+
+//  date picker - blog page
+$(function() {
+    $("#datepicker").datepicker({
+        autoclose: true,
+        todayHighlight: true
+    }).datepicker('update', new Date());
 });
