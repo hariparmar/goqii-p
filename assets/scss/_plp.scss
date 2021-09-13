@@ -134,7 +134,7 @@
 }
 
 .plp-coaching-plans {
-    margin-bottom: 300px;
+    margin-bottom: 250px;
     @media only screen and (max-width: $max-width-1600) {
         margin-bottom: 150px;
     }
@@ -144,7 +144,7 @@
         text-align: center;
         color: #04060a;
         font-family: $heading-font;
-        margin-bottom: 142px;
+        margin-bottom: 100px;
         @media only screen and (max-width: $max-width-1600) {
             font-size: 56px;
             line-height: 1;
@@ -222,7 +222,7 @@
                 display: inline-block;
                 position: absolute;
                 font-family: "Acumin Pro Bold", sans-serif;
-                top: -16px;
+                top: -13px;
                 left: 36px;
             }
             ul {

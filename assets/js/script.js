@@ -14,7 +14,6 @@ const offerSlider = new Swiper(".offer-slider", {
         clickable: true
     },
 });
-
 const logoSlider = new Swiper(".logo-slider", {
     // Optional parameters
     slidesPerView: 5,
@@ -173,8 +172,6 @@ $(document).ready(function() {
 });
 
 //  About Team slider
-
-
 const aboutTeamThumbSlider = new Swiper(".about-team-slider__inner__thumb", {
     slidesPerView: 6,
     spaceBetween: 34,
@@ -203,7 +200,6 @@ const aboutTeamMainSlider = new Swiper(".about-team-slider__inner__main", {
         swiper: aboutTeamThumbSlider,
     },
 });
-
 const aboutInvestorsSlider = new Swiper(".investors__inner__members__slider", {
     slidesPerView: 1,
     spaceBetween: 10,
@@ -239,4 +235,55 @@ $(function() {
         autoclose: true,
         todayHighlight: true
     }).datepicker('update', new Date());
+});
+
+
+// PLP
+
+const plpProductSlider = new Swiper(".plp-product-slider", {
+    // Optional parameters
+    slidesPerView: 3,
+    spaceBetween: 30,
+
+    // Navigation arrows
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
+const plpCoachingSlider = new Swiper(".plp-coaching-slider", {
+    // Optional parameters
+    slidesPerView: 4,
+    spaceBetween: 15,
+
+    // Navigation arrows
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
+const plpDiseaseConditionSlider = new Swiper(".plp-disease-condition-slider", {
+    // Optional parameters
+    slidesPerView: 3,
+    spaceBetween: 30,
+
+    // Navigation arrows
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
+const plpComboSlider = new Swiper(".plp-combo-slider", {
+    // Optional parameters
+    slidesPerView: 3,
+    spaceBetween: 30,
+
+    // Navigation arrows
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
 });
