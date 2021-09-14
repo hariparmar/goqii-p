@@ -175,6 +175,13 @@ $(document).ready(function() {
 const aboutTeamThumbSlider = new Swiper(".about-team-slider__inner__thumb", {
     slidesPerView: 6,
     spaceBetween: 34,
+
+    breakpoints: {
+        768: {
+            spaceBetween: 5,
+            spaceBetween: 10
+        }
+    },
 });
 const aboutTeamMainSlider = new Swiper(".about-team-slider__inner__main", {
     // Optional parameters
