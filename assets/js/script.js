@@ -175,7 +175,40 @@ $(document).ready(function() {
 //  About Team slider
 
 
-const aboutTeamThumbSlider = new Swiper(".about-team-slider__inner__thumb", {
+const aboutLeaderThumbSlider = new Swiper(".about-team-slider__inner__thumb--leadership", {
+    slidesPerView: 6,
+    spaceBetween: 34,
+
+    breakpoints: {
+        768: {
+            spaceBetween: 5,
+            spaceBetween: 10
+        }
+    },
+
+});
+const aboutLeaderMainSlider = new Swiper(".about-team-slider__inner__main--leadership", {
+    // Optional parameters
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    },
+    speed: 500,
+    slidesPerView: 1,
+
+
+    // Navigation arrows
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+        swiper: aboutLeaderThumbSlider,
+    },
+});
+
+
+const aboutDirectorsThumbSlider = new Swiper(".about-team-slider__inner__thumb--directors", {
     slidesPerView: 6,
     spaceBetween: 34,
 
@@ -186,7 +219,7 @@ const aboutTeamThumbSlider = new Swiper(".about-team-slider__inner__thumb", {
         }
     },
 });
-const aboutTeamMainSlider = new Swiper(".about-team-slider__inner__main", {
+const aboutDirectorsMainSlider = new Swiper(".about-team-slider__inner__main--directors", {
     // Optional parameters
     effect: 'fade',
     fadeEffect: {
@@ -195,11 +228,6 @@ const aboutTeamMainSlider = new Swiper(".about-team-slider__inner__main", {
     speed: 500,
     slidesPerView: 1,
 
-    // If we need pagination
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true
-    },
 
     // Navigation arrows
     navigation: {
@@ -207,9 +235,10 @@ const aboutTeamMainSlider = new Swiper(".about-team-slider__inner__main", {
         prevEl: ".swiper-button-prev",
     },
     thumbs: {
-        swiper: aboutTeamThumbSlider,
+        swiper: aboutDirectorsThumbSlider,
     },
 });
+
 
 const aboutInvestorsSlider = new Swiper(".investors__inner__members__slider", {
     slidesPerView: 1,
