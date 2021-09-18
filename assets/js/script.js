@@ -14,7 +14,6 @@ const offerSlider = new Swiper(".offer-slider", {
         clickable: true
     },
 });
-
 const logoSlider = new Swiper(".logo-slider", {
     // Optional parameters
     slidesPerView: 5,
@@ -173,8 +172,6 @@ $(document).ready(function() {
 });
 
 //  About Team slider
-
-
 const aboutLeaderThumbSlider = new Swiper(".about-team-slider__inner__thumb--leadership", {
     slidesPerView: 6,
     spaceBetween: 34,
@@ -239,7 +236,6 @@ const aboutDirectorsMainSlider = new Swiper(".about-team-slider__inner__main--di
     },
 });
 
-
 const aboutInvestorsSlider = new Swiper(".investors__inner__members__slider", {
     slidesPerView: 1,
     spaceBetween: 10,
@@ -275,4 +271,91 @@ $(function() {
         autoclose: true,
         todayHighlight: true
     }).datepicker('update', new Date());
+});
+
+
+// PLP
+
+const plpProductSlider = new Swiper(".plp-product-slider", {
+    // Optional parameters
+    slidesPerView: 1,
+    spaceBetween: 20,
+
+    // Navigation arrows
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 2,
+        },
+        990: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        }
+    },
+});
+
+const plpCoachingSlider = new Swiper(".plp-coaching-slider", {
+    // Optional parameters
+    slidesPerView: 1,
+    spaceBetween: 15,
+
+    // Navigation arrows
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 2,
+        },
+        990: {
+            slidesPerView: 3,
+        },
+        1200: {
+            slidesPerView: 4,
+        }
+    },
+});
+
+const plpDiseaseConditionSlider = new Swiper(".plp-disease-condition-slider", {
+    // Optional parameters
+    slidesPerView: 1,
+    spaceBetween: 30,
+
+    // Navigation arrows
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 2,
+        },
+        990: {
+            slidesPerView: 3,
+        }
+    },
+});
+
+const plpComboSlider = new Swiper(".plp-combo-slider", {
+    // Optional parameters
+    slidesPerView: 1,
+    spaceBetween: 30,
+
+    // Navigation arrows
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 2,
+        },
+        990: {
+            slidesPerView: 3,
+        }
+    },
 });

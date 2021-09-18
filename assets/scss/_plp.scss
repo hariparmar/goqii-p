@@ -5,7 +5,17 @@
         margin-top: 100px;
         margin-bottom: 80px;
     }
+    @media only screen and (max-width: $max-width-mob) {
+        margin-bottom: 10px;
+    }
     &__left {
+        @media only screen and (max-width: $max-width-mob) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 40px;
+        }
         h2 {
             font-size: 45px;
             line-height: 1.22;
@@ -17,6 +27,20 @@
             @media only screen and (max-width: $max-width-1600) {
                 font-size: 36px;
             }
+            @media only screen and (max-width: $max-width-sm) {
+                font-size: 24px;
+            }
+            @media only screen and (max-width: $max-width-mob) {
+                font-size: 23px;
+                text-align: center;
+                font-weight: bold;
+                line-height: 1.13;
+                letter-spacing: 1.15px;
+                max-width: 300px;
+                margin: auto;
+                margin-bottom: 50px;
+                width: 100%;
+            }
         }
         &__quiz-cta {
             max-width: 95%;
@@ -25,6 +49,11 @@
             padding: 25px 33px;
             @media only screen and (max-width: $max-width-1600) {
                 padding: 15px 20px;
+            }
+            @media only screen and (max-width: $max-width-mob) {
+                max-width: 50%;
+                padding: 10px;
+                border-radius: 6px;
             }
             a {
                 font-size: 24px;
@@ -37,6 +66,15 @@
                     font-size: 18px;
                     letter-spacing: 1.5px;
                 }
+                @media only screen and (max-width: $max-width-sm) {
+                    font-size: 14px;
+                }
+                @media only screen and (max-width: $max-width-mob) {
+                    font-size: 9.5px;
+                    line-height: 1.53;
+                    letter-spacing: 0.95px;
+                    display: block;
+                }
             }
         }
     }
@@ -48,6 +86,16 @@
             margin-top: 50px;
             margin-bottom: 50px;
             padding-right: 10px;
+        }
+        @media only screen and (max-width: $max-width-sm) {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            padding-right: 0px;
+        }
+        @media only screen and (max-width: $max-width-mob) {
+            max-width: 50%;
+            width: calc(50% - 24px);
+            margin: 0;
         }
         &.nav {
             .nav-item {
@@ -66,11 +114,28 @@
                     line-height: 50px;
                     letter-spacing: 1.4px;
                 }
+                @media only screen and (max-width: $max-width-sm) {
+                    font-size: 16px;
+                    line-height: 40px;
+                }
+                @media only screen and (max-width: $max-width-mob) {
+                    display: none;
+                    font-size: 11px;
+                    font-weight: bold;
+                    line-height: 3.18;
+                    letter-spacing: 1.1px;
+                    border-bottom: 1px #020202 solid;
+                }
                 &:first-child {
                     border-top: none;
                 }
                 &.active {
                     color: #2185f4;
+                    @media only screen and (max-width: $max-width-mob) {
+                        display: block;
+                        color: #252525;
+                        line-height: 30px;
+                    }
                 }
             }
         }
@@ -95,6 +160,9 @@
                 letter-spacing: 1.5px;
                 margin-bottom: 15px;
             }
+            @media only screen and (max-width: $max-width-mob) {
+                font-size: 18px;
+            }
         }
         p {
             font-size: 20px;
@@ -107,6 +175,10 @@
                 letter-spacing: 1.5px;
                 margin-bottom: 30px;
             }
+            @media only screen and (max-width: $max-width-mob) {
+                font-size: 12px;
+                margin-bottom: 20px;
+            }
         }
     }
     &__right {}
@@ -116,6 +188,9 @@
             justify-content: center;
             margin-top: 60px;
             margin-bottom: 40px;
+            @media only screen and (max-width: $max-width-sm) {
+                margin-top: 30px;
+            }
             a {
                 font-size: 20px;
                 font-weight: bold;
@@ -128,15 +203,24 @@
                     font-size: 18px;
                     letter-spacing: 1.5px;
                 }
+                @media only screen and (max-width: $max-width-sm) {
+                    font-size: 14px;
+                }
+                @media only screen and (max-width: $max-width-mob) {
+                    font-size: 12px;
+                }
             }
         }
     }
 }
 
 .plp-coaching-plans {
-    margin-bottom: 300px;
+    margin-bottom: 250px;
     @media only screen and (max-width: $max-width-1600) {
         margin-bottom: 150px;
+    }
+    @media only screen and (max-width: $max-width-sm) {
+        margin-bottom: 80px;
     }
     h2 {
         font-size: 78px;
@@ -144,11 +228,19 @@
         text-align: center;
         color: #04060a;
         font-family: $heading-font;
-        margin-bottom: 142px;
+        margin-bottom: 100px;
         @media only screen and (max-width: $max-width-1600) {
             font-size: 56px;
             line-height: 1;
             letter-spacing: 4px;
+        }
+        @media only screen and (max-width: $max-width-sm) {
+            font-size: 42px;
+            margin-bottom: 80px;
+        }
+        @media only screen and (max-width: $max-width-mob) {
+            font-size: 24px;
+            margin-bottom: 20px;
         }
     }
     &__single {
@@ -164,6 +256,10 @@
         @media only screen and (max-width: $max-width-1600) {
             padding: 70px 0 30px;
         }
+        @media only screen and (max-width: $max-width-mob) {
+            padding: 50px 0 20px;
+            min-height: 500px;
+        }
         &__icon {
             position: absolute;
             left: 50%;
@@ -171,6 +267,14 @@
             border-radius: 50%;
             overflow: hidden;
             transform: translateX(-50%);
+            @media only screen and (max-width: $max-width-sm) {
+                width: 72px;
+                top: -38px;
+            }
+            @media only screen and (max-width: $max-width-mob) {
+                width: 54px;
+                top: -28px;
+            }
         }
         h3 {
             font-size: 29px;
@@ -182,6 +286,9 @@
             @media only screen and (max-width: $max-width-1600) {
                 font-size: 24px;
             }
+            @media only screen and (max-width: $max-width-mob) {
+                font-size: 18px;
+            }
             span {
                 font-size: 19px;
                 font-weight: bold;
@@ -191,6 +298,9 @@
                 display: block;
                 @media only screen and (max-width: $max-width-1600) {
                     font-size: 16px;
+                }
+                @media only screen and (max-width: $max-width-mob) {
+                    font-size: 11px;
                 }
             }
         }
@@ -202,6 +312,9 @@
             @media only screen and (max-width: $max-width-1600) {
                 margin-top: 30px;
             }
+            @media only screen and (max-width: $max-width-mob) {
+                padding: 24px 14px 16px 14px;
+            }
             h4 {
                 font-size: 17px;
                 line-height: 1.54;
@@ -210,6 +323,9 @@
                 font-weight: 700;
                 font-family: $heading-font;
                 margin-bottom: 0;
+                @media only screen and (max-width: $max-width-mob) {
+                    font-size: 13px;
+                }
             }
             &__offers {
                 padding: 8px 14px 7px 13px;
@@ -222,14 +338,21 @@
                 display: inline-block;
                 position: absolute;
                 font-family: "Acumin Pro Bold", sans-serif;
-                top: -16px;
+                top: -13px;
                 left: 36px;
+                @media only screen and (max-width: $max-width-mob) {
+                    padding: 8px 12px 6px 13px;
+                    font-size: 9px;
+                }
             }
             ul {
                 list-style: none;
                 position: relative;
                 padding-left: 20px;
                 margin-bottom: 0;
+                @media only screen and (max-width: $max-width-mob) {
+                    margin-top: 10px;
+                }
                 li {
                     font-size: 17px;
                     line-height: 1.54;
@@ -240,6 +363,10 @@
                         letter-spacing: 1.5px;
                         line-height: 20px;
                         margin-bottom: 10px;
+                    }
+                    @media only screen and (max-width: $max-width-mob) {
+                        font-size: 12px;
+                        line-height: 1;
                     }
                     &::before {
                         content: "+";
@@ -267,6 +394,9 @@
                 @media only screen and (max-width: $max-width-1600) {
                     font-size: 16px;
                 }
+                @media only screen and (max-width: $max-width-mob) {
+                    font-size: 12px;
+                }
             }
             &__single {
                 font-size: 17px;
@@ -280,6 +410,10 @@
                 cursor: pointer;
                 @media only screen and (max-width: $max-width-1600) {
                     font-size: 16px;
+                }
+                @media only screen and (max-width: $max-width-mob) {
+                    font-size: 12px;
+                    font-weight: bold;
                 }
                 &::before {
                     content: "";
@@ -311,6 +445,11 @@
                         height: 9px;
                         width: 9px;
                         left: 3.5px;
+                    }
+                    @media only screen and (max-width: $max-width-1600) {
+                        height: 10px;
+                        width: 10px;
+                        left: 3px;
                     }
                 }
                 &--active {
@@ -417,6 +556,16 @@
     background-image: linear-gradient(to top, #dff2fc, #ffffff);
     padding: 76px 0 54px;
     margin-bottom: 215px;
+    @media only screen and (max-width: $max-width-sm) {
+        border-radius: 80px;
+        margin-bottom: 150px;
+    }
+    @media only screen and (max-width: $max-width-mob) {
+        border-radius: 40px;
+        margin-bottom: 40px;
+        padding-top: 0;
+        padding-bottom: 30px;
+    }
     h2 {
         font-size: 79px;
         letter-spacing: 3.88px;
@@ -430,6 +579,13 @@
             letter-spacing: 4px;
             margin-bottom: 40px;
         }
+        @media only screen and (max-width: $max-width-sm) {
+            font-size: 42px;
+        }
+        @media only screen and (max-width: $max-width-mob) {
+            font-size: 23px;
+        }
+        
     }
     &__wrapper {
         .row {
@@ -457,6 +613,9 @@
                 font-size: 30px;
                 margin-bottom: 15px;
             }
+            @media only screen and (max-width: $max-width-mob) {
+                font-size: 18px;
+            }
         }
         p {
             font-size: 17px;
@@ -471,6 +630,9 @@
                 max-width: 90%;
                 margin: 0 auto;
                 margin-bottom: 20px;
+            }
+            @media only screen and (max-width: $max-width-mob) {
+                font-size: 12px;
             }
         }
     }
@@ -491,6 +653,11 @@
         /* Chrome10-25,Safari5.1-6 */
         background: linear-gradient(45deg, rgba(252, 231, 219, 1) 0%, rgba(247, 228, 231, 1) 38%, rgba(248, 227, 228, 1) 55%, rgba(237, 225, 241, 1) 72%, rgba(230, 237, 245, 1) 89%, rgba(231, 231, 248, 1) 100%);
         /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        @media only screen and (max-width: $max-width-mob) {
+            padding-top: 10px;
+            border-radius: 20px;
+            padding-bottom: 20px;
+        }
         h2 {
             font-size: 106px;
             letter-spacing: 5.43px;
@@ -504,10 +671,20 @@
                 text-align: left;
                 margin-bottom: 30px;
             }
+            @media only screen and (max-width: $max-width-sm) {
+                font-size: 48px;
+                letter-spacing: 1px;
+                text-align: center;
+            }
+            @media only screen and (max-width: $max-width-mob) {
+                font-size: 36px;
+                margin-bottom: 20px;
+            }
         }
         .row {
             padding: 0 72px;
         }
+        
     }
     &__single {
         text-align: center;
@@ -529,6 +706,10 @@
                 letter-spacing: 1.5px;
                 margin-bottom: 15px;
             }
+            @media only screen and (max-width: $max-width-mob) {
+                font-size: 14px;
+                margin-bottom: 8px;
+            }
         }
         p {
             font-size: 16.5px;
@@ -538,6 +719,10 @@
             @media only screen and (max-width: $max-width-1600) {
                 font-size: 16px;
                 letter-spacing: 1.5px;
+            }
+            @media only screen and (max-width: $max-width-mob) {
+                font-size: 12px;
+                padding: 0 20px;
             }
         }
         &__price {
@@ -550,6 +735,13 @@
             @media only screen and (max-width: $max-width-1600) {
                 font-size: 28px;
                 margin-bottom: 20px;
+            }
+            @media only screen and (max-width: $max-width-sm) {
+                font-size: 22px;
+            }
+            @media only screen and (max-width: $max-width-mob) {
+                font-size: 16px;
+                margin-bottom: 18px;
             }
             span {
                 line-height: 1.81;
