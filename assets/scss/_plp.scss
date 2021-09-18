@@ -70,7 +70,6 @@
                     font-size: 14px;
                 }
                 @media only screen and (max-width: $max-width-mob) {
-                    font-size: 9.5px;
                     line-height: 1.53;
                     letter-spacing: 0.95px;
                     display: block;
@@ -176,7 +175,6 @@
                 margin-bottom: 30px;
             }
             @media only screen and (max-width: $max-width-mob) {
-                font-size: 12px;
                 margin-bottom: 20px;
             }
         }
@@ -222,6 +220,16 @@
     @media only screen and (max-width: $max-width-sm) {
         margin-bottom: 80px;
     }
+    .swiper-button-next {
+        @media only screen and (max-width: $max-width-mob) {
+            right: -10px;
+        }
+    }
+    .swiper-button-prev {
+        @media only screen and (max-width: $max-width-mob) {
+            left: -10px;
+        }
+    }
     h2 {
         font-size: 78px;
         letter-spacing: 3.88px;
@@ -259,6 +267,7 @@
         @media only screen and (max-width: $max-width-mob) {
             padding: 50px 0 20px;
             min-height: 500px;
+            box-shadow: -1.2px 1.6px 10px 1px rgba(36, 40, 44, 0.16);
         }
         &__icon {
             position: absolute;
@@ -354,7 +363,7 @@
                     margin-top: 10px;
                 }
                 li {
-                    font-size: 17px;
+                    font-size: 18px;
                     line-height: 1.54;
                     letter-spacing: 1.75px;
                     color: #010101;
@@ -365,8 +374,7 @@
                         margin-bottom: 10px;
                     }
                     @media only screen and (max-width: $max-width-mob) {
-                        font-size: 12px;
-                        line-height: 1;
+                        font-size: 14px;
                     }
                     &::before {
                         content: "+";
@@ -395,7 +403,7 @@
                     font-size: 16px;
                 }
                 @media only screen and (max-width: $max-width-mob) {
-                    font-size: 12px;
+                    font-size: 14px;
                 }
             }
             &__single {
@@ -412,7 +420,7 @@
                     font-size: 16px;
                 }
                 @media only screen and (max-width: $max-width-mob) {
-                    font-size: 12px;
+                    font-size: 14px;
                     font-weight: bold;
                 }
                 &::before {
@@ -585,7 +593,6 @@
         @media only screen and (max-width: $max-width-mob) {
             font-size: 23px;
         }
-        
     }
     &__wrapper {
         .row {
@@ -630,9 +637,6 @@
                 max-width: 90%;
                 margin: 0 auto;
                 margin-bottom: 20px;
-            }
-            @media only screen and (max-width: $max-width-mob) {
-                font-size: 12px;
             }
         }
     }
@@ -684,7 +688,6 @@
         .row {
             padding: 0 72px;
         }
-        
     }
     &__single {
         text-align: center;
@@ -707,7 +710,7 @@
                 margin-bottom: 15px;
             }
             @media only screen and (max-width: $max-width-mob) {
-                font-size: 14px;
+                font-size: 18px;
                 margin-bottom: 8px;
             }
         }
@@ -721,7 +724,7 @@
                 letter-spacing: 1.5px;
             }
             @media only screen and (max-width: $max-width-mob) {
-                font-size: 12px;
+                font-size: 14px;
                 padding: 0 20px;
             }
         }
