@@ -517,3 +517,19 @@ a.anchor-link {
         max-width: 100% !important;
     }
 }
+
+.border-radius-section {
+    border-radius: 80px;
+    padding: 95px 75px;
+    @media only screen and (max-width: $max-width-1600) {
+        padding: 65px 55px;
+    }
+    @media only screen and (max-width: $max-width-lg) {
+        border-radius: 40px;
+        padding: 40px 30px;
+    }
+    @media only screen and (max-width: $max-width-mob) {
+        border-radius: 15px;
+        padding: 20px 10px;
+    }
+}

@@ -266,12 +266,12 @@ const blogBanenerSlider = new Swiper(".blog-banner__inner__slider", {
 });
 
 //  date picker - blog page
-$(function() {
-    $("#datepicker").datepicker({
-        autoclose: true,
-        todayHighlight: true
-    }).datepicker('update', new Date());
-});
+// $(function() {
+//     $("#datepicker").datepicker({
+//         autoclose: true,
+//         todayHighlight: true
+//     }).datepicker('update', new Date());
+// });
 
 
 // PLP
