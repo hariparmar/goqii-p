@@ -533,3 +533,169 @@ a.anchor-link {
         padding: 20px 10px;
     }
 }
+
+.page-sub-title {
+    color: #3a3939;
+    font-size: 23px;
+    line-height: 1.91;
+    letter-spacing: 2.35px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    &--blue {
+        color: #2185f4;
+    }
+    @media only screen and (max-width: $max-width-1600) {
+        font-size: 20px;
+    }
+    @media only screen and (max-width: $max-width-lg) {
+        font-size: 18px;
+        margin-bottom: 15px;
+        line-height: 1.5;
+    }
+    @media only screen and (max-width: $max-width-lg) {
+        font-size: 16px;
+    }
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-wrapper {
+    .page-sub-title {
+        @media only screen and (max-width: $max-width-lg) {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.form-field {
+    position: relative;
+    width: calc(50% - 40px);
+    @media only screen and (max-width: $max-width-1600) {
+        width: calc(50% - 20px);
+    }
+    @media only screen and (max-width: $max-width-lg) {
+        width: calc(50% - 10px);
+    }
+    @media only screen and (max-width: 480px) {
+        width: 100%;
+    }
+    &--full-width {
+        width: 100%;
+    }
+    &--width-auto {
+        width: auto;
+    }
+    &-submit {
+        margin-top: 70px;
+        @media only screen and (max-width: 576px) {
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
+    input {}
+    label {
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: 0.3s all ease-in-out;
+        color: #272e31;
+        font-size: 16px;
+    }
+    input,
+    select {
+        border: 0;
+        border-bottom: 2px solid #717577;
+        width: 100%;
+        background-color: transparent;
+        outline: none;
+        height: 40px;
+        &:focus+label {
+            top: -30px;
+        }
+    }
+    input[type=file] {
+        border: none;
+        height: 0;
+        width: 0;
+        +label {
+            background-color: #2185f4;
+            color: #fffdfc;
+            padding: 10px 55px;
+            position: relative;
+            cursor: pointer;
+            font-size: 23px;
+            @media only screen and (max-width: $max-width-1600) {
+                font-size: 18px;
+                padding: 6px 30px;
+            }
+            @media only screen and (max-width: $max-width-lg) {
+                font-size: 16px;
+            }
+            +span {
+                font-size: 23px;
+                color: #000000;
+                margin-left: 25px;
+                display: inline-block;
+                @media only screen and (max-width: $max-width-1600) {
+                    font-size: 18px;
+                }
+                @media only screen and (max-width: $max-width-lg) {
+                    font-size: 16px;
+                }
+                +p {
+                    font-size: 23px;
+                    color: #000000;
+                    margin: 25px 0 0 25px;
+                    @media only screen and (max-width: $max-width-1600) {
+                        font-size: 18px;
+                    }
+                    @media only screen and (max-width: $max-width-lg) {
+                        font-size: 16px;
+                    }
+                    span {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        &:focus+label {
+            top: 0;
+        }
+    }
+    input[type=submit] {
+        font-size: 23px;
+        color: 000;
+        font-weight: $bold-font;
+        border: none;
+        width: auto;
+        cursor: pointer;
+        @media only screen and (max-width: $max-width-1600) {
+            font-size: 18px;
+        }
+        @media only screen and (max-width: $max-width-lg) {
+            font-size: 16px;
+        }
+    }
+    textarea {
+        width: 100%;
+        border: 2px solid #717577;
+        border-radius: 20px;
+        resize: none;
+        padding: 15px 10px;
+    }
+}
+
+.hide-this {
+    @media only screen and (max-width: 1200px) {
+        display: none;
+    }
+}
+
+.mandatory-field {
+    color: #e03f14;
+}

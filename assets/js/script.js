@@ -359,3 +359,11 @@ const plpComboSlider = new Swiper(".plp-combo-slider", {
         }
     },
 });
+
+
+$(document).ready(function() {
+    // dropdown for content pages tabs in mobile devices
+    $(".content-page__inner__sidebar .nav-item").click(function() {
+        $(this).closest(".content-page__inner__sidebar").toggleClass("active");
+    })
+})

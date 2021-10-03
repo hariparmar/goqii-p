@@ -376,6 +376,16 @@
                 @media only screen and (max-width: $max-width-lg) {
                     max-width: 100%;
                 }
+                &__image {
+                    height: 340px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    @media only screen and (max-width: $max-width-mob) {
+                        height: auto;
+                        margin-bottom: 25px;
+                    }
+                }
                 h2 {
                     font-weight: $bold-font;
                     font-size: 20px;
@@ -391,7 +401,7 @@
                         margin-top: 15px;
                     }
                     @media only screen and (max-width: $max-width-small-mob-375) {
-                        font-size: 12px;
+                        font-size: 14px;
                         margin-top: 10px;
                     }
                 }
@@ -406,13 +416,21 @@
                         line-height: 20px;
                     }
                     @media only screen and (max-width: $max-width-small-mob-375) {
-                        font-size: 12px;
+                        font-size: 14px;
                         margin-top: 10px;
-                        line-height: 18px;
                     }
                 }
-                img {
-                    width: 100%;
+                .blog-date {
+                    color: #8a8888;
+                    font-size: 14px;
+                    display: block;
+                    margin-top: 20px;
+                    @media only screen and (max-width: $max-width-lg) {
+                        font-size: 12px;
+                    }
+                    @media only screen and (max-width: $max-width-sm) {
+                        margin-top: 10px;
+                    }
                 }
                 .read-more {
                     color: #dd4031;

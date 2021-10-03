@@ -1,5 +1,6 @@
-
 /* Custom Scroll Bar with CSS */
+
+
 /*
 ::-webkit-scrollbar {
 	width: 5px;
@@ -15,6 +16,7 @@
 	background: kt-get($x-base-colors, gray, 700);
 }
 */
+
 @import "./vendor";
 @import "./bootstrap-grid";
 @import "./config";
@@ -29,5 +31,7 @@
 @import "./about";
 @import "./contact";
 @import "./content-pages";
+@import "./warranty";
+@import "./news";
 @import "./plp";
 @import "./responsive";
