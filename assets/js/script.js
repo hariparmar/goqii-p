@@ -266,12 +266,12 @@ const blogBanenerSlider = new Swiper(".blog-banner__inner__slider", {
 });
 
 //  date picker - blog page
-$(function() {
-    $("#datepicker").datepicker({
-        autoclose: true,
-        todayHighlight: true
-    }).datepicker('update', new Date());
-});
+// $(function() {
+//     $("#datepicker").datepicker({
+//         autoclose: true,
+//         todayHighlight: true
+//     }).datepicker('update', new Date());
+// });
 
 
 // PLP
@@ -359,3 +359,11 @@ const plpComboSlider = new Swiper(".plp-combo-slider", {
         }
     },
 });
+
+
+$(document).ready(function() {
+    // dropdown for content pages tabs in mobile devices
+    $(".content-page__inner__sidebar .nav-item").click(function() {
+        $(this).closest(".content-page__inner__sidebar").toggleClass("active");
+    })
+})

@@ -1,5 +1,191 @@
-.footer{
-  background: rgba(0,0,0,0.3);
-  text-align: center
-  
+.footer {}
+
+.footer--wrapper {
+    display: flex;
+    padding: 85px 0 30px;
+    position: relative;
+    flex-wrap: wrap;
+    @media only screen and (max-width: $max-width-sm) {
+        padding: 50px 0 10px;
+    }
+    &:before {
+        content: '';
+        width: 90%;
+        top: 0;
+        left: 5%;
+        border-top: 2px solid #777777;
+        position: absolute;
+    }
+    &__column {
+        width: 15%;
+        @media only screen and (max-width: $max-width-sm) {
+            width: 33.33%;
+        }
+        @media only screen and (max-width: 576px) {
+            width: 100%;
+        }
+        &.footer-address-share {
+            width: 55%;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            padding-left: 120px;
+            @media only screen and (max-width: $max-width-1600) {
+                padding-left: 60px;
+            }
+            @media only screen and (max-width: $max-width-lg) {
+                padding-left: 30px;
+            }
+            @media only screen and (max-width: $max-width-sm) {
+                padding-left: 0;
+                width: 100%;
+            }
+            .footer {
+                &__address,
+                &__share-title {
+                    width: 40%;
+                    @media only screen and (max-width: $max-width-sm) {
+                        width: 50%;
+                    }
+                    @media only screen and (max-width: 576px) {
+                        width: 100%;
+                    }
+                }
+                &__tag,
+                &__share {
+                    width: 60%;
+                    @media only screen and (max-width: $max-width-sm) {
+                        width: 50%;
+                    }
+                    @media only screen and (max-width: 576px) {
+                        width: 100%;
+                    }
+                }
+                &__address {
+                    p {
+                        font-size: 20px;
+                        color: #1e1e1e;
+                        line-height: 28px;
+                        margin-bottom: 35px;
+                        font-family: $secondary-font;
+                        @media only screen and (max-width: $max-width-1600) {
+                            font-size: 18px;
+                            margin-bottom: 20px;
+                        }
+                        @media only screen and (max-width: $max-width-lg) {
+                            font-size: 16px;
+                        }
+                        span {
+                            font-family: $heading-font;
+                        }
+                    }
+                }
+                &__tag {
+                    align-self: center;
+                    color: #000000;
+                    font-size: 38px;
+                    font-weight: $bold-font;
+                    text-align: right;
+                    @media only screen and (max-width: $max-width-1600) {
+                        font-size: 28px;
+                    }
+                    @media only screen and (max-width: 576px) {
+                        text-align: left;
+                        order: 1;
+                        margin-top: 15px;
+                    }
+                }
+                &__share {
+                    text-align: right;
+                    align-self: center;
+                    &-title {
+                        font-size: 20px;
+                        font-family: $heading-font;
+                        color: #1e1e1e;
+                        text-transform: uppercase;
+                        align-self: center;
+                        p {
+                            margin-bottom: 0;
+                        }
+                        @media only screen and (max-width: $max-width-lg) {
+                            font-size: 16px;
+                        }
+                    }
+                    .share-icons__wrapper {
+                        width: 100%;
+                        justify-content: flex-end;
+                        @media only screen and (max-width: 576px) {
+                            justify-content: flex-start;
+                        }
+                        a {
+                            padding: 9px 6px;
+                            border: 1px solid #adadad;
+                            line-height: 0;
+                            border-radius: 50%;
+                            margin: 0 20px;
+                            @media only screen and (max-width: $max-width-1600) {
+                                margin: 0 10px;
+                            }
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                            span {
+                                margin: 0;
+                            }
+                            &:hover {
+                                .share-icons__wrapper__icon {
+                                    background-position-x: -84px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &__sub-title {
+            font-size: 24px;
+            font-family: $heading-font;
+            color: #1e1e1e;
+            margin-bottom: 20px;
+            @media only screen and (max-width: $max-width-1600) {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+        }
+        ul {
+            margin-bottom: 40px;
+            @media only screen and (max-width: $max-width-1600) {
+                margin-bottom: 25px;
+            }
+            li {
+                margin-bottom: 10px;
+                @media only screen and (max-width: $max-width-1600) {
+                    line-height: 1;
+                }
+                a {
+                    font-family: $secondary-font;
+                    font-size: 20px;
+                    color: #1e1e1e;
+                    line-height: 30px;
+                    @media only screen and (max-width: $max-width-1600) {
+                        font-size: 18px;
+                        line-height: 25px;
+                    }
+                }
+            }
+        }
+    }
+    .footer-copyright {
+        width: 100%;
+        font-size: 16px;
+        color: #000;
+        text-align: right;
+        font-weight: $bold-font;
+        letter-spacing: 0px;
+        margin-top: 20px;
+        margin-bottom: 0;
+        @media only screen and (max-width: 576px) {
+            text-align: center;
+        }
+    }
 }

@@ -8,8 +8,6 @@
         margin-bottom: 50px;
     }
     &__inner {
-        border-radius: 80px;
-        padding: 95px 75px;
         /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fdefe8+1,fdefe8+13,fdefe8+23,f9eeea+35,e8eaed+45,dae9f0+56,bde3f5+68,a9dff9+80,a1dcfb+92,afe0fc+100 */
         background: rgb(253, 239, 232);
         /* Old browsers */
@@ -19,17 +17,6 @@
         /* Chrome10-25,Safari5.1-6 */
         background: linear-gradient(135deg, rgba(253, 239, 232, 1) 1%, rgba(253, 239, 232, 1) 13%, rgba(253, 239, 232, 1) 23%, rgba(249, 238, 234, 1) 35%, rgba(232, 234, 237, 1) 45%, rgba(218, 233, 240, 1) 56%, rgba(189, 227, 245, 1) 68%, rgba(169, 223, 249, 1) 80%, rgba(161, 220, 251, 1) 92%, rgba(175, 224, 252, 1) 100%);
         /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        @media only screen and (max-width: $max-width-1600) {
-            padding: 65px 55px;
-        }
-        @media only screen and (max-width: $max-width-lg) {
-            border-radius: 40px;
-            padding: 40px 30px;
-        }
-        @media only screen and (max-width: $max-width-mob) {
-            border-radius: 15px;
-            padding: 20px 10px;
-        }
         p {
             &:last-child {
                 margin-bottom: 0;

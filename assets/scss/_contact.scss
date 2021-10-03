@@ -1,0 +1,105 @@
+.contact-banner {
+    margin-bottom: 60px;
+    &__inner {
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f8d7c5+0,e9dad9+31,d7dfeb+59,cae3f9+84,7db9e8+100 */
+        background: rgb(248, 215, 197);
+        /* Old browsers */
+        background: -moz-linear-gradient(-45deg, rgba(248, 215, 197, 1) 0%, rgba(233, 218, 217, 1) 31%, rgba(215, 223, 235, 1) 59%, rgba(202, 227, 249, 1) 84%, rgba(125, 185, 232, 1) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg, rgba(248, 215, 197, 1) 0%, rgba(233, 218, 217, 1) 31%, rgba(215, 223, 235, 1) 59%, rgba(202, 227, 249, 1) 84%, rgba(125, 185, 232, 1) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg, rgba(248, 215, 197, 1) 0%, rgba(233, 218, 217, 1) 31%, rgba(215, 223, 235, 1) 59%, rgba(202, 227, 249, 1) 84%, rgba(125, 185, 232, 1) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        .big__heading {
+            margin-bottom: 15px;
+        }
+        &__content {
+            display: flex;
+            @media only screen and (max-width: 991px) {
+                flex-direction: column;
+                text-align: center;
+            }
+            p {
+                color: #29284a;
+                font-size: 23px;
+                line-height: 1.9;
+                margin-bottom: 50px;
+                @media only screen and (max-width: $max-width-1600) {
+                    font-size: 20px;
+                }
+                @media only screen and (max-width: $max-width-lg) {
+                    font-size: 18px;
+                    margin-bottom: 30px;
+                    line-height: 1.5;
+                }
+                @media only screen and (max-width: $max-width-lg) {
+                    font-size: 16px;
+                }
+            }
+            &__details {
+                width: 35%;
+                padding-right: 60px;
+                padding-top: 90px;
+                @media only screen and (max-width: $max-width-lg) {
+                    padding-top: 40px;
+                    padding-right: 30px;
+                }
+                @media only screen and (max-width: 991px) {
+                    width: 100%;
+                    display: flex;
+                    padding-top: 0px;
+                }
+                @media only screen and (max-width: 576px) {
+                    flex-wrap: wrap;
+                }
+                &__single {
+                    @media only screen and (max-width: 991px) {
+                        flex-basis: 50%;
+                        flex-shrink: 0;
+                    }
+                    @media only screen and (max-width: 576px) {
+                        flex-basis: 100%;
+                    }
+                }
+            }
+            &__addresses {
+                display: flex;
+                width: 65%;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                @media only screen and (max-width: 991px) {
+                    width: 100%;
+                }
+                @media only screen and (max-width: 576px) {
+                    flex-wrap: wrap;
+                }
+                &__single {
+                    width: calc(50% - 50px);
+                    @media only screen and (max-width: $max-width-lg) {
+                        width: calc(50% - 25px);
+                    }
+                    @media only screen and (max-width: $max-width-sm) {
+                        width: calc(50% - 15px);
+                    }
+                    @media only screen and (max-width: $max-width-mob) {
+                        width: calc(50% - 7.5px);
+                    }
+                    @media only screen and (max-width: 576px) {
+                        width: 100%;
+                    }
+                    img {
+                        border-radius: 40px;
+                        margin-bottom: 10px;
+                        width: 100%;
+                        @media only screen and (max-width: $max-width-lg) {
+                            border-radius: 20px;
+                        }
+                    }
+                    h2 {
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

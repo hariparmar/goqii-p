@@ -1,6 +1,103 @@
 /* general header css */
 
-.header {
-    background: rgba(0,0,0,0.2);
-    text-align: center
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    margin-bottom: 30px;
+    &__logo {
+        @media only screen and (max-width: $max-width-lg) {
+            width: 155px;
+        }
+        &__content {
+            text-indent: -9999px;
+            position: absolute;
+        }
+    }
+    &__navigation {
+        ul {
+            display: flex;
+            li {
+                margin-left: 70px;
+                position: relative;
+                @media only screen and (max-width: $max-width-1600) {
+                    margin-left: 30px;
+                }
+                @media only screen and (max-width: $max-width-sm) {
+                    margin-left: 15px;
+                }
+                a {
+                    color: #272e31;
+                    font-size: 24px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    margin: 20px 0;
+                    display: block;
+                    @media only screen and (max-width: $max-width-1600) {
+                        font-size: 20px;
+                    }
+                    @media only screen and (max-width: $max-width-lg) {
+                        font-size: 18px;
+                    }
+                    @media only screen and (max-width: $max-width-sm) {
+                        font-size: 16px;
+                    }
+                    &:hover,
+                    &.active {
+                        color: #2185f4;
+                    }
+                    &.active {
+                        font-weight: $bold-font;
+                    }
+                }
+            }
+        }
+        &__submenu {
+            &__dropdown {
+                position: absolute;
+                width: 340px;
+                // bottom: -15px;
+                // padding: 15px 0;
+                left: 0;
+                display: none;
+                background-color: #2185f4;
+                border: 1px solid #2185f4;
+                z-index: 9;
+                @media only screen and (max-width: $max-width-1600) {
+                    width: 300px;
+                }
+                @media only screen and (max-width: $max-width-lg) {
+                    width: 250px;
+                }
+                @media only screen and (max-width: $max-width-sm) {
+                    width: 220px;
+                }
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0;
+                    li {
+                        margin-left: 0;
+                        a {
+                            text-transform: capitalize;
+                            margin-left: 0;
+                            color: #fff;
+                            padding: 10px 15px;
+                            display: block;
+                            margin: 0;
+                            &:hover {
+                                background-color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+            &:hover {
+                .header-wrapper__navigation__submenu__dropdown {
+                    display: block;
+                }
+            }
+        }
+    }
 }
