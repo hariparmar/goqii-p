@@ -383,7 +383,7 @@ $(document).ready(function() {
     var screenWidht = $(window).width();
 
     // dropdown for content pages tabs in mobile devices
-    if (screenWidht < 1024) {
+    if (screenWidht < 1281) {
         $(".content-page__inner__sidebar .nav-item").click(function() {
             $(this).closest(".content-page__inner__sidebar").toggleClass("active");
         })
