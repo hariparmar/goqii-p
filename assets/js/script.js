@@ -16,9 +16,23 @@ const offerSlider = new Swiper(".offer-slider", {
 });
 const logoSlider = new Swiper(".logo-slider", {
     // Optional parameters
-    slidesPerView: 5,
-    spaceBetween: 60,
+    slidesPerView: 2,
+    spaceBetween: 30,
+    breakpoints: {
 
+        640: {
+            slidesPerView: 3,
+            spaceBetween: 73
+        },
+        1280: {
+            slidesPerView: 4,
+            spaceBetween: 90
+        },
+        1800: {
+            slidesPerView: 5,
+            spaceBetween: 60
+        }
+    },
     // Navigation arrows
     navigation: {
         nextEl: ".swiper-button-next",
@@ -111,7 +125,7 @@ const healthEcosystemMainSlider = new Swiper(".health-ecosystem-slider__main", {
     autoplay: {
         delay: 5000,
     },
-    onProgress: move,
+    // onProgress: move,
     // Navigation arrows
     navigation: {
         nextEl: ".swiper-button-next",
@@ -173,14 +187,18 @@ $(document).ready(function() {
 
 //  About Team slider
 const aboutLeaderThumbSlider = new Swiper(".about-team-slider__inner__thumb--leadership", {
-    slidesPerView: 6,
-    spaceBetween: 34,
+    slidesPerView: 2.5,
+    spaceBetween: 10,
 
     breakpoints: {
-        768: {
-            spaceBetween: 5,
+        640: {
+            slidesPerView: 3,
             spaceBetween: 10
-        }
+        },
+        1024: {
+            slidesPerView: 5,
+            spaceBetween: 10
+        },
     },
 
 });
@@ -211,7 +229,7 @@ const aboutDirectorsThumbSlider = new Swiper(".about-team-slider__inner__thumb--
 
     breakpoints: {
         768: {
-            spaceBetween: 5,
+            slidesPerView: 5,
             spaceBetween: 10
         }
     },
@@ -362,8 +380,12 @@ const plpComboSlider = new Swiper(".plp-combo-slider", {
 
 
 $(document).ready(function() {
+    var screenWidht = $(window).width();
+
     // dropdown for content pages tabs in mobile devices
-    $(".content-page__inner__sidebar .nav-item").click(function() {
-        $(this).closest(".content-page__inner__sidebar").toggleClass("active");
-    })
+    if (screenWidht < 1281) {
+        $(".content-page__inner__sidebar .nav-item").click(function() {
+            $(this).closest(".content-page__inner__sidebar").toggleClass("active");
+        })
+    }
 })

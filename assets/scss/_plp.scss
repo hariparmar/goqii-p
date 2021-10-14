@@ -40,6 +40,7 @@
                 margin: auto;
                 margin-bottom: 50px;
                 width: 100%;
+                max-width: none
             }
         }
         &__quiz-cta {
@@ -108,10 +109,21 @@
                 color: #252525;
                 font-weight: 700;
                 border-top: solid 0.6px #e9e8e8;
+                background-image: url(../images/icon-arrow-right-black.png);
+                background-position: right;
+                background-repeat: no-repeat;
+                padding-right: 55px;
+                transition: 0.3s all ease-in-out;
+                background-size: 40px;
+                &.active,
+                &:hover {
+                    background-image: url(../images/icon-arrow-right-blue.png);
+                }
                 @media only screen and (max-width: $max-width-1600) {
                     font-size: 20px;
                     line-height: 50px;
                     letter-spacing: 1.4px;
+                    background-size: 30px;
                 }
                 @media only screen and (max-width: $max-width-sm) {
                     font-size: 16px;

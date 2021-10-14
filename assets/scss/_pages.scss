@@ -637,7 +637,7 @@
                     }
                 }
                 &__thumb {
-                    width: 55%;
+                    width: 60%;
                     margin-top: -180px;
                     margin-bottom: 45px;
                     margin-left: 0;
@@ -1164,15 +1164,19 @@
             @media only screen and (max-width: $max-width-1600) {
                 margin-bottom: 100px;
             }
+            @media only screen and (max-width: $max-width-1400) {
+                margin-bottom: 60px;
+            }
             .col-2 {
-                @media only screen and (max-width: 640px) {
-                    flex-basis: 100%;
+                @media only screen and (max-width: 767px) {
                     max-width: 100%;
+                    flex-grow: 1;
                     .home-logo__tab-nav {
                         justify-content: center;
                         margin-bottom: 40px;
                         a {
-                            margin: 0 15px;
+                            margin: 0 20px;
+                            width: auto;
                             &.active {
                                 text-decoration: underline;
                             }
@@ -1181,7 +1185,7 @@
                 }
             }
             .col-10 {
-                @media only screen and (max-width: 640px) {
+                @media only screen and (max-width: 767px) {
                     flex-basis: 100%;
                     max-width: 100%;
                 }
@@ -1212,17 +1216,32 @@
             }
             .tab-content .swiper {
                 padding: 0 70px;
-                @media only screen and (max-width: $max-width-1600) {
-                    padding: 0 60px;
+                @media only screen and (max-width: 639px) {
+                    padding: 0 40px;
                 }
             }
             .logo-slider {
                 .swiper-wrapper {
                     align-items: center;
+                    @media only screen and (max-width: 639px) {
+                        .swiper-slide {
+                            opacity: 0;
+                            visibility: hidden;
+                            &-active,
+                            &-next {
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                        }
+                    }
                 }
-                .swiper-button-disabled {
-                    opacity: 0;
-                    visibility: hidden;
+                @media only screen and (max-width: $max-width-mob) {
+                    .swiper-button-prev {
+                        left: -13px;
+                    }
+                    .swiper-button-next {
+                        right: -12px;
+                    }
                 }
                 &__single {
                     text-align: center;

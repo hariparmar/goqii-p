@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'goqii-icons';
+  src:  url('../fonts/icons/goqii-icons.eot?4g452g');
+  src:  url('../fonts/icons/goqii-icons.eot?4g452g#iefix') format('embedded-opentype'),
+    url('../fonts/icons/goqii-icons.ttf?4g452g') format('truetype'),
+    url('../fonts/icons/goqii-icons.woff?4g452g') format('woff'),
+    url('../fonts/icons/goqii-icons.svg?4g452g#goqii-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'goqii-icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-left:before {
+  content: "\e900";
+}
+.icon-arrow-right:before {
+  content: "\e901";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-youtube:before {
+  content: "\ea9d";
+}
+.icon-linkedin2:before {
+  content: "\eaca";
+}
