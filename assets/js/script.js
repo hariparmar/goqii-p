@@ -378,6 +378,115 @@ const plpComboSlider = new Swiper(".plp-combo-slider", {
     },
 });
 
+// Product specification
+
+
+const smartVitalThumbSlider = new Swiper(".smart-vital-slider__thumb", {
+    slidesPerView: 4,
+    spaceBetween: 10,
+});
+const smartVitalMainSlider = new Swiper(".smart-vital-slider__main", {
+    // Optional parameters
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    },
+    speed: 1500,
+    slidesPerView: 1,
+
+    // If we need pagination
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+        swiper: smartVitalThumbSlider,
+    },
+});
+
+
+const productSpecsThumbSlider = new Swiper(".product-specs-slider__thumb", {
+    slidesPerView: 6,
+    spaceBetween: 20,
+    autoplay: {
+        delay: 5000,
+    },
+    slideToClickedSlide: true
+});
+
+
+
+const productSpecsSliderMain = new Swiper(".product-specs-slider__main", {
+    // Optional parameters
+    effect: 'fade',
+    loop: true,
+    fadeEffect: {
+        crossFade: true
+    },
+    speed: 0,
+    slidesPerView: 1,
+    // If we need pagination
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    autoplay: {
+        delay: 5000,
+    },
+    onProgress: move,
+    // Navigation arrows
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+        swiper: productSpecsThumbSlider,
+    },
+});
+
+const productSpecsSkipThumbSlider = new Swiper(".product-specsSkip-slider__thumb", {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    autoplay: {
+        delay: 5000,
+    },
+    slideToClickedSlide: true
+});
+
+const productSpecsSkipSliderMain = new Swiper(".product-specsSkip-slider__main", {
+    // Optional parameters
+    effect: 'fade',
+    loop: true,
+    fadeEffect: {
+        crossFade: true
+    },
+    speed: 0,
+    slidesPerView: 1,
+    // If we need pagination
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    autoplay: {
+        delay: 5000,
+    },
+    onProgress: move,
+    // Navigation arrows
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+        swiper: productSpecsSkipThumbSlider,
+    },
+});
+
 
 $(document).ready(function() {
     var screenWidht = $(window).width();
