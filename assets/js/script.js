@@ -487,6 +487,34 @@ const productSpecsSkipSliderMain = new Swiper(".product-specsSkip-slider__main",
     },
 });
 
+// Careers page - Core value
+setTimeout(function() {
+    $(".careers-core-values__slider__single").outerHeight($(".careers-core-values__slider .swiper-slide").outerWidth());
+}, 10);
+
+
+const coreValuesSlider = new Swiper(".careers-core-values__slider", {
+    slidesPerView: 2,
+    spaceBetween: 10,
+    speed: 500,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    // Navigation arrows
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints: {
+        990: {
+            spaceBetween: 50,
+            slidesPerView: 3,
+        }
+    },
+});
+
 
 $(document).ready(function() {
     var screenWidht = $(window).width();

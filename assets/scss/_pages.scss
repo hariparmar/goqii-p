@@ -586,7 +586,7 @@
                 }
                 &__single {
                     &__info {
-                        max-width: 78%;
+                        max-width: 97%;
                         @media only screen and (max-width: $max-width-lg) {
                             max-width: 100%;
                         }
@@ -599,7 +599,7 @@
                             letter-spacing: 7.24px;
                         }
                         p {
-                            margin-bottom: 40px;
+                            margin-bottom: 10px;
                             letter-spacing: 1.13px;
                         }
                         &__img__mob {
@@ -624,12 +624,16 @@
                     }
                 }
                 &__main {
-                    top: -80px;
+                    top: -50px;
                     @media only screen and (max-width: $max-width-lg) {
                         top: -35px;
                     }
                     @media only screen and (max-width: $max-width-lg) {
                         top: 0;
+                        padding-top: 40px;                    
+                    }
+                    @media only screen and (max-width: $max-width-mob) { 
+                        padding-top: 0;                    
                     }
                     @media only screen and (max-width: $max-width-1600) {}
                     img {
@@ -638,7 +642,7 @@
                 }
                 &__thumb {
                     width: 60%;
-                    margin-top: -180px;
+                    margin-top: -140px;
                     margin-bottom: 45px;
                     margin-left: 0;
                     @media only screen and (max-width: $max-width-lg) {
@@ -1261,6 +1265,9 @@
                 line-height: 1.1;
                 letter-spacing: 4px;
                 margin-bottom: 40px;
+            }
+            .home-app-feature .app-feature-slider__single__info h2 {
+                margin-bottom: 10px;
             }
             .home-blog-testimonials h2 {
                 font-size: 56px;

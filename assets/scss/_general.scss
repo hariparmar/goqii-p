@@ -57,6 +57,7 @@ a:hover {
     text-align: center;
     color: #3a3939;
     text-transform: uppercase;
+    transition: 0.3s all ease-in-out;
     @media only screen and (max-width: $max-width-1600) {
         font-size: 18px;
         padding: 0 25px;
@@ -95,6 +96,14 @@ a:hover {
     &--blue {
         color: #2185f4;
         border: solid 1px #2185f4;
+        &--filled {
+            background-color: #2185f4;
+            color: #fff;
+            &:hover {
+                background-color: #fff;
+                color: #2185f4;
+            }
+        }
     }
     &--red {
         color: #e22016;
@@ -148,6 +157,45 @@ a:hover {
     }
 }
 
+.swiper-navigation-pagination {
+    .swiper {
+        &-button-prev,
+        &-button-next {
+            top: 12px;
+            @media only screen and (max-width: $max-width-sm) {
+                top: 6px;
+            }
+        }
+    }
+}
+
+.swiper-pagination-bullets.wide-pagination {
+    .swiper {
+        &-pagination-bullet {
+            height: 7px;
+            width: 210px;
+            border-radius: 10px;
+            margin: 0 20px;
+            @media only screen and (max-width: $max-width-sm) {
+                width: 50px;
+            }
+            @media only screen and (max-width: $max-width-mob) {
+                height: 4px;
+                width: 30px;
+                border-radius: 6px;
+                margin: 0 7px;
+            }
+            &-active {
+                background-color: #232324;
+            }
+        }
+        &-button-prev,
+        &-button-next {
+            top: 12px;
+        }
+    }
+}
+
 .big__heading {
     font-family: "Acumin Pro Bold";
     font-size: 175px;
@@ -181,6 +229,30 @@ a:hover {
         font-size: 40px;
         letter-spacing: 5px;
     }
+    &__style-1 {
+        font-size: 80px;
+        text-transform: inherit;
+        text-align: center;
+        letter-spacing: 14px;
+        @media only screen and (max-width: $max-width-1600) {
+            font-size: 72px;
+            letter-spacing: 10px;
+        }
+        @media only screen and (max-width: $max-width-lg) {
+            font-size: 60px;
+            letter-spacing: 8px;
+        }
+        @media only screen and (max-width: $max-width-sm) {
+            font-size: 48px;
+        }
+        @media only screen and (max-width: $max-width-mob) {
+            font-size: 36px;
+        }
+        @media only screen and (max-width: 480PX) {
+            font-size: 24px;
+            letter-spacing: 2px;
+        }
+    }
 }
 
 input {
@@ -198,6 +270,8 @@ button {
     padding-bottom: 9px;
     outline: none;
     border-bottom: 1px solid #212717;
+    background: transparent;
+    height: 40px;
     @media only screen and (max-width: $max-width-sm) {
         padding-bottom: 5px;
     }
@@ -270,6 +344,9 @@ button {
     @media only screen and (max-width: $max-width-1600) {
         font-size: 16px;
         letter-spacing: inherit;
+    }
+    @media only screen and (max-width: $max-width-small-mob) {
+        font-size: 14px;
     }
     @media only screen and (max-width: $max-width-small-mob-375) {
         font-size: 12px;
@@ -600,7 +677,6 @@ a.anchor-link {
             margin-top: 10px;
         }
     }
-    input {}
     label {
         position: absolute;
         left: 0;
@@ -716,4 +792,29 @@ a.anchor-link {
 
 .mandatory-field {
     color: #e03f14;
+}
+
+// Accordion
+.accordion-body {
+    margin-bottom: 60px;
+}
+
+.accordion-header {
+    h2 {
+        border-bottom: 1px solid #8e989f;
+        padding-bottom: 25px;
+        margin-bottom: 25px !important;
+    }
+}
+
+.italic-content {
+    font-style: italic;
+    color: #403f3f;
+    margin: 80px 0;
+    @media only screen and (max-width: $max-width-1600) {
+        margin: 50px 0;
+    }
+    @media only screen and (max-width: $max-width-lg) {
+        margin: 30px 0;
+    }
 }

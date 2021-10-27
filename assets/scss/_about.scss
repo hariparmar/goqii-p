@@ -343,23 +343,6 @@
                             }
                         }
                     }
-                    .swiper {
-                        &-pagination-bullet {
-                            height: 7px;
-                            width: 210px;
-                            border-radius: 10px;
-                            margin: 0 20px;
-                            @media only screen and (max-width: $max-width-mob) {
-                                height: 4px;
-                                width: 70px;
-                                border-radius: 6px;
-                                margin: 0 7px;
-                            }
-                            &-active {
-                                background-color: #232324;
-                            }
-                        }
-                    }
                 }
             }
         }
