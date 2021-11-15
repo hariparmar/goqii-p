@@ -1,14 +1,33 @@
 /* general header css */
 
+.header {
+    @media only screen and (max-width: $max-width-sm) {
+        height: 60px;
+    }
+}
+
 .header-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 50px 0;
     margin-bottom: 30px;
+    @media only screen and (max-width: $max-width-sm) {
+        padding: 15px 0 10px;
+        position: fixed;
+        z-index: 9;
+        width: 100%;
+        background: #fff;
+        top: 0;
+        left: 0;
+    }
     &__logo {
         @media only screen and (max-width: $max-width-lg) {
             width: 155px;
+        }
+        @media only screen and (max-width: $max-width-sm) {
+            width: 100px;
+            margin: auto;
         }
         &__content {
             text-indent: -9999px;
@@ -16,8 +35,69 @@
         }
     }
     &__navigation {
+        @media only screen and (max-width: $max-width-sm) {
+            position: fixed;
+            height: calc(100vh - 45px);
+            width: 100%;
+            background: transparent;
+            top: 50px;
+            z-index: 9;
+            overflow: hidden;
+            left: -100%;
+            transition: 0.3s all ease-in-out;
+            &.Mobile__Navigation--Active {
+                left: 0;
+            }
+        }
+        &__submenu {
+            >a {
+                color: #272e31 !important;
+                transition: 0.3s all ease-in-out;
+                &:after {
+                    content: "\e903";
+                    font-family: 'goqii-icons' !important;
+                    font-size: 24px;
+                    position: absolute;
+                    right: 0;
+                    top: 10px;
+                    transition: 0.3s all ease-in-out;
+                }
+            }
+            &--Active {
+                @media only screen and (max-width: $max-width-sm) {
+                    > a {
+                        color: #2185f4 !important;
+                        font-weight: 700 !important;
+                        &:after {
+                            transform: rotate(180deg);
+                        }
+                    }
+                    .header-wrapper__navigation__submenu__dropdown {
+                        height: 100%;
+                    }
+                }
+            }
+            &__dropdown {
+                @media only screen and (max-width: $max-width-sm) {
+                    height: 0;
+                    transition: 0.3s all ease-in-out;
+                    display: block !important;
+                    overflow: hidden;
+                    ul {
+                        height: auto !important;
+                    }
+                }
+            }
+        }
         ul {
             display: flex;
+            @media only screen and (max-width: $max-width-sm) {
+                flex-direction: column;
+                background: #fff;
+                height: 100%;
+                padding-top: 35px;
+                overflow-y: auto;
+            }
             li {
                 margin-left: 70px;
                 position: relative;
@@ -25,7 +105,8 @@
                     margin-left: 30px;
                 }
                 @media only screen and (max-width: $max-width-sm) {
-                    margin-left: 15px;
+                    margin-left: 20px;
+                    margin-right: 20px;
                 }
                 a {
                     color: #272e31;
@@ -42,6 +123,7 @@
                     }
                     @media only screen and (max-width: $max-width-sm) {
                         font-size: 16px;
+                        margin: 15px 0;
                     }
                     &:hover,
                     &.active {
@@ -71,7 +153,10 @@
                     width: 250px;
                 }
                 @media only screen and (max-width: $max-width-sm) {
-                    width: 220px;
+                    position: relative;
+                    width: 100%;
+                    background-color: transparent;
+                    border: none;
                 }
                 ul {
                     display: flex;
@@ -79,6 +164,9 @@
                     padding: 0;
                     li {
                         margin-left: 0;
+                        @media only screen and (max-width: $max-width-sm) {
+                            margin-right: 0;
+                        }
                         a {
                             text-transform: capitalize;
                             margin-left: 0;
@@ -86,6 +174,12 @@
                             padding: 10px 15px;
                             display: block;
                             margin: 0;
+                            @media only screen and (max-width: $max-width-sm) {
+                                color: #04070c;
+                                padding-left: 0;
+                                border-bottom: 1px solid #d9d9d9;
+                                font-size: 14px;
+                            }
                             &:hover {
                                 background-color: #fff;
                             }
@@ -95,9 +189,62 @@
             }
             &:hover {
                 .header-wrapper__navigation__submenu__dropdown {
-                    display: block;
+                    @media only screen and (min-width: $max-width-sm) {
+                        display: block;
+                    }
                 }
             }
         }
     }
+}
+
+.Mobile__Humburger {
+    display: none;
+    position: fixed;
+    top: 5px;
+    z-index: 10;
+    @media only screen and (max-width: $max-width-sm) {
+        display: block;
+    }
+    span {
+        width: 20px;
+        height: 2px;
+        background: #383b40;
+        display: inline-block;
+        transition: 0.05s all ease-in-out;
+        position: relative;
+        &:before,
+        &:after {
+            content: '';
+            width: 20px;
+            height: 2px;
+            background: #383b40;
+            display: inline-block;
+            position: absolute;
+            transition: 0.3s all ease-in-out;
+        }
+        &:before {
+            top: 6px;
+        }
+        &:after {
+            top: 12px
+        }
+    }
+    &.Active {
+        span {
+            height: 0;
+            &:before {
+                top: 4px;
+                transform: rotate(45deg);
+                left: 1px;
+            }
+            &:after {
+                top: 4px;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}
+.Fixed--Body {
+    overflow: hidden;
 }

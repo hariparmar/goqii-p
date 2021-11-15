@@ -549,4 +549,17 @@ $(document).ready(function() {
             $(this).closest(".content-page__inner__sidebar").toggleClass("active");
         })
     }
+
+    if (screenWidht < 993) {
+
+        $(".Mobile__Humburger").click(function() {
+            $(this).toggleClass("Active");
+            $(".header-wrapper__navigation").toggleClass("Mobile__Navigation--Active");
+            $('html').toggleClass("Fixed--Body");
+        })
+
+        $(".header-wrapper__navigation__submenu").click(function() {
+            $(this).toggleClass("header-wrapper__navigation__submenu--Active")
+        })
+    }
 })
