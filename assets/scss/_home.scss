@@ -143,8 +143,8 @@
     }
     @media only screen and (max-width: $max-width-mob) {
         height: auto;
-        top: 70px;
-        width: 155px;
+        top: 50px;
+        width: 175px;
     }
 }
 
@@ -266,15 +266,14 @@
             }
         }
         &--Image {
-            max-width: 20%;
+            max-width: 30%;
             padding: 25px 20px;
             border-radius: 14.5px;
             box-shadow: -1.2px 1.6px 16.2px 0.9px rgba(36, 40, 44, 0.25);
             background-color: #fff;
             flex-shrink: 0;
             @media only screen and (max-width: $max-width-1600) {
-                max-width: 15%;
-                padding: 15px 10px;
+                padding: 20px 10px;
                 border-radius: 10px;
             }
             @media only screen and (max-width: $max-width-lg) {
@@ -297,10 +296,7 @@
             }
         }
         &--Content {
-            padding-left: 45px;
-            @media only screen and (max-width: $max-width-1600) {
-                padding-left: 25px;
-            }
+            padding-left: 25px;
             .Feature--Title {
                 color: #1f1f1f;
                 font-size: 23px;
@@ -493,13 +489,13 @@
         }
         &__logo {
             position: absolute;
-            top: 50%;
-            left: -75%;
+            top: 46%;
+            left: -77%;
             display: flex;
             flex-direction: column;
             align-items: center;
             @media only screen and (max-width: $max-width-1600) {
-                left: -61%;
+                left: -65%;
                 width: 260px;
                 text-align: center
             }

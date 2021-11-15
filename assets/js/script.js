@@ -282,9 +282,18 @@ const aboutInvestorsSlider = new Swiper(".investors__inner__members__slider", {
     slidesPerView: 1,
     spaceBetween: 10,
     speed: 500,
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
+    },
+    // Navigation arrows
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
 });
 

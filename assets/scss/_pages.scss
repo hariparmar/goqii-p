@@ -470,7 +470,6 @@
                         line-height: 2.16;
                         letter-spacing: 1.69px;
                         color: #2185f4;
-                        text-transform: uppercase;
                         white-space: nowrap;
                         display: inline-block;
                         font-weight: $bold-font;
@@ -630,10 +629,10 @@
                     }
                     @media only screen and (max-width: $max-width-lg) {
                         top: 0;
-                        padding-top: 40px;                    
+                        padding-top: 40px;
                     }
-                    @media only screen and (max-width: $max-width-mob) { 
-                        padding-top: 0;                    
+                    @media only screen and (max-width: $max-width-mob) {
+                        padding-top: 0;
                     }
                     @media only screen and (max-width: $max-width-1600) {}
                     img {
@@ -660,7 +659,6 @@
                         line-height: 2.16;
                         letter-spacing: 1.69px;
                         color: #f7a140;
-                        text-transform: uppercase;
                         white-space: nowrap;
                         display: inline-block;
                         font-weight: $bold-font;
@@ -812,6 +810,12 @@
                         position: absolute;
                         right: 50px;
                         bottom: -37px;
+                        @media only screen and (max-width: $max-width-1600) {
+                            width: 60px;
+                            height: 60px;
+                            bottom: -25px;
+                            right: 30px;
+                        }
                         @media only screen and (max-width: $max-width-lg) {
                             width: 55px;
                             height: 55px;
