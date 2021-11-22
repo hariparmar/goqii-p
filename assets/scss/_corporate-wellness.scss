@@ -1,0 +1,1064 @@
+.corporate-wellness--Banner {
+    position: relative;
+    .corporate-wellness__wrapper {
+        position: relative;
+        background-image: linear-gradient(to right, #fff1eb, #f4bfb7);
+        padding: 50px 30px;
+        border-radius: 50px;
+        .corporate-wellness--data {
+            padding-top: 50;
+            h3 {
+                font-family: "Open Sans", sans-serif;
+                margin-bottom: 0;
+                font-size: 60px;
+                line-height: 1.5;
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: 300;
+            }
+            h2 {
+                font-family: "Acumin Pro Bold";
+                margin-bottom: 20px;
+                font-size: 80px;
+                line-height: 1.5;
+                letter-spacing: 6px;
+                color: #fff;
+                text-transform: uppercase;
+            }
+            p {}
+        }
+    }
+    @media only screen and (max-width: $max-width-1600) {
+        .corporate-wellness__wrapper {
+            .corporate-wellness--data {
+                h2 {
+                    font-size: 56px;
+                }
+                h3 {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: $max-width-lg) {
+        .corporate-wellness__wrapper {
+            .corporate-wellness--data {
+                h2 {
+                    font-size: 48px;
+                }
+                h3 {
+                    font-size: 34px;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: $max-width-sm) {
+        .corporate-wellness__wrapper {
+            .corporate-wellness--data {
+                h2 {
+                    font-size: 40px;
+                }
+                h3 {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: $max-width-mob) {
+        .corporate-wellness__wrapper {
+            .corporate-wellness--data {
+                h2 {
+                    font-size: 30px;
+                }
+                h3 {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: $max-width-small-mob) {
+        .corporate-wellness__wrapper {
+            .corporate-wellness--data {}
+        }
+    }
+}
+
+.why-corporate-wellness {
+    margin-top: 200px;
+    margin-bottom: 100px;
+    position: relative;
+    background-image: linear-gradient(to top, #f3f9fa, #e1ffe4);
+    border-radius: 50px;
+    padding-top: 50px;
+    h3 {
+        font-family: "Open Sans", sans-serif;
+        margin-bottom: 0;
+        font-size: 60px;
+        line-height: 1.5;
+        color: #5eab41;
+        text-transform: uppercase;
+        font-weight: 300;
+    }
+    h2 {
+        font-family: "Acumin Pro Bold";
+        margin-bottom: 20px;
+        font-size: 80px;
+        line-height: 1.5;
+        letter-spacing: 6px;
+        color: #5eab41;
+        text-transform: uppercase;
+    }
+    h4 {
+        font-family: "Acumin Pro Bold";
+        margin-bottom: 20px;
+        font-size: 30px;
+        line-height: 1;
+        letter-spacing: 1px;
+        color: #000;
+    }
+    .centerMainBg {
+        min-width: 1000px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -100%);
+    }
+    .why-corporate-div {
+        margin-right: -10%;
+    }
+    .weaallness-div {
+        margin-left: -10%;
+        h2 {
+            text-align: right;
+        }
+    }
+    .why-corporate-wellness__inner {
+        text-align: center;
+        border-radius: 50px;
+        padding: 40px 50px;
+        z-index: 1;
+        position: relative;
+        box-shadow: -1.2px 1.6px 16.2px 0.9px #24282c40;
+        background-color: #fff;
+    }
+    @media only screen and (max-width: $max-width-1600) {
+        h2 {
+            font-size: 56px;
+        }
+        h3 {
+            font-size: 40px;
+        }
+    }
+    @media only screen and (max-width: $max-width-lg) {
+        h2 {
+            font-size: 48px;
+        }
+        h3 {
+            font-size: 34px;
+        }
+    }
+    @media only screen and (max-width: $max-width-sm) {
+        .why-corporate-div {
+            margin-right: 0;
+        }
+        .weaallness-div {
+            margin-left: 0;
+        }
+        h2 {
+            font-size: 40px;
+        }
+        h3 {
+            font-size: 30px;
+        }
+    }
+    @media only screen and (max-width: $max-width-mob) {
+        .centerMainBg {
+            display: none;
+        }
+        .weaallness-div h2 {
+            text-align: left;
+            padding-top: 40px;
+        }
+        h2 {
+            font-size: 30px;
+        }
+        h3 {
+            font-size: 20px;
+        }
+        .why-corporate-wellness__inner {
+            padding: 30px 20px 20px;
+            h4 {
+                font-size: 20px;
+            }
+        }
+        margin: 50px 0;
+    }
+    @media only screen and (max-width: $max-width-small-mob) {}
+}
+
+.corporate-wellness-slider {
+    &.home-health-ecosystem {
+        margin-bottom: 0px;
+        margin-top: 170px;
+        background-image: linear-gradient(to top, #fff, #cfeffa);
+        border-top-left-radius: 80px;
+        border-top-right-radius: 80px;
+        padding: 80px 0;
+        position: relative;
+        @media only screen and (max-width: $max-width-1600) {
+            padding: 40px 0;
+            margin-top: 60px;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px
+        }
+        @media only screen and (max-width: $max-width-mob) {
+            margin-top: 40px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            margin-bottom: 0;
+            .onlyDesktop {
+                display: none !important;
+            }
+        }
+        .container {
+            @media only screen and (max-width: $max-width-mob) {
+                padding: 0;
+            }
+        }
+        &::before {
+            content: "";
+            display: none;
+        }
+        .health-ecosystem-slider {
+            position: relative;
+            @media only screen and (max-width: $max-width-mob) {
+                text-align: center;
+            }
+            .swiper-wrapper {
+                align-items: center;
+                .swiper-slide {}
+                .swiper-slide-thumb-active {}
+            }
+            &__single {
+                display: flex;
+                padding: 0 70px;
+                @media only screen and (max-width: $max-width-mob) {
+                    padding: 0 50px;
+                    .col-md-7 {
+                        display: none;
+                    }
+                    .col-md-5 {
+                        padding: 0;
+                    }
+                }
+                &__info {
+                    h2 {
+                        margin-bottom: 25px;
+                        font-family: "Acumin Pro Bold";
+                        font-size: 80px;
+                        line-height: 1.1;
+                        letter-spacing: 7.24px;
+                        color: #2185f4;
+                        @media only screen and (max-width: $max-width-1600) {
+                            margin-bottom: 25px;
+                            font-size: 56px;
+                            line-height: 1.1;
+                            letter-spacing: 4px;
+                        }
+                        @media only screen and (max-width: $max-width-lg) {
+                            margin-bottom: 10px;
+                            font-size: 48px;
+                            line-height: 1.1;
+                            letter-spacing: 2px;
+                        }
+                        @media only screen and (max-width: $max-width-mob) {
+                            font-size: 24px;
+                            text-align: center;
+                            margin-bottom: 15px;
+                        }
+                        span {
+                            font-family: $primary-font;
+                            font-size: 38px;
+                            font-weight: 300;
+                            letter-spacing: 2.13px;
+                            display: block;
+                            margin-bottom: 23px;
+                            margin-left: 2px;
+                            @media only screen and (max-width: $max-width-1600) {
+                                font-size: 30px;
+                                letter-spacing: 1.5px;
+                                margin-bottom: 15px;
+                            }
+                            @media only screen and (max-width: $max-width-1600) {
+                                font-size: 24px;
+                                margin-bottom: 10px;
+                            }
+                            @media only screen and (max-width: $max-width-mob) {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                    &__img {
+                        &__mob {
+                            margin-bottom: 20px;
+                            @media only screen and (min-width: 768px) {
+                                display: none;
+                            }
+                        }
+                    }
+                    p {
+                        margin-bottom: 42px;
+                        @media only screen and (max-width: $max-width-mob) {
+                            margin-bottom: 25px;
+                        }
+                    }
+                }
+            }
+            &__main {
+                padding-bottom: 120px;
+                img {
+                    max-width: 100%;
+                }
+            }
+            &__thumb {
+                width: 100%;
+                position: absolute;
+                left: 60px;
+                bottom: 50px;
+                @media only screen and (max-width: $max-width-1600) {
+                    width: auto;
+                }
+                img {
+                    width: 100%;
+                }
+                @keyframes example {
+                    from {
+                        width: 0;
+                    }
+                    to {
+                        width: 100%;
+                    }
+                }
+                &__single {
+                    font-size: 20px;
+                    line-height: 2.16;
+                    letter-spacing: 1.69px;
+                    color: #2185f4;
+                    text-transform: uppercase;
+                    white-space: nowrap;
+                    display: inline-block;
+                    font-weight: $bold-font;
+                    opacity: 0.5;
+                    @media only screen and (max-width: $max-width-1600) {
+                        font-size: 16px;
+                        letter-spacing: 1px;
+                    }
+                    &__progress {
+                        height: 7px;
+                        width: 100%;
+                        background-color: #bababa;
+                        border-radius: 10px;
+                        position: relative;
+                        opacity: 0;
+                        overflow: hidden;
+                        &::after {
+                            content: "";
+                            height: 100%;
+                            width: 0;
+                            background-color: #2185f4;
+                            top: 0;
+                            left: 0;
+                            position: absolute;
+                        }
+                        @media only screen and (max-width: $max-width-1600) {
+                            height: 5px;
+                        }
+                    }
+                }
+                .swiper-slide {
+                    width: auto !important;
+                }
+                .swiper-slide-thumb-active {
+                    .health-ecosystem-slider__thumb__single {
+                        opacity: 1;
+                        &__progress {
+                            opacity: 1;
+                            &::after {
+                                animation-name: example;
+                                animation-duration: 5s;
+                            }
+                        }
+                    }
+                }
+            }
+            .swiper-button {
+                &-prev,
+                &-next {
+                    background-position-y: -26px;
+                }
+            }
+        }
+    }
+}
+
+.value-added-service {
+    position: relative;
+    background-image: linear-gradient(to top, #fcfaec, #fce6a9);
+    padding: 80px 30px 0;
+    border-radius: 50px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    h2 {
+        font-family: "Acumin Pro Bold";
+        margin-bottom: 100px;
+        font-size: 80px;
+        line-height: 1;
+        letter-spacing: 6px;
+        color: #fa8935;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .value-added-service__inner {
+        text-align: center;
+        border-radius: 50px;
+        padding: 20px;
+        z-index: 1;
+        position: relative;
+        box-shadow: -1.2px 1.6px 16.2px 0.9px #24282c40;
+        background-color: #fff;
+        height: 100%;
+        img {
+            position: relative;
+            margin-top: -70px;
+            width: 70px;
+        }
+        h4 {
+            font-family: "Acumin Pro Bold";
+            margin: 20px 0;
+            font-size: 25px;
+            line-height: 1;
+            letter-spacing: 1px;
+            color: #000;
+        }
+    }
+    @media only screen and (max-width: $max-width-1600) {
+        h2 {
+            font-size: 56px;
+        }
+    }
+    @media only screen and (max-width: $max-width-lg) {
+        h2 {
+            font-size: 48px;
+        }
+    }
+    @media only screen and (max-width: $max-width-sm) {
+        h2 {
+            font-size: 40px;
+        }
+    }
+    @media only screen and (max-width: $max-width-mob) {
+        h2 {
+            font-size: 30px;
+        }
+        .value-added-service__inner {
+            margin-bottom: 60px;
+            height: auto;
+            img {
+                width: 50px;
+                margin-top: -60px;
+            }
+        }
+        padding: 40px 0 20px;
+    }
+    @media only screen and (max-width: $max-width-small-mob) {}
+}
+
+.our-methodology-section {
+    margin-top: 100px;
+    h2 {
+        font-family: "Acumin Pro Bold";
+        margin: 20px 0;
+        font-size: 80px;
+        line-height: 1;
+        letter-spacing: 6px;
+        color: #000;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .methodologyCommon {
+        border-radius: 50px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        padding: 50px;
+        margin-bottom: 20px;
+        h2 {
+            text-align: left;
+        }
+        img {}
+    }
+    .leftDataWithImg {
+        .col-md-6:first-child {
+            padding-right: 40px;
+        }
+    }
+    .RightDataWithImg {
+        .col-md-6:first-child {
+            padding-left: 40px;
+            order: 1;
+        }
+    }
+    .our-methodology__inner {
+        img {
+            width: 80px;
+        }
+    }
+    .greenData {
+        background-image: linear-gradient(to top, #fff, #def6c5);
+        h2 {
+            color: #5eab41
+        }
+    }
+    .pinkOrangeData {
+        background-image: linear-gradient(to top, #fff, #f6dac5);
+        h2 {
+            color: #ea881a
+        }
+    }
+    .blueData {
+        background-image: linear-gradient(to top, #fff, #cfeffa);
+        h2 {
+            color: #2185f4
+        }
+    }
+    @media only screen and (max-width: $max-width-1600) {
+        h2 {
+            font-size: 56px;
+        }
+    }
+    @media only screen and (max-width: $max-width-lg) {
+        h2 {
+            font-size: 48px;
+        }
+    }
+    @media only screen and (max-width: $max-width-sm) {
+        h2 {
+            font-size: 40px;
+        }
+    }
+    @media only screen and (max-width: $max-width-mob) {
+        h2 {
+            font-size: 30px;
+        }
+        .methodologyCommon {
+            padding: 30px 20px 20px;
+            .our-methodology__inner {
+                img {
+                    width: 50px;
+                }
+            }
+        }
+        .leftDataWithImg {
+            .col-md-6:first-child {
+                padding-right: 15px;
+            }
+        }
+        .RightDataWithImg {
+            .col-md-6:first-child {
+                padding-left: 15px;
+                order: 0;
+            }
+        }
+    }
+    @media only screen and (max-width: $max-width-small-mob) {}
+    .health-ecosystem-slider-bottom {
+        .health-ecosystem-slider {
+            margin: 0;
+            border-top-left-radius: 80px;
+            border-top-right-radius: 80px;
+            padding: 0;
+            position: relative;
+            position: relative;
+            .swiper-wrapper {
+                align-items: center;
+                .swiper-slide {}
+                .swiper-slide-thumb-active {}
+            }
+            h4 {
+                font-family: "Acumin Pro Bold";
+                margin: 20px 0;
+                font-size: 25px;
+                line-height: 1;
+                letter-spacing: 1px;
+                color: #000;
+            }
+            @media only screen and (max-width: $max-width-mob) {
+                h2 {
+                    text-align: center !important;
+                }
+                text-align: center;
+                h4 {
+                    font-size: 18px;
+                }
+            }
+            &__main {
+                padding-bottom: 120px;
+                img {
+                    max-width: 100%;
+                }
+            }
+            &__thumb {
+                width: 100%;
+                position: absolute;
+                left: 60px;
+                bottom: 50px;
+                @media only screen and (max-width: $max-width-1600) {
+                    width: auto;
+                }
+                img {
+                    width: 100%;
+                }
+                @keyframes example {
+                    from {
+                        width: 0;
+                    }
+                    to {
+                        width: 100%;
+                    }
+                }
+                &__single {
+                    font-size: 20px;
+                    line-height: 2.16;
+                    letter-spacing: 1.69px;
+                    color: #2185f4;
+                    text-transform: uppercase;
+                    white-space: nowrap;
+                    display: inline-block;
+                    font-weight: $bold-font;
+                    opacity: 0.5;
+                    @media only screen and (max-width: $max-width-1600) {
+                        font-size: 16px;
+                        letter-spacing: 1px;
+                    }
+                    &__progress {
+                        height: 7px;
+                        width: 100%;
+                        background-color: #bababa;
+                        border-radius: 10px;
+                        position: relative;
+                        opacity: 0;
+                        overflow: hidden;
+                        &::after {
+                            content: "";
+                            height: 100%;
+                            width: 0;
+                            background-color: #2185f4;
+                            top: 0;
+                            left: 0;
+                            position: absolute;
+                        }
+                        @media only screen and (max-width: $max-width-1600) {
+                            height: 5px;
+                        }
+                    }
+                }
+                .swiper-slide {
+                    width: auto !important;
+                }
+            }
+            .swiper-slide-thumb-active {
+                .health-ecosystem-slider__thumb__single {
+                    opacity: 1;
+                    &__progress {
+                        opacity: 1;
+                        &::after {
+                            animation-name: example;
+                            animation-duration: 5s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.bottomCtaBox {
+    position: relative;
+    padding: 80px 0;
+    text-align: center;
+    h4 {
+        font-family: "Acumin Pro Bold";
+        margin: 20px 0;
+        font-size: 25px;
+        line-height: 1;
+        letter-spacing: 1px;
+        color: #000;
+    }
+    .goqii-btn-primary {
+        background-color: #5eab41;
+        color: #fff;
+        border-color: #5eab41;
+    }
+    @media only screen and (max-width: $max-width-mob) {
+        padding: 60px 0;
+        h4 {
+            font-size: 18px;
+        }
+    }
+}
+
+.popupSection {
+    margin: 100px auto;
+    position: relative;
+    max-width: 1100px;
+    background-color: #fff;
+    padding-bottom: 50px;
+    @media only screen and (max-width: $max-width-sm) {
+        padding-bottom: 0;
+    }
+    .popupHead {
+        padding: 30px;
+        position: relative;
+        background-image: linear-gradient(to right, #fef2eb, #c5e5f9);
+        @media only screen and (max-width: $max-width-sm) {
+            padding: 15px;
+        }
+        .quizStep {
+            margin-top: 20px;
+            margin-bottom: 50px;
+            h3 {
+                font-family: "Acumin Pro Bold";
+                font-size: 30px;
+                line-height: 1.5;
+                letter-spacing: 1px;
+                @media only screen and (max-width: $max-width-lg) {
+                    font-size: 24px;
+                }
+                @media only screen and (max-width: $max-width-sm) {
+                    font-size: 20px;
+                }
+            }
+            h4 {
+                color: #38607b;
+                font-size: 18px;
+                line-height: 1.5;
+                font-weight: $bold-font;
+                @media only screen and (max-width: $max-width-lg) {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .popupBody {
+        position: relative;
+        padding: 30px;
+        @media only screen and (max-width: $max-width-sm) {
+            padding: 15px;
+        }
+        .quizStepHolder {
+            display: flex;
+            align-items: center;
+            margin-top: -55px;
+            .quizStepHolderLeft {
+                width: calc(100% - 180px);
+                padding-right: 80px;
+                display: flex;
+                justify-content: space-between;
+                a {
+                    font-size: 18px;
+                    line-height: 1.5;
+                    border-radius: 5px;
+                    color: #000;
+                    font-family: "Acumin Pro Bold";
+                    box-shadow: -1.2px 1.6px 5.2px 0.9px #24282c40;
+                    background-color: #fff;
+                    padding: 15px 15px 12px;
+                    margin-right: 20px;
+                    &.activeCta {
+                        background-color: #1576e2;
+                        color: #fff;
+                    }
+                }
+            }
+            .quizStepHolderRight {
+                width: 180px;
+                a {
+                    font-size: 18px;
+                    line-height: 1.5;
+                    border-radius: 5px;
+                    color: #fff;
+                    text-align: center;
+                    background-color: #e92f2f;
+                    padding: 10px 10px 8px;
+                    width: 100%;
+                    display: inline-block;
+                    box-shadow: -1.2px 1px 2.2px 0.9px #24282c40;
+                    font-weight: $bold-font;
+                }
+            }
+            @media only screen and (max-width: $max-width-mob) {
+                align-items: end;
+                margin-top: -100px;
+                .quizStepHolderLeft {
+                    flex-wrap: wrap;
+                    width: calc(100% - 130px);
+                    padding-right: 20px;
+                    a {
+                        font-size: 14px;
+                        width: auto;
+                        display: inline-block;
+                        margin-top: 30px;
+                        padding: 10px;
+                        margin-right: 0;
+                    }
+                }
+                .quizStepHolderRight {
+                    width: 130px;
+                    a {
+                        width: 100%;
+                        font-size: 12px;
+                    }
+                }
+            }
+            @media only screen and (max-width: $max-width-small-mob) {
+                .quizStepHolderLeft {
+                    flex-wrap: wrap;
+                    width: calc(100% - 100px);
+                    a {
+                        font-size: 12px;
+                        width: auto;
+                        display: inline-block;
+                        padding: 10px;
+                        line-height: 1;
+                    }
+                }
+                .quizStepHolderRight {
+                    width: 100px;
+                    a {
+                        width: 100%;
+                        font-size: 10px;
+                        padding: 8px 5px;
+                    }
+                }
+            }
+        }
+        .popupBodyForm {
+            position: relative;
+            .inputElement {
+                margin: 40px 0;
+                padding-left: 20px;
+                .labelStyle {
+                    position: relative;
+                    font-family: "Acumin Pro Bold";
+                    font-size: 20px;
+                    line-height: 1.5;
+                    margin-bottom: 15px;
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        left: -20px;
+                        background-color: #5eab41;
+                        border-radius: 10px;
+                        top: 8px;
+                        height: 10px;
+                        width: 10px;
+                    }
+                }
+                .customRadioHolder {
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    .customRadio {
+                        margin-right: 20px;
+                    }
+                    @media only screen and (max-width: $max-width-mob) {
+                        .customRadio {
+                            flex: 0 0 100%;
+                        }
+                    }
+                }
+                .customRadio [type="radio"]:checked,
+                .customRadio [type="radio"]:not(:checked) {
+                    position: absolute;
+                    left: -9999px;
+                }
+                .customRadio [type="radio"]:checked+label,
+                .customRadio [type="radio"]:not(:checked)+label {
+                    position: relative;
+                    padding-left: 28px;
+                    cursor: pointer;
+                    line-height: 20px;
+                    font-size: 16px;
+                    display: inline-block;
+                    color: #666;
+                }
+                .customRadio [type="radio"]:checked+label:before,
+                .customRadio [type="radio"]:not(:checked)+label:before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 18px;
+                    height: 18px;
+                    border: 1px solid #ddd;
+                    border-radius: 100%;
+                    background: #fff;
+                }
+                .customRadio [type="radio"]:checked+label:after,
+                .customRadio [type="radio"]:not(:checked)+label:after {
+                    content: '';
+                    width: 12px;
+                    height: 12px;
+                    background: #1576e2;
+                    position: absolute;
+                    top: 3px;
+                    left: 3px;
+                    border-radius: 100%;
+                    -webkit-transition: all 0.2s ease;
+                    transition: all 0.2s ease;
+                }
+                .customRadio [type="radio"]:not(:checked)+label:after {
+                    opacity: 0;
+                    -webkit-transform: scale(0);
+                    transform: scale(0);
+                }
+                .customRadio [type="radio"]:checked+label:after {
+                    opacity: 1;
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                }
+                .numberSec {
+                    display: flex;
+                    align-items: center;
+                    select {
+                        height: 40px;
+                        width: 50px;
+                    }
+                    input {
+                        height: 40px;
+                        padding: 0;
+                    }
+                }
+                select {
+                    width: 200px;
+                    border: none;
+                    border-bottom: 1px solid #000 !important;
+                }
+                .error {
+                    color: #a3a2a2;
+                    font-size: 14px;
+                    font-style: italic;
+                }
+                input {
+                    &::-webkit-input-placeholder {
+                        font-style: italic;
+                    }
+                    &:-ms-input-placeholder {
+                        font-style: italic;
+                    }
+                    &::placeholder {
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+    }
+    .popupBodyResult {
+        position: relative;
+        padding: 0 50px;
+        .popupBodyResultInner {
+            position: relative;
+            text-align: center;
+            .mainImg {
+                max-height: 250px;
+                margin: auto;
+                margin-bottom: -150px;
+                display: inline-block;
+            }
+            .popupBodyResultInnerBox {
+                background-color: #fff;
+                padding: 200px 40px 40px;
+                box-shadow: -1.2px 1.6px 16.2px 0.9px #24282c40;
+                border-radius: 10px;
+                img {
+                    max-height: 40px;
+                    max-width: 180px;
+                    display: inline-block;
+                    margin: auto;
+                }
+                h4 {
+                    margin: 10px 0px;
+                    font-size: 18px;
+                    line-height: 1.45;
+                    letter-spacing: 1.76px;
+                    font-weight: bold;
+                    color: #201f1f;
+                }
+                h5 {
+                    margin: 20px 0px 10px;
+                    font-size: 18px;
+                    font-weight: bold;
+                    line-height: 1.45;
+                    letter-spacing: 1.76px;
+                    color: #201f1f;
+                }
+                p {
+                    margin: 10px 0px;
+                    font-size: 18px;
+                    line-height: 1.45;
+                    letter-spacing: 1.76px;
+                    color: #201f1f;
+                }
+                .smart-vital-main__productPriceValue {
+                    margin: 30px 0;
+                    h4 {
+                        font-size: 40.5px;
+                        font-weight: bold;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.06;
+                        letter-spacing: 4.05px;
+                        color: #2185f4;
+                        strong {
+                            padding-right: 10px;
+                            text-decoration: line-through;
+                            color: #859297;
+                        }
+                        @media only screen and (max-width: $max-width-1600) {
+                            font-size: 30px;
+                        }
+                        @media only screen and (max-width: $max-width-lg) {
+                            font-size: 24px;
+                        }
+                        @media only screen and (max-width: $max-width-sm) {
+                            font-size: 20px;
+                        }
+                        @media only screen and (max-width: $max-width-mob) {
+                            font-size: 18px;
+                        }
+                        @media only screen and (max-width: $max-width-small-mob) {}
+                    }
+                }
+                .goqii-btn-primary {
+                    border: solid 1px #2185f4;
+                    color: #2185f4;
+                    margin: 0 10px;
+                }
+            }
+        }
+        @media only screen and (max-width: $max-width-mob) {
+            padding: 0 20px;
+            .popupBodyResultInner {
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+.resultDivActive {
+    .popupHead {
+        min-height: 400px;
+    }
+    .popupBodyResult {
+        margin-top: -180px;
+    }
+}

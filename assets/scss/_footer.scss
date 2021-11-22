@@ -21,7 +21,7 @@
         @media only screen and (max-width: $max-width-sm) {
             width: 33.33%;
         }
-        @media only screen and (max-width: 576px) {
+        @media only screen and (max-width: $max-width-mob) {
             width: 100%;
         }
         &.footer-address-share {
@@ -47,7 +47,7 @@
                     @media only screen and (max-width: $max-width-sm) {
                         width: 50%;
                     }
-                    @media only screen and (max-width: 576px) {
+                    @media only screen and (max-width: $max-width-mob) {
                         width: 100%;
                     }
                 }
@@ -57,7 +57,7 @@
                     @media only screen and (max-width: $max-width-sm) {
                         width: 50%;
                     }
-                    @media only screen and (max-width: 576px) {
+                    @media only screen and (max-width: $max-width-mob) {
                         width: 100%;
                     }
                 }
@@ -92,7 +92,7 @@
                     @media only screen and (max-width: $max-width-1600) {
                         font-size: 28px;
                     }
-                    @media only screen and (max-width: 576px) {
+                    @media only screen and (max-width: $max-width-mob) {
                         text-align: left;
                         order: 1;
                         margin-top: 15px;
@@ -117,11 +117,11 @@
                     .share-icons__wrapper {
                         width: 100%;
                         justify-content: flex-end;
-                        @media only screen and (max-width: 576px) {
+                        @media only screen and (max-width: $max-width-mob) {
                             justify-content: flex-start;
                         }
                         a {
-                            padding: 9px 6px;
+                            padding: 9px 5px 9px 7px;
                             border: 1px solid #adadad;
                             line-height: 0;
                             border-radius: 50%;
@@ -134,10 +134,9 @@
                             }
                             span {
                                 margin: 0;
-                            }
-                            &:hover {
-                                .share-icons__wrapper__icon {
-                                    background-position-x: -84px;
+                                width: 36px;
+                                &:after {
+                                    line-height: inherit;
                                 }
                             }
                         }
@@ -194,7 +193,7 @@
         letter-spacing: 0px;
         margin-top: 20px;
         margin-bottom: 0;
-        @media only screen and (max-width: 576px) {
+        @media only screen and (max-width: $max-width-mob) {
             text-align: center;
         }
     }

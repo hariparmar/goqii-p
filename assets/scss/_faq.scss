@@ -1,70 +1,48 @@
-.news-banner__inner {
-    padding-bottom: 0;
-    padding-top: 70px;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#c8c9fb+0,c6c9fb+17,c6cdfb+34,c6d8fb+50,c6d8f8+63,bfd5f9+82,b2cef8+100 */
-    background: rgb(200, 201, 251);
-    /* Old browsers */
-    background: -moz-linear-gradient(left, rgba(200, 201, 251, 1) 0%, rgba(198, 201, 251, 1) 17%, rgba(198, 205, 251, 1) 34%, rgba(198, 216, 251, 1) 50%, rgba(198, 216, 248, 1) 63%, rgba(191, 213, 249, 1) 82%, rgba(178, 206, 248, 1) 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(200, 201, 251, 1) 0%, rgba(198, 201, 251, 1) 17%, rgba(198, 205, 251, 1) 34%, rgba(198, 216, 251, 1) 50%, rgba(198, 216, 248, 1) 63%, rgba(191, 213, 249, 1) 82%, rgba(178, 206, 248, 1) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(200, 201, 251, 1) 0%, rgba(198, 201, 251, 1) 17%, rgba(198, 205, 251, 1) 34%, rgba(198, 216, 251, 1) 50%, rgba(198, 216, 248, 1) 63%, rgba(191, 213, 249, 1) 82%, rgba(178, 206, 248, 1) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    @media only screen and (max-width: $max-width-1600) {
-        padding-top: 55px;
-    }
-    @media only screen and (max-width: $max-width-lg) {
-        padding-top: 45px;
-    }
-    @media only screen and (max-width: $max-width-sm) {
-        padding-top: 40px;
-    }
-    .big__heading {
-        margin-bottom: 0;
-    }
-    &.border-radius-section {
-        border-radius: 40px;
-    }
-    .page-sub-title {
-        font-weight: $primary-font-weight;
-        color: #3a3939;
-        text-align: right;
-        margin-top: -25px;
-        padding-bottom: 10px;
-        margin-bottom: 0;
-        @media only screen and (max-width: $max-width-lg) {
-            margin-top: -15px;
+.faq-banner {
+    &__inner {
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#c8c9fb+0,c6c9fb+17,c6cdfb+34,c6d8fb+50,c6d8f8+63,bfd5f9+82,b2cef8+100 */
+        background: rgb(200, 201, 251);
+        /* Old browsers */
+        background: -moz-linear-gradient(left, rgba(200, 201, 251, 1) 0%, rgba(198, 201, 251, 1) 17%, rgba(198, 205, 251, 1) 34%, rgba(198, 216, 251, 1) 50%, rgba(198, 216, 248, 1) 63%, rgba(191, 213, 249, 1) 82%, rgba(178, 206, 248, 1) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, rgba(200, 201, 251, 1) 0%, rgba(198, 201, 251, 1) 17%, rgba(198, 205, 251, 1) 34%, rgba(198, 216, 251, 1) 50%, rgba(198, 216, 248, 1) 63%, rgba(191, 213, 249, 1) 82%, rgba(178, 206, 248, 1) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, rgba(200, 201, 251, 1) 0%, rgba(198, 201, 251, 1) 17%, rgba(198, 205, 251, 1) 34%, rgba(198, 216, 251, 1) 50%, rgba(198, 216, 248, 1) 63%, rgba(191, 213, 249, 1) 82%, rgba(178, 206, 248, 1) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        @media only screen and (min-width: $max-width-1600) {
+            padding: 110px 40px;
         }
-        @media only screen and (max-width: $max-width-sm) {
-            margin-top: -10px;
+        form {
+            max-width: 1200px;
+            margin: 50px auto 0;
+            @media only screen and (max-width: $max-width-1600) {
+                margin: 30px auto 0;
+            }
+            @media only screen and (max-width: $max-width-sm) {
+                margin: 25px auto 0;
+            }
+            input {
+                &::-webkit-input-placeholder,
+                &:-ms-input-placeholder,
+                &::placeholder {
+                    font-size: 18px;
+                    font-style: italic;
+                    color: #40444c;
+                }
+                @media only screen and (max-width: $max-width-1600) {
+                    &::-webkit-input-placeholder,
+                    &:-ms-input-placeholder,
+                    &::placeholder {
+                        font-size: 14px;
+                        font-style: italic;
+                        color: #40444c;
+                    }
+                }
+            }
         }
     }
 }
 
-.news-listing {
-    .blog-listing {
-        &__articles__single {
-            @media only screen and (max-width: $max-width-sm) {
-                width: 100%;
-                text-align: center;
-            }
-            &__inner {
-                h2 {
-                    min-height: 72px;
-                    @media only screen and (max-width: $max-width-lg) {
-                        min-height: 40px;
-                    }
-                    @media only screen and (max-width: $max-width-mob) {
-                        min-height: auto;
-                    }
-                }
-                p {
-                    min-height: 84px;
-                    @media only screen and (max-width: $max-width-mob) {
-                        min-height: auto;
-                    }
-                }
-            }
-        }
-    }
+.faqs--content .content-page__inner__sidebar .nav {
+    top: 40px;
 }

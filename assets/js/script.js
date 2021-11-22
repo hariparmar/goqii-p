@@ -179,11 +179,35 @@ const blogTestimonialsSlider = new Swiper(".blog-testimonials-slider", {
         clickable: true
     },
 });
+
+// Magnific popup
 $(document).ready(function() {
     $('.popup-youtube').magnificPopup({
         type: 'iframe'
     });
+
+    $('.popup-with-form').magnificPopup({
+        type: 'inline',
+        preloader: false,
+        focus: '#name',
+
+        // When elemened is focused, some mobile browsers in some cases zoom in
+        // It looks not nice, so we disable it:
+        callbacks: {
+            beforeOpen: function() {
+                if ($(window).width() < 700) {
+                    this.st.focus = false;
+                } else {
+                    this.st.focus = '#name';
+                }
+            }
+        }
+    });
 });
+
+
+
+
 
 //  About Team slider
 const aboutLeaderThumbSlider = new Swiper(".about-team-slider__inner__thumb--leadership", {
@@ -258,9 +282,18 @@ const aboutInvestorsSlider = new Swiper(".investors__inner__members__slider", {
     slidesPerView: 1,
     spaceBetween: 10,
     speed: 500,
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
+    },
+    // Navigation arrows
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
 });
 
@@ -487,6 +520,34 @@ const productSpecsSkipSliderMain = new Swiper(".product-specsSkip-slider__main",
     },
 });
 
+// Careers page - Core value
+setTimeout(function() {
+    $(".careers-core-values__slider__single").outerHeight($(".careers-core-values__slider .swiper-slide").outerWidth());
+}, 10);
+
+
+const coreValuesSlider = new Swiper(".careers-core-values__slider", {
+    slidesPerView: 2,
+    spaceBetween: 10,
+    speed: 500,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    // Navigation arrows
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints: {
+        990: {
+            spaceBetween: 50,
+            slidesPerView: 3,
+        }
+    },
+});
+
 
 $(document).ready(function() {
     var screenWidht = $(window).width();
@@ -495,6 +556,19 @@ $(document).ready(function() {
     if (screenWidht < 1281) {
         $(".content-page__inner__sidebar .nav-item").click(function() {
             $(this).closest(".content-page__inner__sidebar").toggleClass("active");
+        })
+    }
+
+    if (screenWidht < 993) {
+
+        $(".Mobile__Humburger").click(function() {
+            $(this).toggleClass("Active");
+            $(".header-wrapper__navigation").toggleClass("Mobile__Navigation--Active");
+            $('html').toggleClass("Fixed--Body");
+        })
+
+        $(".header-wrapper__navigation__submenu").click(function() {
+            $(this).toggleClass("header-wrapper__navigation__submenu--Active")
         })
     }
 })

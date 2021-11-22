@@ -1,6 +1,5 @@
 .about-banner {
     margin-bottom: 200px;
-    margin-top: 100px;
     @media only screen and (max-width: $max-width-1600) {
         margin-bottom: 80px;
     }
@@ -274,9 +273,17 @@
         &__inner {
             &__members {
                 &__slider {
+                    padding: 0 60px;
+                    @media only screen and (max-width: $max-width-mob) {
+                        padding: 0 40px;
+                    }
                     .col-md-2 {
                         @media only screen and (max-width: $max-width-mob) {
                             width: calc(100% / 4);
+                            padding: 0 5px;
+                        }
+                        @media only screen and (max-width: 640px) {
+                            width: calc(100% / 3);
                             padding: 0 5px;
                         }
                     }
@@ -299,19 +306,11 @@
                                 width: 130px;
                                 height: 130px;
                             }
-                            @media only screen and (max-width: 990px) {
-                                width: 90px;
-                                height: 90px;
-                            }
-                            @media only screen and (max-width: $max-width-mob) {
+                            @media only screen and (max-width: 1100px) {
                                 width: 110px;
                                 height: 110px;
                             }
-                            @media only screen and (max-width: 576px) {
-                                width: 90px;
-                                height: 90px;
-                            }
-                            @media only screen and (max-width: 480px) {
+                            @media only screen and (max-width: 990px) {
                                 width: 75px;
                                 height: 75px;
                             }
@@ -343,21 +342,24 @@
                             }
                         }
                     }
-                    .swiper {
-                        &-pagination-bullet {
-                            height: 7px;
-                            width: 210px;
-                            border-radius: 10px;
-                            margin: 0 20px;
-                            @media only screen and (max-width: $max-width-mob) {
-                                height: 4px;
-                                width: 70px;
-                                border-radius: 6px;
-                                margin: 0 7px;
-                            }
-                            &-active {
-                                background-color: #232324;
-                            }
+                    .swiper-button-next,
+                    .swiper-button-prev {
+                        top: calc(50% - 130px);
+                        @media only screen and (max-width: $max-width-1600) {
+                            top: calc(50% - 70px);
+                        }
+                        @media only screen and (max-width: $max-width-sm) {
+                            top: calc(50% - 55px);
+                        }
+                    }
+                    .swiper-button-prev {
+                        @media only screen and (max-width: $max-width-mob) {
+                            left: -10px;
+                        }
+                    }
+                    .swiper-button-next {
+                        @media only screen and (max-width: $max-width-mob) {
+                            right: -10px;
                         }
                     }
                 }
