@@ -52,6 +52,7 @@
             >a {
                 color: #272e31 !important;
                 transition: 0.3s all ease-in-out;
+
                 &:after {
                     content: "\e903";
                     font-family: 'goqii-icons' !important;
@@ -60,6 +61,9 @@
                     right: 0;
                     top: 10px;
                     transition: 0.3s all ease-in-out;
+                    @media only screen and (min-width: 992px) {
+                    	top: 16px;
+                    }                
                 }
             }
             &--Active {

@@ -457,7 +457,7 @@
                     img {
                         width: 100%;
                     }
-                    @keyframes example {
+                    @keyframes progress-fill {
                         from {
                             width: 0;
                         }
@@ -509,8 +509,9 @@
                             &__progress {
                                 opacity: 1;
                                 &::after {
-                                    animation-name: example;
+                                    animation-name: progress-fill;
                                     animation-duration: 5s;
+                                    animation-fill-mode: forwards;
                                 }
                             }
                         }
@@ -698,8 +699,9 @@
                             &__progress {
                                 opacity: 1;
                                 &::after {
-                                    animation-name: example;
+                                    animation-name: progress-fill;
                                     animation-duration: 5s;
+                                    animation-fill-mode: forwards;
                                 }
                             }
                         }

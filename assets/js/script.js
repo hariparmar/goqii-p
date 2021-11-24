@@ -101,12 +101,20 @@ const appFeatureMainSlider = new Swiper(".app-feature-slider__main", {
     },
 });
 const healthEcosystemThumbSlider = new Swiper(".health-ecosystem-slider__thumb", {
-    slidesPerView: 4,
+    slidesPerView: 2,
     spaceBetween: 20,
     autoplay: {
         delay: 5000,
     },
-    slideToClickedSlide: true
+    slideToClickedSlide: true,
+    // draggable: true,
+    breakpoints: {
+        870: {
+            slidesPerView: 4,
+
+        }
+    },
+
 });
 const healthEcosystemMainSlider = new Swiper(".health-ecosystem-slider__main", {
     // Optional parameters
@@ -125,6 +133,7 @@ const healthEcosystemMainSlider = new Swiper(".health-ecosystem-slider__main", {
     autoplay: {
         delay: 5000,
     },
+
     // onProgress: move,
     // Navigation arrows
     navigation: {
@@ -134,23 +143,27 @@ const healthEcosystemMainSlider = new Swiper(".health-ecosystem-slider__main", {
     thumbs: {
         swiper: healthEcosystemThumbSlider,
     },
+
+
+
 });
 
-function move() {
-    var elem = document.getElementById("progress");
-    var width = 1;
-    var autoplayTime = autoplay / 100;
-    var id = setInterval(frame, autoplayTime);
 
-    function frame() {
-        if (width >= 100) {
-            clearInterval(id);
-        } else {
-            width++;
-            elem.style.width = width + '%';
-        }
-    }
-}
+// function move() {
+//     var elem = document.getElementById("progress");
+//     var width = 1;
+//     var autoplayTime = autoplay / 100;
+//     var id = setInterval(frame, autoplayTime);
+
+//     function frame() {
+//         if (width >= 100) {
+//             clearInterval(id);
+//         } else {
+//             width++;
+//             elem.style.width = width + '%';
+//         }
+//     }
+// }
 const blogTestimonialsSlider = new Swiper(".blog-testimonials-slider", {
     // Optional parameters
     slidesPerView: 3,
@@ -472,7 +485,7 @@ const productSpecsSliderMain = new Swiper(".product-specs-slider__main", {
     autoplay: {
         delay: 5000,
     },
-    onProgress: move,
+    // onProgress: move,
     // Navigation arrows
     navigation: {
         nextEl: ".swiper-button-next",
@@ -509,7 +522,7 @@ const productSpecsSkipSliderMain = new Swiper(".product-specsSkip-slider__main",
     autoplay: {
         delay: 5000,
     },
-    onProgress: move,
+    // onProgress: move,
     // Navigation arrows
     navigation: {
         nextEl: ".swiper-button-next",
